@@ -7,6 +7,7 @@ import { ServerTimer } from './ServerTimer.js';
 export interface GameRoom {
   roomCode: string;
   hostSocketId: string;
+  isPartyMode: boolean;
   engine: GameEngine;
   timer: ServerTimer;
   playerSockets: Map<string, string>; // playerId -> socketId
@@ -40,7 +41,8 @@ export class RoomManager {
 
   public createRoom(
     hostSocketId: string,
-    customConfig?: Partial<GameConfig>
+    customConfig?: Partial<GameConfig>,
+    isPartyMode: boolean = false
   ): GameRoom {
     const roomCode = this.generateRoomCode();
     const engine = new GameEngine(roomCode, this.sharedRepo, customConfig);
@@ -49,6 +51,7 @@ export class RoomManager {
     const room: GameRoom = {
       roomCode,
       hostSocketId,
+      isPartyMode,
       engine,
       timer,
       playerSockets: new Map(),

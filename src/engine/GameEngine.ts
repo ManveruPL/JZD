@@ -172,6 +172,7 @@ export class GameEngine {
     // Rule: "Aby przejść do drugiego etapu trzeba odpowiedzieć poprawnie na co najmniej jedno pytanie."
     for (const player of this.players) {
       if (!player.isEliminated && player.stage1CorrectCount === 0) {
+        player.chances = 0;
         player.isEliminated = true;
         this.logEvent('ELIMINATION', `Gracz ${player.name} nie odpowiedział na żadne pytanie w Etapie 1 i odpada.`, player.id);
       }
@@ -358,7 +359,13 @@ export class GameEngine {
     } else {
       player.chances--;
       this.logEvent('ANSWER_WRONG', `Gracz ${player.name} odpowiedział błędnie i traci szansę (pozostało: ${player.chances}).`, player.id);
-      if (player.chances === 0) {
+
+      // Rule: In Stage 1, a wrong answer on the 2nd question (if 1st was also wrong) eliminates the player and wipes both remaining chances
+      if (player.stage1QuestionsAnswered === 2 && player.stage1CorrectCount === 0) {
+        player.chances = 0;
+        player.isEliminated = true;
+        this.logEvent('ELIMINATION', `Gracz ${player.name} odpowiedział błędnie na oba pytania w Etapie 1 i traci wszystkie szanse (odpada z gry).`, player.id);
+      } else if (player.chances === 0) {
         player.isEliminated = true;
         this.logEvent('ELIMINATION', `Gracz ${player.name} stracił wszystkie szanse i odpada z gry.`, player.id);
       }

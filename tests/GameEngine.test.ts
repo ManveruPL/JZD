@@ -92,9 +92,10 @@ describe('GameEngine - Jeden z Dziesięciu', () => {
 
       // After 8 answers, stage 1 should finish
       const state = engine.getState();
-      // fourth player failed both questions (0 correct) -> should be eliminated!
+      // fourth player failed both questions (0 correct) -> should be eliminated and have 0 chances!
       const pFailed = state.players.find(p => p.id === fourthPlayer.id)!;
       expect(pFailed.isEliminated).toBe(true);
+      expect(pFailed.chances).toBe(0);
 
       // Remaining 3 players have at least 1 correct answer -> survive!
       expect(state.players.filter(p => !p.isEliminated).length).toBe(3);

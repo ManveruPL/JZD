@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Users,
   Play,
+  Pause,
   RotateCcw,
   CheckCircle2,
   XCircle,
@@ -126,36 +127,128 @@ export const HostView: React.FC<HostViewProps> = ({
   const activePlayer = gameState?.players.find((p) => p.id === gameState?.activePlayerId);
   const buzzeredPlayer = gameState?.players.find((p) => p.id === buzzerPlayerId);
 
-  // Keyboard shortcuts for Mistrz Gry (1 = Poprawna, 2 = Błędna, 3 = Czas minął, Space = Pauza/Wznów)
+  // Check if current phase requires player nomination
+  const isNominationPhase =
+    !isLobby &&
+    !isFinished &&
+    ((stage === GameStage.STAGE_2 && !gameState?.activePlayerId && !!gameState?.nominationHolderId) ||
+      (stage === GameStage.STAGE_3 && gameState?.stage3Phase === Stage3Phase.NOMINATING));
+
+  // Helper to map player positions to keyboard hotkeys
+  const getHotkeyForPosition = (position?: number): string | undefined => {
+    if (!position) return undefined;
+    if (position >= 1 && position <= 9) return String(position);
+    if (position === 10) return '0';
+    const letters = ['Q', 'W', 'E', 'R', 'T'];
+    if (position >= 11 && position <= 15) return letters[position - 11];
+    return undefined;
+  };
+
+  // Keyboard shortcuts for Mistrz Gry
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Don't trigger if user is typing in an input
       if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement).tagName)) return;
 
       if (!isLobby && !isFinished) {
-        if (e.key === '1') {
-          e.preventDefault();
-          onVerdict(true);
-        } else if (e.key === '2') {
-          e.preventDefault();
-          onVerdict(false);
-        } else if (e.key === '3') {
-          e.preventDefault();
-          onVerdict(false);
-        } else if (e.key === ' ') {
+        // Space: Start / Pause Timer in any phase
+        if (e.key === ' ') {
           e.preventDefault();
           if (timerState.isRunning) {
             onPauseTimer();
           } else {
             onResumeTimer();
           }
+          return;
+        }
+
+        // Nomination Phase Shortcuts
+        if (isNominationPhase) {
+          // 'S' -> nominate self in Stage 3
+          if (e.key.toLowerCase() === 's' && stage === GameStage.STAGE_3 && gameState?.nominationHolderId) {
+            e.preventDefault();
+            sounds.playTick();
+            onNominate(gameState.nominationHolderId);
+            return;
+          }
+
+          // '1' to '9' -> players with position 1-9
+          if (e.key >= '1' && e.key <= '9') {
+            const targetPos = Number(e.key);
+            const targetP = gameState?.players.find((p) => (p.position || 0) === targetPos);
+            if (targetP && !targetP.isEliminated) {
+              // In Stage 2 cannot nominate self
+              if (stage === GameStage.STAGE_2 && targetP.id === gameState?.nominationHolderId) return;
+              e.preventDefault();
+              sounds.playTick();
+              onNominate(targetP.id);
+              return;
+            }
+          }
+
+          // '0' -> player with position 10
+          if (e.key === '0') {
+            const targetP = gameState?.players.find((p) => (p.position || 0) === 10);
+            if (targetP && !targetP.isEliminated) {
+              if (stage === GameStage.STAGE_2 && targetP.id === gameState?.nominationHolderId) return;
+              e.preventDefault();
+              sounds.playTick();
+              onNominate(targetP.id);
+              return;
+            }
+          }
+
+          // 'q', 'w', 'e', 'r', 't' -> players with position 11-15
+          const letterIdx = ['q', 'w', 'e', 'r', 't'].indexOf(e.key.toLowerCase());
+          if (letterIdx !== -1) {
+            const targetPos = 11 + letterIdx;
+            const targetP = gameState?.players.find((p) => (p.position || 0) === targetPos);
+            if (targetP && !targetP.isEliminated) {
+              if (stage === GameStage.STAGE_2 && targetP.id === gameState?.nominationHolderId) return;
+              e.preventDefault();
+              sounds.playTick();
+              onNominate(targetP.id);
+              return;
+            }
+          }
+          return;
+        }
+
+        // Answering Phase Shortcuts (Verdicts)
+        if (['1', 'p', 'P', 'Enter', 'z', 'Z'].includes(e.key)) {
+          e.preventDefault();
+          sounds.playCorrect();
+          onVerdict(true);
+        } else if (['2', 'b', 'B', 'Backspace', 'x', 'X'].includes(e.key)) {
+          e.preventDefault();
+          sounds.playWrong();
+          onVerdict(false);
+        } else if (['3', 'c', 'C'].includes(e.key)) {
+          e.preventDefault();
+          sounds.playTimeOut();
+          onVerdict(false);
+        } else if (['n', 'N', 'm', 'M'].includes(e.key)) {
+          e.preventDefault();
+          onNextQuestion();
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isLobby, isFinished, timerState.isRunning, onVerdict, onPauseTimer, onResumeTimer]);
+  }, [
+    isLobby,
+    isFinished,
+    isNominationPhase,
+    stage,
+    gameState,
+    timerState.isRunning,
+    onVerdict,
+    onNominate,
+    onNextQuestion,
+    onPauseTimer,
+    onResumeTimer
+  ]);
 
   return (
     <div className="min-h-screen bg-theme-black text-white studio-grid flex flex-col p-3 sm:p-6 select-none">
@@ -466,17 +559,47 @@ export const HostView: React.FC<HostViewProps> = ({
             {/* Central Controls: Timer & Big Verdict Buttons */}
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4 border-t border-zinc-800">
               {/* Timer Display with Host controls */}
-              <TimerDisplay
-                remaining={timerState.remaining}
-                duration={timerState.duration}
-                isRunning={timerState.isRunning}
-                showControls={true}
-                onPause={onPauseTimer}
-                onResume={onResumeTimer}
-                onReset={() => onResetTimer()}
-                onAddSeconds={onAddSeconds}
-                label={stage === GameStage.STAGE_3 && !activePlayer ? 'CZAS NA ZGŁOSZENIE (BUZZER)' : 'CZAS NA ODPOWIEDŹ'}
-              />
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <TimerDisplay
+                  remaining={timerState.remaining}
+                  duration={timerState.duration}
+                  isRunning={timerState.isRunning}
+                  showControls={true}
+                  onPause={onPauseTimer}
+                  onResume={onResumeTimer}
+                  onReset={() => onResetTimer()}
+                  onAddSeconds={onAddSeconds}
+                  label={stage === GameStage.STAGE_3 && !activePlayer ? 'CZAS NA ZGŁOSZENIE (BUZZER)' : 'CZAS NA ODPOWIEDŹ'}
+                />
+
+                {/* Big Space / Start Countdown Trigger for Host */}
+                <div className="flex flex-col items-center gap-1.5 sm:border-l sm:border-zinc-800 sm:pl-4">
+                  {!timerState.isRunning ? (
+                    <button
+                      onClick={onResumeTimer}
+                      data-testid="btn-start-countdown"
+                      className="py-3.5 px-6 rounded-2xl bg-gradient-to-r from-status-active to-cyan-300 text-black font-black uppercase text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-xl glow-cyan animate-pulse"
+                      title="Rozpocznij odliczanie 30s po przeczytaniu pytania na głos (Klawisz: Spacja)"
+                    >
+                      <Play className="w-4 h-4 fill-black" />
+                      <span>START CZASU (Spacja)</span>
+                    </button>
+                  ) : (
+                    <button
+                      onClick={onPauseTimer}
+                      data-testid="btn-pause-countdown"
+                      className="py-3.5 px-6 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-amber-400 font-bold text-sm border border-amber-500/50 flex items-center justify-center gap-2 transition-colors shadow-lg"
+                      title="Zatrzymaj licznik czasu (Klawisz: Spacja)"
+                    >
+                      <Pause className="w-4 h-4" />
+                      <span>PAUZA (Spacja)</span>
+                    </button>
+                  )}
+                  <span className="text-[11px] text-zinc-400 text-center">
+                    {!timerState.isRunning ? '📖 Przeczytaj pytanie, potem wciśnij Spację' : '⏱️ Odliczanie trwa...'}
+                  </span>
+                </div>
+              </div>
 
               {/* Verdict Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
@@ -487,9 +610,10 @@ export const HostView: React.FC<HostViewProps> = ({
                   }}
                   data-testid="btn-verdict-correct"
                   className="py-4 px-6 rounded-2xl bg-status-success text-black font-extrabold hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 shadow-lg glow-emerald text-base group"
+                  title="Dobra odpowiedź (Klawisz: 1, P lub Enter)"
                 >
                   <CheckCircle2 className="w-5 h-5 fill-black group-hover:scale-110 transition-transform" />
-                  <span>DOBRZE (Klawisz 1)</span>
+                  <span>DOBRZE (1 / P)</span>
                 </button>
 
                 <button
@@ -499,9 +623,10 @@ export const HostView: React.FC<HostViewProps> = ({
                   }}
                   data-testid="btn-verdict-wrong"
                   className="py-4 px-6 rounded-2xl bg-status-danger text-white font-extrabold hover:bg-red-500 transition-all flex items-center justify-center gap-2 shadow-lg glow-rose text-base group"
+                  title="Błędna odpowiedź (Klawisz: 2, B lub Backspace)"
                 >
                   <XCircle className="w-5 h-5 fill-white text-status-danger group-hover:scale-110 transition-transform" />
-                  <span>ŹLE (Klawisz 2)</span>
+                  <span>ŹLE (2 / B)</span>
                 </button>
 
                 <button
@@ -511,35 +636,40 @@ export const HostView: React.FC<HostViewProps> = ({
                   }}
                   data-testid="btn-verdict-timeout"
                   className="py-4 px-4 rounded-2xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-bold transition-colors border border-zinc-700 flex items-center justify-center gap-1.5 text-sm"
-                  title="Czas minął / brak odpowiedzi"
+                  title="Czas minął / brak odpowiedzi (Klawisz: 3 lub C)"
                 >
                   <Clock className="w-4 h-4 text-amber-400" />
-                  <span>Czas minął</span>
+                  <span>Czas minął (3)</span>
                 </button>
 
                 <button
                   onClick={onNextQuestion}
                   data-testid="btn-skip-question"
                   className="py-4 px-4 rounded-2xl bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors border border-zinc-800 text-xs flex items-center justify-center"
-                  title="Pomiń to pytanie i wylosuj inne"
+                  title="Pomiń to pytanie i wylosuj inne (Klawisz: N)"
                 >
-                  Pomiń
+                  Pomiń (N)
                 </button>
               </div>
             </div>
 
             {/* Stage 3 Phase 2 Nomination Guidance */}
             {stage === GameStage.STAGE_3 && gameState?.stage3Phase === Stage3Phase.NOMINATING && activePlayer && (
-              <div className="mt-4 p-3 rounded-xl bg-cyan-950/40 border border-cyan-800 text-cyan-300 text-xs flex items-center justify-between">
-                <span>
-                  Gracz #{activePlayer.position || 1} {activePlayer.name} ma prawo wyznaczyć siebie (+20 pkt) lub innego gracza (+10 pkt).
-                </span>
+              <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-cyan-950/70 via-zinc-900 to-amber-950/70 border-2 border-amber-500/80 text-amber-300 text-xs flex flex-col sm:flex-row items-center justify-between gap-3 glow-amber">
+                <div className="text-center sm:text-left">
+                  <span className="font-bold text-sm text-white block">
+                    Gracz #{activePlayer.position || 1} {activePlayer.name} ma prawo wyznaczenia:
+                  </span>
+                  <span className="text-zinc-400 text-xs">
+                    Wciśnij <kbd className="px-1.5 py-0.5 rounded bg-zinc-800 text-amber-400 font-mono font-bold">[S]</kbd>, aby wyznaczyć siebie, lub kliknij w boks rywala.
+                  </span>
+                </div>
                 <button
                   onClick={() => onNominate(activePlayer.id)}
                   data-testid="btn-nominate-self"
-                  className="px-3 py-1.5 rounded-lg bg-status-active text-black font-bold hover:bg-cyan-300 transition-colors flex items-center gap-1"
+                  className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-black font-black hover:from-amber-300 hover:to-amber-400 transition-all flex items-center gap-1.5 shadow-lg text-sm"
                 >
-                  <Flame className="w-3.5 h-3.5" /> Wyznaczam siebie (+20)
+                  <Flame className="w-4 h-4 fill-black" /> Wyznaczam siebie (+20 pkt) [S]
                 </button>
               </div>
             )}
@@ -556,22 +686,36 @@ export const HostView: React.FC<HostViewProps> = ({
               </span>
             </div>
 
+            {/* Nomination helper banner when nomination is open */}
+            {isNominationPhase && (
+              <div className="mb-3 p-3 rounded-xl bg-cyan-950/50 border border-status-active text-center glow-cyan">
+                <span className="text-xs font-bold text-status-active">
+                  👆 Kliknij w cały boks wybranego zawodnika lub naciśnij jego cyfrę [1]–[9], [0] na klawiaturze, aby go wyznaczyć!
+                </span>
+              </div>
+            )}
+
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-              {gameState?.players.map((player) => (
-                <PlayerCard
-                  key={player.id}
-                  player={player}
-                  isActive={player.id === gameState?.activePlayerId}
-                  isBuzzered={player.id === buzzerPlayerId}
-                  canNominate={
-                    (stage === GameStage.STAGE_2 || (stage === GameStage.STAGE_3 && gameState?.stage3Phase === Stage3Phase.NOMINATING)) &&
-                    !player.isEliminated
-                  }
-                  onNominate={(targetId) => onNominate(targetId)}
-                  showScore={stage === GameStage.STAGE_3 || player.score > 0}
-                  compact={gameState.players.length > 8}
-                />
-              ))}
+              {gameState?.players.map((player) => {
+                const canNom =
+                  isNominationPhase &&
+                  !player.isEliminated &&
+                  (stage === GameStage.STAGE_3 || player.id !== gameState?.nominationHolderId);
+
+                return (
+                  <PlayerCard
+                    key={player.id}
+                    player={player}
+                    isActive={player.id === gameState?.activePlayerId}
+                    isBuzzered={player.id === buzzerPlayerId}
+                    canNominate={canNom}
+                    onNominate={(targetId) => onNominate(targetId)}
+                    showScore={stage === GameStage.STAGE_3 || player.score > 0}
+                    compact={gameState.players.length > 8}
+                    hotkeyLabel={getHotkeyForPosition(player.position)}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

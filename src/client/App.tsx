@@ -100,7 +100,7 @@ export const App: React.FC = () => {
   // Handlers for Home actions
   const handleStartParty = () => {
     setIsPartyMode(true);
-    emit('room:create', { hostName: 'Mistrz Gry', config: { minPlayers: 4, maxPlayers: 15 } }, (res) => {
+    emit('room:create', { hostName: 'Mistrz Gry', isPartyMode: true, config: { minPlayers: 4, maxPlayers: 15 } }, (res) => {
       if (res?.success && res.roomCode) {
         setRoomCode(res.roomCode);
         setCurrentView('HOST');

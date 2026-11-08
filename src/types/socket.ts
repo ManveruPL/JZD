@@ -42,7 +42,7 @@ export interface ServerToClientEvents {
 export interface ClientToServerEvents {
   // Room events
   'room:create': (
-    payload: { hostName?: string; config?: Partial<GameConfig> },
+    payload: { hostName?: string; isPartyMode?: boolean; config?: Partial<GameConfig> },
     callback?: (response: { success: boolean; roomCode?: string; error?: string }) => void
   ) => void;
 

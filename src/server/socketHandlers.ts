@@ -60,7 +60,7 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     // 1. Create Room
     socket.on('room:create', (payload, callback) => {
       try {
-        const room = roomManager.createRoom(socket.id, payload.config);
+        const room = roomManager.createRoom(socket.id, payload.config, payload.isPartyMode);
         socket.data.roomCode = room.roomCode;
         socket.data.role = 'host';
 
@@ -158,7 +158,11 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
         }
 
         room.engine.startGame();
-        room.timer.start(room.engine.getState().config.answerTimeLimitSeconds);
+        if (room.isPartyMode) {
+          room.timer.reset(room.engine.getState().config.answerTimeLimitSeconds);
+        } else {
+          room.timer.start(room.engine.getState().config.answerTimeLimitSeconds);
+        }
 
         io.to(room.roomCode).emit('notification', {
           type: 'success',
@@ -185,25 +189,41 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
 
         const state = room.engine.getState();
 
-        // Start timer based on new state
-        if (state.stage === GameStage.STAGE_3) {
-          if (state.stage3Phase === Stage3Phase.BUZZER) {
-            room.timer.start(state.config.buzzerTimeLimitSeconds);
-          } else if (state.stage3Phase === Stage3Phase.ANSWERING_NOMINATED) {
-            room.timer.start(state.config.answerTimeLimitSeconds);
-          } else {
-            room.timer.stop();
-          }
-        } else if (state.stage === GameStage.STAGE_1) {
-          room.timer.start(state.config.answerTimeLimitSeconds);
-        } else if (state.stage === GameStage.STAGE_2) {
-          if (state.activePlayerId && state.questionState === QuestionState.ANSWERING) {
-            room.timer.start(state.config.answerTimeLimitSeconds);
+        // Start timer based on new state and game mode
+        if (room.isPartyMode) {
+          if (state.stage === GameStage.STAGE_3) {
+            if (state.stage3Phase === Stage3Phase.BUZZER) {
+              room.timer.reset(state.config.buzzerTimeLimitSeconds);
+            } else if (state.stage3Phase === Stage3Phase.ANSWERING_NOMINATED) {
+              room.timer.reset(state.config.answerTimeLimitSeconds);
+            } else {
+              room.timer.stop();
+            }
+          } else if (state.stage === GameStage.STAGE_1 || state.stage === GameStage.STAGE_2) {
+            room.timer.reset(state.config.answerTimeLimitSeconds);
           } else {
             room.timer.stop();
           }
         } else {
-          room.timer.stop();
+          if (state.stage === GameStage.STAGE_3) {
+            if (state.stage3Phase === Stage3Phase.BUZZER) {
+              room.timer.start(state.config.buzzerTimeLimitSeconds);
+            } else if (state.stage3Phase === Stage3Phase.ANSWERING_NOMINATED) {
+              room.timer.start(state.config.answerTimeLimitSeconds);
+            } else {
+              room.timer.stop();
+            }
+          } else if (state.stage === GameStage.STAGE_1) {
+            room.timer.start(state.config.answerTimeLimitSeconds);
+          } else if (state.stage === GameStage.STAGE_2) {
+            if (state.activePlayerId && state.questionState === QuestionState.ANSWERING) {
+              room.timer.start(state.config.answerTimeLimitSeconds);
+            } else {
+              room.timer.stop();
+            }
+          } else {
+            room.timer.stop();
+          }
         }
 
         broadcastGameState(room);
@@ -231,7 +251,11 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
 
       try {
         room.engine.nominate(payload.targetPlayerId);
-        room.timer.start(room.engine.getState().config.answerTimeLimitSeconds);
+        if (room.isPartyMode) {
+          room.timer.reset(room.engine.getState().config.answerTimeLimitSeconds);
+        } else {
+          room.timer.start(room.engine.getState().config.answerTimeLimitSeconds);
+        }
         broadcastGameState(room);
       } catch (err: any) {
         socket.emit('room:error', { message: err.message });

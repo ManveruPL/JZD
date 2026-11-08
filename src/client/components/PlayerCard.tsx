@@ -11,6 +11,7 @@ interface PlayerCardProps {
   onNominate?: (playerId: string) => void;
   showScore?: boolean;
   compact?: boolean;
+  hotkeyLabel?: string;
 }
 
 export const PlayerCard: React.FC<PlayerCardProps> = ({
@@ -20,14 +21,23 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
   canNominate = false,
   onNominate,
   showScore = true,
-  compact = false
+  compact = false,
+  hotkeyLabel
 }) => {
   const isEliminated = player.isEliminated || player.chances <= 0;
+  const isClickableNominate = canNominate && !isEliminated && !!onNominate;
+
+  const handleClick = () => {
+    if (isClickableNominate) {
+      onNominate(player.id);
+    }
+  };
 
   return (
     <div
       data-testid={`player-card-${player.id}`}
-      className={`relative rounded-xl border transition-all duration-300 flex flex-col justify-between ${
+      onClick={handleClick}
+      className={`relative rounded-xl border transition-all duration-200 flex flex-col justify-between ${
         compact ? 'p-3' : 'p-4'
       } ${
         isEliminated
@@ -36,6 +46,8 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
           ? 'bg-gradient-to-b from-cyan-950/40 to-theme-darker border-status-active glow-cyan ring-1 ring-cyan-400'
           : isBuzzered
           ? 'bg-gradient-to-b from-amber-950/40 to-theme-darker border-status-warning glow-amber animate-pulse'
+          : isClickableNominate
+          ? 'bg-theme-card border-cyan-700/60 hover:border-status-active hover:scale-[1.02] cursor-pointer hover:glow-cyan ring-1 ring-cyan-500/30'
           : 'bg-theme-card border-theme-border hover:border-zinc-700'
       }`}
     >
@@ -51,6 +63,14 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
           >
             #{player.position || 1}
           </span>
+          {hotkeyLabel && isClickableNominate && (
+            <span
+              className="font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-cyan-950 border border-cyan-500 text-cyan-300"
+              title={`Klawisz skrótu: ${hotkeyLabel}`}
+            >
+              [{hotkeyLabel}]
+            </span>
+          )}
           {player.isConnected !== undefined && (
             <span
               className={`w-2 h-2 rounded-full ${
@@ -99,7 +119,10 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
 
         {canNominate && !isEliminated && onNominate && (
           <button
-            onClick={() => onNominate(player.id)}
+            onClick={(e) => {
+              e.stopPropagation();
+              onNominate(player.id);
+            }}
             data-testid={`btn-nominate-${player.id}`}
             className="px-2.5 py-1 text-xs font-semibold rounded-lg bg-status-active text-black hover:bg-cyan-300 transition-colors flex items-center gap-1 shadow-sm"
           >
