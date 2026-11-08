@@ -19,6 +19,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Test reports & artifacts
+test-results/
+playwright-report/
+coverage/
+
 # IDE & Editor files
 .idea/
 .vscode/

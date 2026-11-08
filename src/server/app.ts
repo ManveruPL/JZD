@@ -45,6 +45,34 @@ export async function buildApp(
     });
   }
 
+  // Serve questions data if needed
+  const dataDir = path.resolve(process.cwd(), 'data');
+  if (fs.existsSync(dataDir)) {
+    await app.register(fastifyStatic, {
+      root: dataDir,
+      prefix: '/data/',
+      decorateReply: false
+    });
+  }
+
+  // Serve compiled client frontend if present (Production / Docker build)
+  const clientDistDir = path.resolve(process.cwd(), 'dist/client');
+  if (fs.existsSync(clientDistDir)) {
+    await app.register(fastifyStatic, {
+      root: clientDistDir,
+      prefix: '/',
+      decorateReply: false
+    });
+
+    app.setNotFoundHandler((req, reply) => {
+      const url = req.raw.url || '';
+      if (!url.startsWith('/api') && !url.startsWith('/socket.io') && !url.startsWith('/data') && !url.startsWith('/assets')) {
+        return reply.sendFile('index.html', clientDistDir);
+      }
+      reply.status(404).send({ error: 'Endpoint nie istnieje' });
+    });
+  }
+
   const questionsRepo = customRepo || new QuestionsRepository();
   const roomManager = new RoomManager(questionsRepo);
 

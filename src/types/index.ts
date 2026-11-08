@@ -5,6 +5,7 @@ export interface Question {
   aliases?: string[];
   category: string;
   source: string;
+  difficulty?: string;
 }
 
 export interface Player {
@@ -17,6 +18,7 @@ export interface Player {
   stage1QuestionsAnswered: number;
   isConnected?: boolean;
   socketId?: string;
+  position?: number;
 }
 
 export enum GameStage {
@@ -77,6 +79,7 @@ export interface GameState {
     remaining: number;
     isRunning: boolean;
     startedAt: number | null;
+    expiresAt?: number | null;
   } | null;
   winner: Player | null;
   history: GameEventRecord[];

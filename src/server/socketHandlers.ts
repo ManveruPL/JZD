@@ -139,13 +139,24 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     });
 
     // 4. Start Game
-    socket.on('game:start', () => {
+    socket.on('game:start', (payload) => {
       const roomCode = socket.data.roomCode;
       if (!roomCode) return;
       const room = roomManager.getRoom(roomCode);
       if (!room || room.hostSocketId !== socket.id) return;
 
       try {
+        // If party players list is provided, populate engine
+        if (payload?.players && Array.isArray(payload.players) && payload.players.length >= 4) {
+          // If room already had players in lobby, clear them or keep
+          const currentCount = room.engine.getState().players.length;
+          if (currentCount === 0) {
+            for (const name of payload.players) {
+              room.engine.addPlayer(name);
+            }
+          }
+        }
+
         room.engine.startGame();
         room.timer.start(room.engine.getState().config.answerTimeLimitSeconds);
 

@@ -57,7 +57,7 @@ export interface ClientToServerEvents {
   ) => void;
 
   // Game control events
-  'game:start': () => void;
+  'game:start': (payload?: { players?: string[]; categories?: string[] }) => void;
   'game:answer_verdict': (payload: { isCorrect: boolean }) => void;
   'game:nominate': (payload: { targetPlayerId: string }) => void;
   'game:buzz': () => void;
