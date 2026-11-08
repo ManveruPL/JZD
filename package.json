@@ -1,0 +1,27 @@
+{
+  "name": "jzd",
+  "version": "1.0.0",
+  "description": "Jeden z Dziesięciu - gra quizowa w czasie rzeczywistym",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "jzd",
+    "quiz",
+    "jeden-z-dziesieciu",
+    "game",
+    "socketio"
+  ],
+  "author": "Michał Świątek",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
