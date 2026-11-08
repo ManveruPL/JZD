@@ -1163,10 +1163,13 @@
   },
   {
     "id": 167,
-    "question": "Kto jest prezydentem Polski?",
-    "answer": "Bronisław Komorowski",
+    "question": "Kto pełni urząd prezydenta Rzeczypospolitej Polskiej od 2015 roku?",
+    "answer": "Andrzej Duda",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Duda"
+    ]
   },
   {
     "id": 168,
@@ -1408,10 +1411,15 @@
   },
   {
     "id": 202,
-    "question": "Czym zajmuje sie teraz Robert Korzeniowski?",
-    "answer": "dyrektorem sportowym TVP",
+    "question": "Jaką funkcję w Telewizji Polskiej pełnił w latach 2005–2009 Robert Korzeniowski?",
+    "answer": "dyrektor sportowy TVP",
     "category": "sport",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "dyrektor sportowy",
+      "dyrektor redakcji sportowej",
+      "szef sportu w TVP"
+    ]
   },
   {
     "id": 203,
@@ -1778,13 +1786,6 @@
     "source": "jzd-classic"
   },
   {
-    "id": 255,
-    "question": "Czy wychodki są używane również do napełniania dezodorantów??",
-    "answer": "absolutnie zabranie tego prawo klopka gloszace:nie uzywaj zapachu tego do konsumowania swego",
-    "category": "spoleczenstwo-i-prawo",
-    "source": "jzd-classic"
-  },
-  {
     "id": 256,
     "question": "Czy krasnal Ludek mieszka w:",
     "answer": "w pekinie pod szpitalem",
@@ -1968,10 +1969,16 @@
   },
   {
     "id": 282,
-    "question": "Odin to bóg:",
-    "answer": "rzymski",
+    "question": "W mitologii Odyn (Odin) jest najwyższym bogiem jakiego panteonu?",
+    "answer": "nordyckiego",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "nordycki",
+      "skandynawski",
+      "germański",
+      "mitologii nordyckiej"
+    ]
   },
   {
     "id": 283,
@@ -2227,10 +2234,13 @@
   },
   {
     "id": 319,
-    "question": "jaka jest największa pustynia na Ziemi",
-    "answer": "Gobi",
+    "question": "Jaka jest największa gorąca pustynia piaszczysto-żwirowa na Ziemi?",
+    "answer": "Sahara",
     "category": "geografia",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "pustynia Sahara"
+    ]
   },
   {
     "id": 320,
@@ -2514,10 +2524,13 @@
   },
   {
     "id": 360,
-    "question": "Kto jest prezydentem miasta Warszawa?",
-    "answer": "Hanna Gronkiewicz-Waltz",
+    "question": "Kto pełni funkcję prezydenta m.st. Warszawy od 2018 roku?",
+    "answer": "Rafał Trzaskowski",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Trzaskowski"
+    ]
   },
   {
     "id": 361,
@@ -2689,10 +2702,14 @@
   },
   {
     "id": 385,
-    "question": "paż królowej to...",
-    "answer": "świerszcz",
+    "question": "Paź królowej to piękny i duży krajowy owad będący:",
+    "answer": "motylem",
     "category": "literatura",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "motyl",
+      "motyl dzienny"
+    ]
   },
   {
     "id": 386,
@@ -2745,10 +2762,14 @@
   },
   {
     "id": 393,
-    "question": "jakie drzewo nazywane jest królem drzew",
-    "answer": "jesion",
+    "question": "Który potężny gatunek drzewa liściastego tradycyjnie nazywany jest królem polskich lasów?",
+    "answer": "dąb",
     "category": "nauki-scisle",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "dąb szypułkowy",
+      "deby"
+    ]
   },
   {
     "id": 394,
@@ -2836,10 +2857,13 @@
   },
   {
     "id": 406,
-    "question": "jak nazywa się największy wąż Amazonii",
-    "answer": "boa dusiciel",
+    "question": "Jak nazywa się największy i najmasywniejszy wąż Ameryki Południowej, żyjący w dorzeczu Amazonki?",
+    "answer": "anakonda",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "anakonda zielona"
+    ]
   },
   {
     "id": 407,
@@ -2948,10 +2972,13 @@
   },
   {
     "id": 422,
-    "question": "jak nazywa się największy ssak obu Ameryk",
-    "answer": "słoń",
+    "question": "Jak nazywa się największy lądowy ssak Ameryki Północnej?",
+    "answer": "bizon",
     "category": "geografia",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "bizon amerykański"
+    ]
   },
   {
     "id": 423,
@@ -4228,13 +4255,6 @@
     "source": "jzd-classic"
   },
   {
-    "id": 605,
-    "question": "Obecnie większość Apaczów z?",
-    "answer": "9 grup",
-    "category": "ciekawostki",
-    "source": "jzd-classic"
-  },
-  {
     "id": 606,
     "question": "Według danych z roku 2002[6] Augustów ma obszar 80,93 km², w tym?",
     "answer": "użytki rolne: 27%",
@@ -5314,10 +5334,14 @@
   },
   {
     "id": 760,
-    "question": "jak nazywa się największy chrząszcz wodny Polski",
-    "answer": "jelonek",
+    "question": "Jak nazywa się największy chrząszcz wodny występujący w Polsce?",
+    "answer": "kałużnica czarnozielona",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "kałużnica",
+      "pływak żółtobrzeżek"
+    ]
   },
   {
     "id": 761,
@@ -6119,10 +6143,14 @@
   },
   {
     "id": 875,
-    "question": "Ile planet znajduje się w Układzie Słonecznym?",
-    "answer": "9",
+    "question": "Ile planet znajduje się w Układzie Słonecznym od czasu reklasyfikacji Plutona w 2006 roku?",
+    "answer": "osiem",
     "category": "nauki-scisle",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "8",
+      "8 planet"
+    ]
   },
   {
     "id": 876,
@@ -6406,10 +6434,13 @@
   },
   {
     "id": 916,
-    "question": "Co jest walutą Litwy?",
+    "question": "Jak nazywała się narodowa waluta Litwy przed przyjęciem euro w 2015 roku?",
     "answer": "lit",
     "category": "spoleczenstwo-i-prawo",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "lity"
+    ]
   },
   {
     "id": 917,
@@ -7106,10 +7137,16 @@
   },
   {
     "id": 1016,
-    "question": "Kanada do dziś pozostaje monarchią konstytucyjną, gdzie jako głowa państwa występuje:",
-    "answer": "Elżbieta II",
+    "question": "Kanada pozostaje monarchią konstytucyjną – kto jest jej obecną głową państwa?",
+    "answer": "Karol III",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "król Karol III",
+      "Karol",
+      "Charles III",
+      "monarcha brytyjski"
+    ]
   },
   {
     "id": 1017,
@@ -7568,10 +7605,13 @@
   },
   {
     "id": 1082,
-    "question": "Aum Shinrikyo oznacza: a) b) c) d)",
+    "question": "Co w dosłownym tłumaczeniu oznacza nazwa japońskiej sekty Aum Shinrikyo?",
     "answer": "Najwyższa Prawda",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "nauka o najwyższej prawdzie"
+    ]
   },
   {
     "id": 1083,
@@ -9493,10 +9533,13 @@
   },
   {
     "id": 1357,
-    "question": "Kto jest obecnym premierem Polski",
+    "question": "Kto objął urząd Prezesa Rady Ministrów (premiera) Polski w grudniu 2023 roku?",
     "answer": "Donald Tusk",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Tusk"
+    ]
   },
   {
     "id": 1358,
@@ -10172,10 +10215,13 @@
   },
   {
     "id": 1454,
-    "question": "Jaki jest obecny prezydent Polski",
+    "question": "Kto pełnił urząd prezydenta Rzeczypospolitej Polskiej w latach 2010–2015?",
     "answer": "Bronisław Komorowski",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Komorowski"
+    ]
   },
   {
     "id": 1455,
@@ -10494,10 +10540,15 @@
   },
   {
     "id": 1500,
-    "question": "Obecny papież jest:",
-    "answer": "niemcem",
+    "question": "Z jakiego kraju pochodził papież Benedykt XVI (Joseph Ratzinger)?",
+    "answer": "z Niemiec",
     "category": "ciekawostki",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Niemcy",
+      "Niemiec",
+      "z RFN"
+    ]
   },
   {
     "id": 1501,
@@ -11932,13 +11983,6 @@
     "question": "Gdzie znajduje się najwyższy szczyt na ziemi?",
     "answer": "Himalaje",
     "category": "geografia",
-    "source": "jzd-classic"
-  },
-  {
-    "id": 1706,
-    "question": "Nie da Ci tego ojciec,nie da Ci tego matka co może dac Ci dzisiaj",
-    "answer": "sąsiadka",
-    "category": "ciekawostki",
     "source": "jzd-classic"
   },
   {
@@ -28295,10 +28339,14 @@
   },
   {
     "id": 4043,
-    "question": ".Kto jest obecnym prezydentem FIFA?",
+    "question": "Kto pełnił funkcję prezydenta FIFA w latach 1998–2015?",
     "answer": "Joseph Blatter",
     "category": "sport",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Sepp Blatter",
+      "Blatter"
+    ]
   },
   {
     "id": 4044,
@@ -29002,10 +29050,13 @@
   },
   {
     "id": 4144,
-    "question": "Kto jest aktualnym trenerem piłkarskiej reprezentacji Polski",
+    "question": "Kto był selekcjonerem piłkarskiej reprezentacji Polski w latach 2012–2013?",
     "answer": "Waldemar Fornalik",
     "category": "sport",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Fornalik"
+    ]
   },
   {
     "id": 4145,
@@ -29464,10 +29515,13 @@
   },
   {
     "id": 4210,
-    "question": "Kto jest aktualnie trenerem polskiej reprezentacji piłkarzy ręcznych?",
+    "question": "Kto był selekcjonerem reprezentacji Polski w piłce ręcznej mężczyzn w latach 2004–2012?",
     "answer": "Bogdan Wenta",
     "category": "sport",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Wenta"
+    ]
   },
   {
     "id": 4211,
@@ -31150,13 +31204,6 @@
     "source": "jzd-classic"
   },
   {
-    "id": 4451,
-    "question": "Ile widzów obejrzalo premierowy odcinek Barw szczescia?",
-    "answer": "5 625 286",
-    "category": "film",
-    "source": "jzd-classic"
-  },
-  {
     "id": 4452,
     "question": "Kogo gra Katarzyna Glinka w Barwach Szczęścia?",
     "answer": "Katarzynę",
@@ -32049,13 +32096,6 @@
     "id": 4579,
     "question": "O której godzinie w Polsacie leci serial Pierwsza Miłosc?",
     "answer": "18",
-    "category": "film",
-    "source": "jzd-classic"
-  },
-  {
-    "id": 4580,
-    "question": "Ile lat ma brat Szymona w Pierwszej Milosci widoczna z jego osobowosci?",
-    "answer": "10",
     "category": "film",
     "source": "jzd-classic"
   },
@@ -34735,10 +34775,15 @@
   },
   {
     "id": 4963,
-    "question": "Największym banknotem jest:",
-    "answer": "banknot 200zł",
+    "question": "Jaki jest najwyższy nominał polskich banknotów obiegowych z wizerunkiem Jana III Sobieskiego, wprowadzony w 2017 roku?",
+    "answer": "500 zł",
     "category": "styl-zycia",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "500",
+      "500 złotych",
+      "pięćset złotych"
+    ]
   },
   {
     "id": 4964,
@@ -34791,10 +34836,16 @@
   },
   {
     "id": 4971,
-    "question": "Jak nazywa się obecna królowa Wielkiej Brytanii?",
-    "answer": "Królowa Elżbieta II",
+    "question": "Kto jest obecnym monarchą Wielkiej Brytanii?",
+    "answer": "Karol III",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "król Karol III",
+      "Karol",
+      "Charles III",
+      "King Charles III"
+    ]
   },
   {
     "id": 4972,
@@ -34833,10 +34884,14 @@
   },
   {
     "id": 4977,
-    "question": "Na jakiej ulicy mieszka premier W. Brytanii?",
-    "answer": "Downing Streat",
+    "question": "Przy jakiej ulicy w Londynie znajduje się oficjalna rezydencja premiera Wielkiej Brytanii?",
+    "answer": "Downing Street",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "10 Downing Street",
+      "Downing Street 10"
+    ]
   },
   {
     "id": 4978,
@@ -34854,10 +34909,15 @@
   },
   {
     "id": 4980,
-    "question": "Gdzie mieszka królowa angielska?",
-    "answer": "pałac Buckingham",
+    "question": "Gdzie znajduje się oficjalna londyńska rezydencja brytyjskich monarchów?",
+    "answer": "Pałac Buckingham",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Buckingham",
+      "Buckingham Palace",
+      "w Pałacu Buckingham"
+    ]
   },
   {
     "id": 4981,
@@ -35015,10 +35075,13 @@
   },
   {
     "id": 5003,
-    "question": "Jak nazywa się obserwatorium astronomiczne i dzielnica Londynu przez, którą przechodzi południk 0?",
-    "answer": "Greenich",
+    "question": "Jak nazywa się dzielnica Londynu ze słynnym obserwatorium astronomicznym, przez którą przechodzi południk zerowy?",
+    "answer": "Greenwich",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "obserwatorium Greenwich"
+    ]
   },
   {
     "id": 5004,
@@ -35113,10 +35176,13 @@
   },
   {
     "id": 5017,
-    "question": "Jak nazywa się słynny most w Londynie?",
-    "answer": "Tover Bridge",
+    "question": "Jak nazywa się słynny wiktoriański most zwodzony nad Tamizą w Londynie?",
+    "answer": "Tower Bridge",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "most Tower Bridge"
+    ]
   },
   {
     "id": 5018,
@@ -35204,10 +35270,15 @@
   },
   {
     "id": 5030,
-    "question": "Jak na imię ma mąż obecnej królowej?",
+    "question": "Jak miał na imię zmarły w 2021 roku mąż królowej Elżbiety II?",
     "answer": "Filip",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "książę Filip",
+      "Filip Mountbatten",
+      "książę Edynburga"
+    ]
   },
   {
     "id": 5031,
@@ -35218,10 +35289,13 @@
   },
   {
     "id": 5032,
-    "question": "Jak nazywa się obecny premier W. Brytanii?",
+    "question": "Kto był premierem Wielkiej Brytanii z ramienia Partii Pracy w latach 1997–2007?",
     "answer": "Tony Blair",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Blair"
+    ]
   },
   {
     "id": 5033,
@@ -35260,24 +35334,35 @@
   },
   {
     "id": 5038,
-    "question": "Na jakim placu w Londynie stoi kolumna Nelsona?",
-    "answer": "Trafalgar Sguare",
+    "question": "Na jakim słynnym placu w Londynie wznosi się kolumna admirała Nelsona?",
+    "answer": "Trafalgar Square",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "plac Trafalgar Square"
+    ]
   },
   {
     "id": 5039,
-    "question": "Podaj pełną nazwę W. Brytanii?",
-    "answer": "Zjednoczone Krółestwo Wielkiej Brytanii i Irlandii Północnej",
+    "question": "Jak brzmi pełna oficjalna nazwa państwa brytyjskiego?",
+    "answer": "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Zjednoczone Królestwo"
+    ]
   },
   {
     "id": 5040,
-    "question": "Jaką funkcję spełniało kiedyś Tover?",
+    "question": "Jaką funkcję w przeszłości pełniła londyńska twierdza Tower of London?",
     "answer": "więzienie",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "więzienie i miejsce egzekucji",
+      "twierdza",
+      "zbrojownia"
+    ]
   },
   {
     "id": 5041,
@@ -35309,10 +35394,14 @@
   },
   {
     "id": 5045,
-    "question": "W jakim mieście znajduje się letnia siedziba królowej?",
-    "answer": "Windsor",
+    "question": "W jakiej rezydencji w hrabstwie Berkshire monarchowie brytyjscy spędzają tradycyjnie weekendy i święta?",
+    "answer": "zamek Windsor",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Windsor",
+      "w Windsorze"
+    ]
   },
   {
     "id": 5046,
@@ -35421,10 +35510,14 @@
   },
   {
     "id": 5061,
-    "question": "Ilu synów ma następca tronu królewskiego",
-    "answer": "2",
+    "question": "Ilu synów miał król Karol III z małżeństwa z księżną Dianą?",
+    "answer": "dwóch",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "2",
+      "dwaj synowie"
+    ]
   },
   {
     "id": 5062,
@@ -35456,10 +35549,13 @@
   },
   {
     "id": 5066,
-    "question": "Jak nazywa się miejsce w Londynie, gdzie można obrażać wszystkich oprócz królowej?",
-    "answer": "Corner of Speakers",
+    "question": "Jak nazywa się znane miejsce w londyńskim Hyde Parku, będące symbolem wolności słowa i debat publicznych?",
+    "answer": "Speakers' Corner",
     "category": "wielka-brytania",
-    "source": "jzd-classic"
+    "source": "jzd-classic",
+    "aliases": [
+      "Speakers Corner"
+    ]
   },
   {
     "id": 5067,
@@ -40852,10 +40948,13 @@
   },
   {
     "id": 5802,
-    "question": "Kto jest głową państwa na Jamajce?",
-    "answer": "Elżbieta II",
+    "question": "Kto jest formalną głową państwa na Jamajce?",
+    "answer": "Karol III",
     "aliases": [
-      "królowa brytyjska"
+      "król Karol III",
+      "Karol",
+      "Charles III",
+      "monarcha brytyjski"
     ],
     "category": "ciekawostki",
     "source": "poleval-2021-dev"
@@ -47607,10 +47706,13 @@
   },
   {
     "id": 6718,
-    "question": "Kto jest głową Australii?",
-    "answer": "Elżbieta II",
+    "question": "Kto jest formalną głową państwa Związku Australijskiego (Australii)?",
+    "answer": "Karol III",
     "aliases": [
-      "królowa brytyjska"
+      "król Karol III",
+      "Karol",
+      "Charles III",
+      "monarcha brytyjski"
     ],
     "category": "geografia",
     "source": "poleval-2021-testA"
@@ -61466,10 +61568,12 @@
   },
   {
     "id": 8591,
-    "question": "Ile części liczy obecnie saga o przygodach Indiany Jonesa z Harrisonem Fordem?",
-    "answer": "cztery",
+    "question": "Ile pełnometrażowych filmów kinowych liczy saga o przygodach Indiany Jonesa z Harrisonem Fordem (po premierze w 2023 r.)?",
+    "answer": "pięć",
     "aliases": [
-      "4"
+      "5",
+      "pięć części",
+      "5 filmów"
     ],
     "category": "motoryzacja",
     "source": "poleval-2021-testB"
@@ -78473,10 +78577,11 @@
   },
   {
     "id": 10789,
-    "question": "Jak nazywał się angielski korsarz, nobilitowany przez królową Elżbietę II i podniesiony do godności wiceadmirała?",
+    "question": "Jak nazywał się angielski korsarz, pasowany na rycerza przez królową Elżbietę I i mianowany wiceadmirałem?",
     "answer": "Francis Drake",
     "aliases": [
-      "Drake"
+      "Drake",
+      "sir Francis Drake"
     ],
     "category": "ciekawostki",
     "source": "poleval-2021-testB"

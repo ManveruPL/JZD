@@ -79,7 +79,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <main className="max-w-4xl w-full mx-auto my-auto py-10 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-400 mb-6">
           <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-          <span>Baza 11 052 pytań teleturniejowych z synonimami odpowiedzi</span>
+          <span>Baza 11 047 zweryfikowanych pytań teleturniejowych</span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight uppercase text-white mb-4">

@@ -345,7 +345,7 @@ export const HostView: React.FC<HostViewProps> = ({
                       : 'bg-zinc-800 text-zinc-400 hover:text-white'
                   }`}
                 >
-                  Wszystkie kategorie (11 052)
+                  Wszystkie kategorie (11 047)
                 </button>
                 {categories.slice(0, 8).map((cat) => {
                   const isSel = selectedCategories.includes(cat.id);

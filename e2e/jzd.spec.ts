@@ -13,7 +13,7 @@ test.describe('Jeden z Dziesięciu - E2E Suite', () => {
     await expect(heading).toContainText(/Jeden z Dziesięciu/i);
 
     // Check Question Counter Badge
-    const badge = page.locator('text=11 052');
+    const badge = page.locator('text=11 047');
     await expect(badge).toBeVisible();
 
     // Check Mode Cards
