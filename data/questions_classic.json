@@ -10,7 +10,7 @@
     "id": 2,
     "question": "Narzędzie służące do robienia bruzd przy uprawie roślin to:",
     "answer": "radło",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -24,21 +24,21 @@
     "id": 4,
     "question": "Co znaczy słowo \"biblion\"?",
     "answer": "księgę",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
     "id": 5,
     "question": "Z ilu ksiąg w Biblii składa się Stary Testament?",
     "answer": "46",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 6,
     "question": "Z ilu ksiąg w Biblii składa się Nowy Testament?",
     "answer": "27",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -59,7 +59,7 @@
     "id": 9,
     "question": "Gdy miał przyjść na świat zewsząd przypłynęły łabędzie był synem Zeusa i Latony, o kogo chodzi?",
     "answer": "Apolla",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -73,21 +73,21 @@
     "id": 11,
     "question": "Ukochany Afrodyty, rozszarpany przez dzika, sześć miesięcy bywał przy Afrodycie, sześć w Hadesie, o kogo chodzi?",
     "answer": "Adonisa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 12,
     "question": "Posiadał czapkę która czyniła go niewidzialnym, był rzadkim bywalcem olimpu, o kogo chodzi?",
     "answer": "o Hadesa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 13,
     "question": "Pierwsza żona Zeusa. Jedna z najstarszych bogiń, mądra i doświadczona.Opiekunka sprawiedliwości, o kim mowa?",
     "answer": "o Temidzie",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -171,49 +171,49 @@
     "id": 25,
     "question": "Jaki aparat fotograficzny \"występuje\" w \"Rejsie\", przez co staje się na trwałe kojarzony z okresem PRL-u?",
     "answer": "Zorka 5",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 26,
     "question": "Jak nazywała się modna w PRL akcja społeczna, polegająca na jeżdżeniu \"na okazję\" ze specjalnie przygotowaną książeczką, na której widniał m. in. czerwony okrąg łudząco podobny do milicyjnego \"lizaka\"?",
     "answer": "autostop",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 27,
     "question": "Jaka nazwę nosiła legendarna, wielozadaniowa PRL-oska pralka z kieleckiej Huty Ludwików - SHL?",
     "answer": "frania",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 28,
     "question": "Jak nazywały się organizowane od 1948 r. wielkie zawody kolarskie, których trasa przebiegała przez trzy kraje: PRL, NRD i Czechosłowację?",
     "answer": "Wyścig Pokoju",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 29,
     "question": "Jaką nazwę nosił najpowszechniejszy przedstawiciel napojów gazowanych w PRL-u?",
     "answer": "Oranżada",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 30,
     "question": "Kto jako szef agencji \"Poltel\" sprowadził do Polski kultowy serial brazylijski \"Niewolnica Isaura\"?",
     "answer": "Lew Rywin",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 31,
     "question": "\"Stare miał dżinsy, starą koszulę, w dziurawych kamaszach szedł...\" O którym z bohaterów kultowego serialu młodzieżowego mówią słowa tej ballady?",
     "answer": "o Tolku Bananie",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -262,7 +262,7 @@
     "id": 38,
     "question": "W Muzeum Diecezjalnym im. Biskupa Stanisława Wojciecha Okoniewskiego w Peplinie znajduje się jedyny egzemplarz księgi wydanej drukiem przez Gutenberga. Co to za księga?",
     "answer": "Księga przysłów",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -276,21 +276,21 @@
     "id": 40,
     "question": "Jak się nazywa skrzyżowanie i plac w sercu West Endu w Londynie, znane od lat dzięki wielkim neonom takich firm jak SANYO czy Coca-cola, umieszczonym na jednym z rogów placu?",
     "answer": "Piccadilly Circus",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 41,
     "question": "Kościół halowy to?",
     "answer": "kościół z nawami o równej wysokości",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 42,
     "question": "Glastonubury Tor w hrabstwie Somerset znajduje się według legendy tam, gdzie istniał(a)?",
     "answer": "wyspa Avalon",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -304,49 +304,49 @@
     "id": 44,
     "question": "Ile posągów świętych znajduje się na Moście Karola w Pradze?",
     "answer": "30",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 45,
     "question": "Jak się nazywa nagroda od 1979 roku przyznawana architektom, honorująca żyjącego architekta, który poprzez swoją sztukę, talent, wizjonerstwo oraz konsekwentne i znaczące zaangażowanie, wzbogaca otoczenie człowieka i jego środowisko budowlane?",
     "answer": "nagroda Pritzkera",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 46,
     "question": "Czyją córką była Atena, narodziny której ukazane są na wschodnim przyczółku Partenonu?",
     "answer": "Zeusa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 47,
     "question": "Który budynek jest uznawany za pierwszy wieżowiec o konstrukcji szkieletowej?",
     "answer": "Home Insurance Building",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 48,
     "question": "Katedra w Mediolanie to inaczej?",
     "answer": "Katedra Narodzin św. Marii",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 49,
     "question": "Z jaką dziedziną działalności człowieka kojarzy się Cape Canaveral, przylądek na Florydzie w Stanach Zjednoczonych Ameryki Północnej?",
     "answer": "z astronautyką",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 50,
     "question": "Jaka jest potoczna nazwa ruchu ekologicznego, organizacji, stowarzyszeń czy partii, których głównym celem jest ochrona środowiska?",
     "answer": "zieloni",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -374,7 +374,7 @@
     "id": 54,
     "question": "Jak nazywa się dział etyki zajmujący się badanie problemów moralnych występujących w praktyce nauk biologicznych i medycznych?",
     "answer": "Bioetyka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -388,7 +388,7 @@
     "id": 56,
     "question": "Jak nazywa się od 1900 r. okrągły kotlet z mielonej wołowiny z dodatkiem przypraw, sprzedawany zwykle w przekrojonej bułce?",
     "answer": "hamburger",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -409,7 +409,7 @@
     "id": 59,
     "question": "Jak nazywa się zaopatrywanie w żywność pasażerów samolotów czy pracowników firm?",
     "answer": "catering",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -423,7 +423,7 @@
     "id": 61,
     "question": "Od 1946 roku jest to jedna z metod identyfikacji przestępcy, polegająca na sporządzeniu według opinii świadków i osób poszkodowanych tak zwanego, portretu mówionego. Jaka jest inna jego nazwa?",
     "answer": "portret pamięciowy",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -451,7 +451,7 @@
     "id": 65,
     "question": "Co od 1908 roku oznacza nadanie na morzu lub w powietrzu alfabetem Morse'a sygnału składającego się z 3 kropek, 3 kresek i 3 kropek?",
     "answer": "wołanie o pomoc",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -472,28 +472,28 @@
     "id": 68,
     "question": "Męska czapka futrzana noszona przez mieszkańców Kaukazu to:",
     "answer": "papacha",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 69,
     "question": "Stosunek wymienny dwóch lub więcej walut to:",
     "answer": "parytet",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 70,
     "question": "Ludowy wyrób tkacki, wełniany lub lniany przeznaczony na zapaski, spódnice oraz narzuty to:",
     "answer": "pasiak",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 71,
     "question": "Długa zwykle metalowa laska zakończona u góry spiralą stanowiąca oznakę władzy biskupów to:",
     "answer": "pastorał",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -507,7 +507,7 @@
     "id": 73,
     "question": "Potrawa przygotowana z gotowanego ryżu lub łamanej pszenicy z dodatkiem baraniny, ryb lub drobiu to:",
     "answer": "pilaw",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -521,56 +521,56 @@
     "id": 75,
     "question": "Jak nazywał się słynny z luksusu pociąg, który w latach 1883-1977 kursował pomiędzy Paryżem a Stambułem?",
     "answer": "Orient Express",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 76,
     "question": "\"Fabryka snów\" to tytuł książki z 1931 roku o Hollywood rosyjskiego pisarza Ilji Erenburga. Tytuł ten to również popularne określenie. Czego dotyczy?",
     "answer": "kinematografii",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 77,
     "question": "Jak nazywa się pseudonaukowy system poglądów o wyższości jednych ras ludzkich nad drugimi, który w pierwszej połowie XX wieku doprowadził między innymi do eksterminacji Żydów europejskich przez hitlerowskie Niemcy?",
     "answer": "rasizm",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 78,
     "question": "Z jakim wynalazkiem pochodzącym z 1901 roku kojarzy się postać Amerykanina Kinga Gillette'a?",
     "answer": "z maszynką do golenia",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 79,
     "question": "Jak nazywa się amerykański, musujący napój oparty m. in. na wyciągu z orzeszków krzewu koli, sporządzany według recepty Johna S. Penbertona z Atlanty?",
     "answer": "Coca-cola",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 80,
     "question": "Co to jest budka suflera?",
     "answer": "to miejsce w którym ukryty jest człowiek podpowiadający aktorom tekst roli",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 81,
     "question": "Obszerny płaszcz bez rękawów to:",
     "answer": "opończa",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 82,
     "question": "Osoba uprawniona do wyboru obywatelstwa to:",
     "answer": "optant",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -661,7 +661,7 @@
     "id": 95,
     "question": "Rodzinna wyspa Boba Marleya to:",
     "answer": "Jamajka",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -682,14 +682,14 @@
     "id": 98,
     "question": "Zdaniem Dana Browna, autora \"Kodu Leonarda daVinci\" Maria Magdalena była żoną:",
     "answer": "Jezusa Chrystusa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 99,
     "question": "Z którego kraju pochodzi kapelusz typu Panama?",
     "answer": "Ekwador",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -703,14 +703,14 @@
     "id": 101,
     "question": "Od którego zwierzęcia pochodzi nazwa Wysp Kanaryjskich?",
     "answer": "od psa",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 102,
     "question": "Jaka część mowy odpowiada na pytania: kto, co?",
     "answer": "rzeczownik",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -731,7 +731,7 @@
     "id": 105,
     "question": "Jak się pisze wyraz żuraw?",
     "answer": "ż, u",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -759,7 +759,7 @@
     "id": 109,
     "question": "W jakim mieście jest Wawel?",
     "answer": "w Krakowie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -773,14 +773,14 @@
     "id": 111,
     "question": "Alternatywna nazwa dla gry w Ping Ponga to?",
     "answer": "tenis stołowy",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 112,
     "question": "Nauka o owadach to?",
     "answer": "entomologia",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -794,14 +794,14 @@
     "id": 114,
     "question": "Dokończ wyliczankę, entliczek pentliczek....?",
     "answer": "czerwony stoliczek",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 115,
     "question": "Do roślin strączkowych zaliczamy?",
     "answer": "bób",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -815,35 +815,35 @@
     "id": 117,
     "question": "W którym roku NOBEL wynalazł dynamit/",
     "answer": "1867",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 118,
     "question": "W którym roku Vasko de Gama dotarł do Indii",
     "answer": "1498",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 119,
     "question": "Kto jest autorem znanej rzeźby pt.PIETA",
     "answer": "MICHAŁ ANIOŁ",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 120,
     "question": "Serial animowany \" Proszę słonia \" opowiada o przygodach tytułowego słonia o imieniu?",
     "answer": "Dominik",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 121,
     "question": "Serial animowany o przygodach Wilka, który próbuje dopaść sympatycznego Zająca. Gonią się i przeżywają mnóstwo zabawnych przygód, z których Zając zawsze wychodzi cało to bajka pod tytułem?",
     "answer": "Wilk i Zając",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -871,7 +871,7 @@
     "id": 125,
     "question": "Drobna moneta z miedzi i srebra wartości 1/6 drachmy to:",
     "answer": "obol",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -955,14 +955,14 @@
     "id": 137,
     "question": "Kiedy wypada międzynarodowy DZIEŃ ZWIERZĄT",
     "answer": "4 PAŻDZIERNIKA",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 138,
     "question": "Którego obchodzony jest światowy dzień antykoncepcji",
     "answer": "26września",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -997,7 +997,7 @@
     "id": 143,
     "question": "W którym roku powstał pierwszy długometrażowy film animowany?",
     "answer": "1937",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -1011,56 +1011,56 @@
     "id": 145,
     "question": "W którym roku A.FLEMING odkrył penicylinę?",
     "answer": "1928",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 146,
     "question": "W którym roku powstały pierwsze antybiotyki?",
     "answer": "1942",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 147,
     "question": "W którym roku w Dolinie Królów odkryto grobowiec TUTENCHAMONA?",
     "answer": "1922",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 148,
     "question": "W którym roku w Dolinie Królów odkryto grobowiec TUTENCHAMONA",
     "answer": "1922",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 149,
     "question": "W którym roku miał miejsce w Stanach Zjednoczonych pierwszy lot rakiety",
     "answer": "1926",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 150,
     "question": "W którym roku firma Nestle wprowadziła na rynek kawę rozpuszczalną?",
     "answer": "1938",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 151,
     "question": "W którym roku COCO CHANEL otworzyła swój pierwszy dom mody?",
     "answer": "1919",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 152,
     "question": "SZKORBUTY jest objawem braku jakiej witaminy?",
     "answer": "c",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1074,7 +1074,7 @@
     "id": 154,
     "question": "W którym roku ukazał się pierwszy numer niekontrolowanej i nie zależnej GAZETY WYBORCZEJ",
     "answer": "1989",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -1102,7 +1102,7 @@
     "id": 158,
     "question": "Co oznacza słowo GOOGLE?",
     "answer": "jedynke z stu zerami",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -1116,21 +1116,21 @@
     "id": 160,
     "question": "W którym roku po raz pierwszy użyto emotikonek?",
     "answer": "1982",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 161,
     "question": "W którym roku Samuel Morse wynalazł alfabet morsa?",
     "answer": "1882",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 162,
     "question": "Co oznacza \"Carpe diem\"??",
     "answer": "chwytaj dzień",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -1144,21 +1144,21 @@
     "id": 164,
     "question": "Pierwsza stolica Polski??",
     "answer": "Gniezno",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 165,
     "question": "Piosenka \"'PANIE JANIE\" znana jest w większości krajów europejskich.W którym wieku prawdopodobnie powstała",
     "answer": "15",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 166,
     "question": "W których latach powstały pierwsze wirusy komputerowe",
     "answer": "80",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1186,14 +1186,14 @@
     "id": 170,
     "question": "\"Kraj kangurow\" to:",
     "answer": "Australia",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 171,
     "question": "Jak nazywa sie organizacja zajmujaca sie ratowaniem osob zaginionych w polskich gorach?",
     "answer": "GOPR",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1207,14 +1207,14 @@
     "id": 173,
     "question": "W jakich latach trwal w sztuce kubizm??",
     "answer": "1906 - 1914",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 174,
     "question": "Jak w krajach germanskich mawia sie na swietego Mikolaja??",
     "answer": "dziadek mróz",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -1242,14 +1242,14 @@
     "id": 178,
     "question": "Kto pierwszy zdobyl polska nagrode Nobla??",
     "answer": "Henryk Sienkiewicz",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 179,
     "question": "Ulubione zwierze Faraona??",
     "answer": "kot",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -1270,7 +1270,7 @@
     "id": 182,
     "question": "Kto wynalazl pierwszy samochod?",
     "answer": "Ford",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -1284,21 +1284,21 @@
     "id": 184,
     "question": "Workowata część niektórych sieci rybackich to:",
     "answer": "matnia",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 185,
     "question": "Lody waniliowe z kremem i konfiturami to inaczej:",
     "answer": "melba",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 186,
     "question": "Zasadnicza część ołtarza w formie płyty lub skrzyni na nóżkach na relikwie męczenników to:",
     "answer": "mensa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1312,14 +1312,14 @@
     "id": 188,
     "question": "Płótno bawełniane używane na bieliznę wojskową to:",
     "answer": "metkal",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 189,
     "question": "Prawo najmłodszego syna do dziedziczenia po ojcu to:",
     "answer": "minorat",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -1340,7 +1340,7 @@
     "id": 192,
     "question": "Kto uchodzi za legendarnego założyciela Rzymu?",
     "answer": "Romulus",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1375,7 +1375,7 @@
     "id": 197,
     "question": "Jakie są żywiołaki w Heroes 3?",
     "answer": "Ogien,Woda,Ziemia,Powietrze,Umysł",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1389,7 +1389,7 @@
     "id": 199,
     "question": "Jakie państwa w 1969r. toczyły między sobą kilkudniową \"wojnę futbolową\"?",
     "answer": "Honduras i Salwador",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -1410,7 +1410,7 @@
     "id": 202,
     "question": "Czym zajmuje sie teraz Robert Korzeniowski?",
     "answer": "dyrektorem sportowym TVP",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -1424,7 +1424,7 @@
     "id": 204,
     "question": "Ile Polska posiada elektrowni atomowych?",
     "answer": "1",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1438,7 +1438,7 @@
     "id": 206,
     "question": "Kiedy wznieciono Powstanie Warszawskie?",
     "answer": "1 sierpnia 1944r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -1459,35 +1459,35 @@
     "id": 209,
     "question": "Marszczony lub drobno układany okrągły kołnierz z koronki to:",
     "answer": "kreza",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 210,
     "question": "Książka powstała z kart odbitych jednostronnie techniką drzeworytniczą to:",
     "answer": "ksylograf",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 211,
     "question": "Drewniana beczka używana głównie w przemyśle piwowarskim to:",
     "answer": "kufa",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 212,
     "question": "Krótka krokiew oparta na krawężnicy (najczęściej w dachach drewnianych) to:",
     "answer": "kulawka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 213,
     "question": "Kierownik działu w muzeum lub bibliotece opiekujący się zbiorami to:",
     "answer": "kustosz",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -1550,14 +1550,14 @@
     "id": 222,
     "question": "Urządzenie, na którym buduje się małe statki to:",
     "answer": "heling",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 223,
     "question": "Zwyżka kursu papierów wartościowych lub cen towarów notowanych na giełdzie to:",
     "answer": "hossa",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -1599,7 +1599,7 @@
     "id": 229,
     "question": "Ile sezonów jest juz serial CSI:Kryminalne zagadki Miami?",
     "answer": "10",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -1620,42 +1620,42 @@
     "id": 232,
     "question": "Co to jest kwiat lotosu?",
     "answer": "Kwiat, wystepujący tylko w Afryce Południowej.",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 233,
     "question": "W jakim filmie nie grał Richard Gere?",
     "answer": "\"Notting Hill\".",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 234,
     "question": "W którym roku urodziła sie Monica Bellucci?",
     "answer": "1968",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 235,
     "question": "Co to są bataty?",
     "answer": "słodkie ziemniaki",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 236,
     "question": "Co to jest \"Fakes\"?",
     "answer": "Zupa z soczewicy.",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 237,
     "question": "Co to jest \"kurkuma\"?",
     "answer": "Przyprawa o smaku z lekka podobnym do pieprzu, ale mniej ostra.",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -1676,28 +1676,28 @@
     "id": 240,
     "question": "Czyja to piosenka \"Pieprz i sól\"?",
     "answer": "Kasi Kowalskiej.",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 241,
     "question": "Jak nazywa sie rosyjski pieniądz?",
     "answer": "Rubel",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 242,
     "question": "Poznań to województwo?",
     "answer": "wielkopolskie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 243,
     "question": "Co to jest \"Balsa\"?",
     "answer": "Potężne drzewo z rodziny wełniakowatych",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -1711,14 +1711,14 @@
     "id": 245,
     "question": "Które województwo jest największe?",
     "answer": "Mazowieckie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 246,
     "question": "Najniższym organem administracji państwowej w polsce jest:",
     "answer": "gmina",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1746,7 +1746,7 @@
     "id": 250,
     "question": "Ptak na każdym radiowozie policyjnym to:",
     "answer": "kogut",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1760,7 +1760,7 @@
     "id": 252,
     "question": "Kolumb dopłynąwszy do Ameryki myślał, że dopłynął do:",
     "answer": "Indii",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -1774,14 +1774,14 @@
     "id": 254,
     "question": "Parobek klopek bohater powieśći gobylina uran ma:",
     "answer": "brata matrixa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 255,
     "question": "Czy wychodki są używane również do napełniania dezodorantów??",
     "answer": "absolutnie zabranie tego prawo klopka gloszace:nie uzywaj zapachu tego do konsumowania swego",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -1809,7 +1809,7 @@
     "id": 259,
     "question": "Za wbicie jakiej bili w snookerze uzyskuje się najwięcej punktów?",
     "answer": "czarnej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -1830,7 +1830,7 @@
     "id": 262,
     "question": "Amerykański program lotów w kosmos to projekt:",
     "answer": "Apollo",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -1865,7 +1865,7 @@
     "id": 267,
     "question": "Jak nazywa się samica świni???",
     "answer": "maciora",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -1893,14 +1893,14 @@
     "id": 271,
     "question": "który napój im starszy tym lepszy:",
     "answer": "wino",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 272,
     "question": "Posejdon to bóg:",
     "answer": "wody",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -1928,21 +1928,21 @@
     "id": 276,
     "question": "flaga polski jes koloru:",
     "answer": "biało-czerwonego",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 277,
     "question": "jak określa się znaną sławną osobe???",
     "answer": "gwiazdą",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 278,
     "question": "gadu-gadu to program:",
     "answer": "rozmawiania z innymi",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -1963,7 +1963,7 @@
     "id": 281,
     "question": "W jakim kraju jest najwięcej ludzi???",
     "answer": "Chinach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2005,7 +2005,7 @@
     "id": 287,
     "question": "Kto broni oskarzonego przed sądem?",
     "answer": "adwokat",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -2047,7 +2047,7 @@
     "id": 293,
     "question": "Cynaderki to duszone:",
     "answer": "nerki",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2068,14 +2068,14 @@
     "id": 296,
     "question": "Ile kart dostaje każdy zawodnik w brydżu sportowym?",
     "answer": "13",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 297,
     "question": "Ile jest muz w mitologii greckiej?",
     "answer": "9",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -2089,14 +2089,14 @@
     "id": 299,
     "question": "Które drewno paląc się wytwarza dużo dymu?",
     "answer": "sosna",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 300,
     "question": "Co powoduje różowe ubarwienie Flaminga",
     "answer": "zjadane skorupiaki",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2110,49 +2110,49 @@
     "id": 302,
     "question": "Pardwa to.....?",
     "answer": "ptak",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 303,
     "question": "Pępawa to?",
     "answer": "kwiat",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 304,
     "question": "Bobs to gatunek?",
     "answer": "ryby",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 305,
     "question": "Zając morski to gatunek?",
     "answer": "mięczaka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 306,
     "question": "Wielka Szołdra to nazwa?",
     "answer": "mięczaka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 307,
     "question": "Pękówka babienica to?",
     "answer": "płaz",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 308,
     "question": "W którym roku otwarto klinikę okulistyczna w Katowicach na ulicy Ceglanej?",
     "answer": "1990",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -2187,7 +2187,7 @@
     "id": 313,
     "question": "helminotofobie to lęk przed?",
     "answer": "ślimakam",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2229,42 +2229,42 @@
     "id": 319,
     "question": "jaka jest największa pustynia na Ziemi",
     "answer": "Gobi",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 320,
     "question": "jaka jest przeciętna grubość lodu na Antarktydzie",
     "answer": "7 tys.metrów",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 321,
     "question": "jaki kolor ma kwiat mniszka pospolitego",
     "answer": "biały",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 322,
     "question": "ile gatunków szpaków występuje w Europie",
     "answer": "1",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 323,
     "question": "co to jest waruga",
     "answer": "płaz",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 324,
     "question": "jaką roślinę ma w herbie Szkocja",
     "answer": "dąb",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2278,21 +2278,21 @@
     "id": 326,
     "question": "Pierwszego SMS-a wysłano w Wielkiej Brytanii i były to życzenia świąteczne, w którym roku miało to miejsce...?",
     "answer": "1992",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 327,
     "question": "Dual SIM to telefon komórkowy posiadający możliwość korzystania z...:",
     "answer": "dwóch kart sim",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 328,
     "question": "Pomnik przedstawia postać kobiety-astronoma, siedząca na ławce uczona spogląda w niebo i trzymając w dłoniach swoje dzieło „Urania propitia” oraz sferę armilarną, o jaką postać chodzi..:",
     "answer": "Marię Kunic",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2306,7 +2306,7 @@
     "id": 330,
     "question": "Pomnik króla Władysława Jagiełły w Przeworsku został wzniesiony z okazji obchodów 500-lecia Bitwy pod Grunwaldem w roku...",
     "answer": "1910",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -2320,7 +2320,7 @@
     "id": 332,
     "question": "Prosta droga w lesie powstała przez wycięcie drzew to:",
     "answer": "dukt",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2334,7 +2334,7 @@
     "id": 334,
     "question": "Czarne, błyszczące paciorki wyrabiane z polerowanego węgla to:",
     "answer": "dżet",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2369,21 +2369,21 @@
     "id": 339,
     "question": "Jaki symbol na sód?",
     "answer": "NA",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 340,
     "question": "Endokrynologia to nauka o?",
     "answer": "HORMONACH",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 341,
     "question": "BMI to wskaźnik czego?",
     "answer": "masy ciała",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -2425,14 +2425,14 @@
     "id": 347,
     "question": "Części jadalne, narządy wewnętrzne oraz inne części ciała zwierząt rzeźnych nie wchodzące w skład tusz to:",
     "answer": "podroby",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 348,
     "question": "Pierwsze stadium postępowania karnego polegające na zbieraniu dowodów i wyjaśnieniu okoliczności przestępstwa to:",
     "answer": "dochodzenie",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2453,21 +2453,21 @@
     "id": 351,
     "question": "Walentynki jakie to swieto?",
     "answer": "międzynarodowe",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 352,
     "question": "14 luty to oprocz Walentynek, dzien choroby na?",
     "answer": "epilepsje",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 353,
     "question": "Walentynki są obchodzone w Europie od?",
     "answer": "średniowiecza",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -2488,7 +2488,7 @@
     "id": 356,
     "question": "Nad jaka rzeka lezy Warszawa?",
     "answer": "Wisła",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2502,7 +2502,7 @@
     "id": 358,
     "question": "Jaki kolor ma flaga Warszawy?",
     "answer": "żolto-czerwony",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2537,7 +2537,7 @@
     "id": 363,
     "question": "Jakiej piosenki Dody byla premiera 14 lutego 2012r?",
     "answer": "Kac Wawa",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -2558,7 +2558,7 @@
     "id": 366,
     "question": "Kiedy urodzila sie Magda Femme, właściwie Magdalena Pokora wokalistka Ich Troje?",
     "answer": "22 maja 1971",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -2579,14 +2579,14 @@
     "id": 369,
     "question": "W jakim serialu tvn Magda Gessler wystąpiła jako służąca?",
     "answer": "Niania",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 370,
     "question": "Jakie wyznania jest Magda Gessler?",
     "answer": "prawosławnego",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -2614,28 +2614,28 @@
     "id": 374,
     "question": "gdzie występuje ryś rudy",
     "answer": "w Europie zachodniej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 375,
     "question": "nazwa jakiego krzewu kojarzy się z wilkiem",
     "answer": "wrzosiec",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 376,
     "question": "ren amerykański to...",
     "answer": "muflon",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 377,
     "question": "ile gatunków ssaków żyje na świecie",
     "answer": "ok.7242",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2649,35 +2649,35 @@
     "id": 379,
     "question": "ile gatunków liczy gromada ptaków",
     "answer": "ok.8700",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 380,
     "question": "w Irlandii żyje tylko jeden gatunek ptaka zagrożonego wyginięciem.Jaki to ptak?",
     "answer": "dzierzba",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 381,
     "question": "jaki ptak podobny do bekasów żyje w środku lasu",
     "answer": "słonka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 382,
     "question": "najmniejsza europejska kaczka to...",
     "answer": "ohar",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 383,
     "question": "gdzie zimuje trzcinniczek",
     "answer": "w Azji",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2691,7 +2691,7 @@
     "id": 385,
     "question": "paż królowej to...",
     "answer": "świerszcz",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -2747,49 +2747,49 @@
     "id": 393,
     "question": "jakie drzewo nazywane jest królem drzew",
     "answer": "jesion",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 394,
     "question": "jaki jest najszybszy ptak",
     "answer": "albatros",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 395,
     "question": "jaki jest najcięższy ptak",
     "answer": "sęp",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 396,
     "question": "Jaki jest kraj produkcji serialu rodzinka.pl?",
     "answer": "Polska",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 397,
     "question": "jak nazywa się najcięższy ptak Polski",
     "answer": "jastrząb",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 398,
     "question": "który ptak ma najwięcej piór",
     "answer": "kuropatwa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 399,
     "question": "gdzie można spotkać orła stepowego",
     "answer": "w Himalajach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2817,7 +2817,7 @@
     "id": 403,
     "question": "Toksoplazmoza to choroba przenoszona przez...",
     "answer": "koty",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -2852,14 +2852,14 @@
     "id": 408,
     "question": "co to jest langur",
     "answer": "ptak z rodziny kazaurów",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 409,
     "question": "gdzie leży Dolina Ryftowa",
     "answer": "we wschodniej Afryce",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2880,14 +2880,14 @@
     "id": 412,
     "question": "gdzie można spotkać lirogona",
     "answer": "w Azji",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 413,
     "question": "gdzie żyje małpożer",
     "answer": "w Europie zachodniej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2908,21 +2908,21 @@
     "id": 416,
     "question": "kiedy pojawiły się na Ziemi pierwsze ssaki",
     "answer": "ok.220 milionów lat temu",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 417,
     "question": "jaki ssak lubi sporządzać parasol do ochrony przed opadami",
     "answer": "goryl",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 418,
     "question": "gdzie występuje chutliwiec podmiejski",
     "answer": "w Himalajach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2950,14 +2950,14 @@
     "id": 422,
     "question": "jak nazywa się największy ssak obu Ameryk",
     "answer": "słoń",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 423,
     "question": "jaki jest największy ssak lądowy",
     "answer": "słoń afrykański",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -2985,21 +2985,21 @@
     "id": 427,
     "question": "Forma stosunków kredytowych między wierzycielem a dłużnikiem, polegająca na pobieraniu wygórowanych procentów za pożyczone pieniądze to:",
     "answer": "lichwa",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 428,
     "question": "W jakich latach rozgrywa się akcja powieści Quo Vadis?",
     "answer": "63-66 n.e",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 429,
     "question": "Jak nazywa się waluta Rumunii dzieląca się na100 banii?",
     "answer": "lej",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3013,14 +3013,14 @@
     "id": 431,
     "question": "Skąd wzieła się nazwa traktora URSUS?",
     "answer": "od imienia rzymskiego gladiatora",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 432,
     "question": "Skąd wzięła się nazwa traktora URSUS?",
     "answer": "od imienia rzymskiego gladiatora",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -3034,7 +3034,7 @@
     "id": 434,
     "question": "Przychodzi...do lekarza...",
     "answer": "baba",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3062,7 +3062,7 @@
     "id": 438,
     "question": "W którym roku umarł Michael Jackson?",
     "answer": "2009",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -3076,28 +3076,28 @@
     "id": 440,
     "question": "Jak mial na imie drugi nauczyciel Fryderyka Chopina?",
     "answer": "Józef",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 441,
     "question": "O kim mowimy ze \"wstrzymal Słonce, ruszyl Ziemie?\"",
     "answer": "Mikołaj Kopernik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 442,
     "question": "Jak zginal Heniek Kwas?",
     "answer": "przez wychlodzenie w sniegu",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 443,
     "question": "Gdzie umarl Henryk pseudo Kwas?",
     "answer": "w parku",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3125,7 +3125,7 @@
     "id": 447,
     "question": "Orange to?",
     "answer": "Telefonia komórkowa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3139,14 +3139,14 @@
     "id": 449,
     "question": "Bajka dla dzieci z serii \" Marta mówi \" opowiada o przygodach...?",
     "answer": "gadającego psa",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 450,
     "question": "Co musi jeść Marta z bajki \"Marta mówi 'żeby móc mówićjak człowiek...?",
     "answer": "zupę literkową",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -3174,28 +3174,28 @@
     "id": 454,
     "question": "Najbliżej słońca krąży...?",
     "answer": "Merkury",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 455,
     "question": "W święto górników imieniny obchodzi...?",
     "answer": "Barbara",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 456,
     "question": "Prusak należy do rzędu?",
     "answer": "karaczanów",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 457,
     "question": "Najgłębsza kopalnia złota w 2012roku miała głębokość",
     "answer": "4000m",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3209,14 +3209,14 @@
     "id": 459,
     "question": "W którym roku miał miejsce wybuch reaktora w CZARNOBYLU",
     "answer": "1986",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 460,
     "question": "Karta o najniższej wartości w grze to:",
     "answer": "blotka",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -3244,14 +3244,14 @@
     "id": 464,
     "question": "Rodzaj marynarki, uszytej z miękkiej tkaniny, będący porannym męskim ubiorem domowym to:",
     "answer": "bonżurka",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 465,
     "question": "Kapelusz filcowy z szerokim miękkim rondem to:",
     "answer": "borsalino",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -3272,7 +3272,7 @@
     "id": 468,
     "question": "Długie, obszerne okrycie z kapturem bez rękawów to:",
     "answer": "burnus",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -3286,14 +3286,14 @@
     "id": 470,
     "question": "Tkanina używana na namioty, plandeki, osłony to:",
     "answer": "celta",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 471,
     "question": "Technika przygotowywania klisz wklęsłodrukowych z miedzianych płyt pokrytych woskiem to:",
     "answer": "cerografia",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -3307,7 +3307,7 @@
     "id": 473,
     "question": "Zwójka Zieloneczka to...?",
     "answer": "owad",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3342,7 +3342,7 @@
     "id": 478,
     "question": "Stanisław Wyszyński urodzony 12 stycznia 1932 roku w Wilnie to...?",
     "answer": "aktor filmowy i teatralny",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -3370,28 +3370,28 @@
     "id": 482,
     "question": "Jaką głębokość miała w 2012 najgłębsza kopalnia złota?",
     "answer": "4250m",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 483,
     "question": "I le waży najmniejszy samochód świata PEEL P50?",
     "answer": "59KG",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 484,
     "question": "W którym roku doszło do największej afery hakerskiej na świecie?",
     "answer": "2009",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 485,
     "question": "Ile procent wilgoci w powietrzu zamienia zwłoki w mumie?",
     "answer": "mniej niż 1%",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3405,28 +3405,28 @@
     "id": 487,
     "question": "Artystyczna tkanina ścienna naśladująca obraz to:",
     "answer": "arras",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 488,
     "question": "Racjonalne i równomierne rozmieszczenie ciężaru na statku to:",
     "answer": "arymaż",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 489,
     "question": "Miękka tkanina jedwabna lub bawełniana o prawej stronie gładkiej, błyszczącej a lewej matowej to:",
     "answer": "atłas",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 490,
     "question": "Imitacja sprzedawanych przedmiotów lub puste opakowanie, ustawiane na wystawie sklepowej jako reklama to:",
     "answer": "atrapa",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3461,42 +3461,42 @@
     "id": 495,
     "question": "Na Wzgórzu Uniwersyteckim w Opolu postawiony jest pomnik słynnego polskiego piosenkarza, poety i kompozytora, o kim mowa?",
     "answer": "Marku Grechucie",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 496,
     "question": "Za kogo wydana została Jadwiga Andegaweńska, która po ślubie stała się królem Polski?",
     "answer": "za Władysława II Jagiełłę",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 497,
     "question": "co to jest rozrzutka",
     "answer": "roślina skalniakowa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 498,
     "question": "czym są helofity",
     "answer": "glony",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 499,
     "question": "czym jest bezkręgowiec",
     "answer": "zwierzę bez zębów",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 500,
     "question": "ile nóg ma owad",
     "answer": "10",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3510,28 +3510,28 @@
     "id": 502,
     "question": "co to jest saprofit",
     "answer": "organizm żywiący sięobumarłą materią organiczną",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 503,
     "question": "co to takiego środowisko",
     "answer": "siedziba gatunku,organizmu lub zbiorowiska",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 504,
     "question": "co oznacza słowo,,fauna\"",
     "answer": "ogół ptaków występujących na danym obszarze",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
     "id": 505,
     "question": "co to jest paurako",
     "answer": "papuga afrykańska",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -3545,28 +3545,28 @@
     "id": 507,
     "question": "Polski alpinista i himalaista, jako drugi człowiek na Ziemi zdobył Koronę Himalajów i Karakorum –,wszystkie 14 szczytów, o kogo chodzi?",
     "answer": "Jerzy Kukuczka",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 508,
     "question": "Jednobarwna tkanina wełniana z przędzy czesankowej to:",
     "answer": "gabardyna",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 509,
     "question": "Ukośne ruchome drzewce oparte piętą o maszt to:",
     "answer": "gafel",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 510,
     "question": "Substancje chemiczne służące do obróbki skór zwierzęcych to:",
     "answer": "garbniki",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3580,7 +3580,7 @@
     "id": 512,
     "question": "Znak kamieniarski umieszczany na powierzchni kamienia w celu ułatwienia montażu elementów architektonicznych to:",
     "answer": "gmerk",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -3594,7 +3594,7 @@
     "id": 514,
     "question": "Silnie skręcona przędza jedwabna otrzymywana przez połączenie dwóch lub więcej nitek greży to:",
     "answer": "grenadyna",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -3615,28 +3615,28 @@
     "id": 517,
     "question": "Herbata biała z Nepalu o wspaniałym kwiecisto - owocowym aromacie, bardzo przypominającym brzoskwinie i mango to:",
     "answer": "White Nepal Himalayan",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 518,
     "question": "Herbata biała pochodząca ze słynnej chińskiej prowincji Fujian o pięknym aromacie, zrównoważonym jaśminowym smaku to:",
     "answer": "Jasmine Lychee Ball",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 519,
     "question": "Herbata ta pochodzi z dzikich starych drzew rosnących na wysokich zboczach góry Shi Zi w Wu Ding County w prowincji Yunnan, zbiera się je tylko raz w roku, o jaką herbatę chodzi?",
     "answer": "Ya Bao Yesheng Biały Puerh",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 520,
     "question": "Bułka paryska albo francuska – rodzaj pieczywa pszennego zwane w Krakowskiem?",
     "answer": "weką",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -3657,14 +3657,14 @@
     "id": 523,
     "question": "Statek powietrzny cięższy od powietrza mogący latać wskutek dynamicznego oddziaływania powietrza na płaty nośne to:",
     "answer": "aerodyna",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 524,
     "question": "Wszelki druk okolicznościowy to:",
     "answer": "akcydens",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3706,7 +3706,7 @@
     "id": 530,
     "question": "Co oznacza skrót EKD?",
     "answer": "Europejska Klasyfikacja Działalności",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -3727,21 +3727,21 @@
     "id": 533,
     "question": "Co to jest Produkt krajowy brutto?",
     "answer": "wartość wszystkich dóbr i usług wytworzonych przez spoleczenstwo w ciągu roku",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 534,
     "question": "Co to jest Produkt narodowy brutto?",
     "answer": "suma dochodów osiąganych przez obywateli niezaleznie od miejsca swiadczenia uslug",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 535,
     "question": "Co to jest stopa inflacji?",
     "answer": "roczny procentowy wzrost ogólnego poziomu cen",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3776,7 +3776,7 @@
     "id": 540,
     "question": "Stosunek ekonomiczny polegający na odstąpieniu przez kredytodawcę na rzecz kredytobiorcy określonej wartości w pieniądzu to?",
     "answer": "kredyt",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3790,49 +3790,49 @@
     "id": 542,
     "question": "Rodzaj umowy cywilnoprawnej gdzie jedna strona przekazuje drugiej stronie prawo do korzystania pożytków to?",
     "answer": "leasing",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 543,
     "question": "Podatek dochodowy od osób fizycznych to inaczej?",
     "answer": "PIT",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 544,
     "question": "podatek dochodowy od osób prawnych to?",
     "answer": "CIT",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 545,
     "question": "opodatkowuje sie nią rózne towary jak papierosy, alkohol,samochody?",
     "answer": "akcyza",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 546,
     "question": "Uporządkowany zbiór norm postępowania ustanowionych przez państwo to?",
     "answer": "prawo",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 547,
     "question": "reguła postępowania zbudowana na podstawie przepisów prawnych według pewnego wzorca to?",
     "answer": "norma prawna",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 548,
     "question": "możność zaciągania we własnym imieniu praw i obowiązków to?",
     "answer": "zdolność do czynności prawnych",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3846,7 +3846,7 @@
     "id": 550,
     "question": "odpowiedzialność sprzedawcy względem kupującego z tytułu wad fizycznych i prawnych rzeczy to?",
     "answer": "rękojmia za wady",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -3860,7 +3860,7 @@
     "id": 552,
     "question": "Jest umową starannego dzialania, nie zawsze musi zakonczyc sie pozytywnym skutkiem dla zleceniodawcy",
     "answer": "umowa zlecenie",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -3874,7 +3874,7 @@
     "id": 554,
     "question": "Kto udowodnil ze planety krążą wokół Słońca?",
     "answer": "Kepler",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -3909,7 +3909,7 @@
     "id": 559,
     "question": "Jaka cena jest zaokrąglona do pełnych wartości?",
     "answer": "tradycyjna",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -4000,14 +4000,14 @@
     "id": 572,
     "question": "Jaki jest wzór sumaryczny BUTANU?",
     "answer": "C4H10",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 573,
     "question": "Wodór jest to?",
     "answer": "niemetal",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4063,7 +4063,7 @@
     "id": 581,
     "question": "Serwis który charakteryzuje sie tym ze wszystkie zimne przekaski owoce i desery wykladane sa na stolach?",
     "answer": "rosyjski",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -4098,21 +4098,21 @@
     "id": 586,
     "question": "W jakim kraju są pola tulipanów?",
     "answer": "Holandia",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 587,
     "question": "Jakiej firmy buty są najwygodniejsze?",
     "answer": "Reebok",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 588,
     "question": "Jakiego koloru nie ma w tęczy?",
     "answer": "czarny",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -4147,28 +4147,28 @@
     "id": 593,
     "question": "W którym roku powstala \"Gospoda pod Modrym Fartuszkiem\"?",
     "answer": "1489",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 594,
     "question": "W którym roku Kaziemierz Wielki wypowiedzial slowa\"aby karczmarzom gwałtu nikt czynić nie śmiał\"",
     "answer": "1374",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 595,
     "question": "W którym roku powstal hotel Bazar w Poznaniu?",
     "answer": "1842",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 596,
     "question": "Jakie jest skrót Swiatowej Organizacji Turystyki?",
     "answer": "UNWTO",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4189,7 +4189,7 @@
     "id": 599,
     "question": "długie prostokątne czesto pietrowe budynki wyposazone w kolumnowe gumki to?",
     "answer": "stoa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4203,21 +4203,21 @@
     "id": 601,
     "question": "Jakiej formy udzielania noclegu nie bylo w Starozytnej Europie?",
     "answer": "pandoktia",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 602,
     "question": "Jakiej formy udzielania noclegu nie bylo w Renesansie?",
     "answer": "xenodochium",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 603,
     "question": "Jaka jest data Ustawy o Usługach Turystycznych",
     "answer": "29 sierpnia 1997",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -4273,7 +4273,7 @@
     "id": 611,
     "question": "Georg Sauerwein, serb. Juro Surowin, lit. Jurgis Zauerveinas, Georgas Sauerweinas, ps. Girėnas urodził się w r.?",
     "answer": "15 stycznia 1831",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -4287,14 +4287,14 @@
     "id": 613,
     "question": "Co oznacza nazwa \"frutti di mare\"?",
     "answer": "owoce morza",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 614,
     "question": "Uszy którego ze zwierząt w gwarze myśliwskiej nazywane są słuchami?",
     "answer": "zająca",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4315,7 +4315,7 @@
     "id": 617,
     "question": "Amerykański Chopper – serial dokumentalny nadawany w Polsce na kanale?",
     "answer": "Discovery",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -4329,7 +4329,7 @@
     "id": 619,
     "question": "Jak nazywa się tajna organizacja terrorystyczna Kraju Basków?",
     "answer": "ETA",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4350,14 +4350,14 @@
     "id": 622,
     "question": "Dom Kereta (pełna nazwa: Ermitaż – Dom Kereta) – instalacja artystyczna zaprojektowana przez architekta?",
     "answer": "Jakuba Szczęsnego",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 623,
     "question": "Jaką nazwę nosił pierwszy lodołamacz o napędzie jądrowym zbudowany w ZSRR?",
     "answer": "Lenin",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -4371,7 +4371,7 @@
     "id": 625,
     "question": "Jak się nazywają szybkie pociągi francuskie?",
     "answer": "TGV",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -4385,14 +4385,14 @@
     "id": 627,
     "question": "Robert Capa, właśc. Endré (André) Ernő Friedmann ur.?",
     "answer": "22 października 1913",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 628,
     "question": "Traszka, zwana także trytonem to...?",
     "answer": "płaz",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4420,7 +4420,7 @@
     "id": 632,
     "question": "Z ilu atomów tlenu składa się cząsteczka ozonu?",
     "answer": "3",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4483,7 +4483,7 @@
     "id": 641,
     "question": "Jak nazywa się rasa najmniejszych koni?",
     "answer": "falabella",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4504,7 +4504,7 @@
     "id": 644,
     "question": "-Dzieci i... głosu nie mają.",
     "answer": "ryby",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4518,28 +4518,28 @@
     "id": 646,
     "question": "Linia 1 metra lub Versova-Andheri-Ghatkopar (VAG) corridor metra w Mumbaju ma być uruchomiona w marcu?",
     "answer": "2013",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 647,
     "question": "Główna część kadłuba okrętu podwodnego to:",
     "answer": "kadłub sztywny",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 648,
     "question": "Jak nazywa się główna z oper Michel Blavet?",
     "answer": "Le Jaloux corrigé",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 649,
     "question": "Tradycyjna rybacka drewniana łódź charakterystyczna dla środkowej Wisły",
     "answer": "lejtak",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -4588,14 +4588,14 @@
     "id": 656,
     "question": "Kiedy Zrzucono bomby atomowe na Nagasaki?",
     "answer": "9.VIII.1945",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 657,
     "question": "Fala Lewisa to reakcja autonomicznego układu nerwowego polegająca na okresowej?",
     "answer": "wazodilatacji",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -4609,28 +4609,28 @@
     "id": 659,
     "question": "Ile dni trwala niemiecka blokada Leningradu?",
     "answer": "900",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 660,
     "question": "Jak nazywala sie operacja która byla lądowaniem aliantów w Normandi?",
     "answer": "Overlord",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 661,
     "question": "Walki o Monte Cassino to operacja?",
     "answer": "Alarik",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 662,
     "question": "Desant aliantów na Syberię to operacja?",
     "answer": "Husky",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -4644,7 +4644,7 @@
     "id": 664,
     "question": "Jakie swieto obchodzi sie 1 stycznia?",
     "answer": "Nowy Rok",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -4658,14 +4658,14 @@
     "id": 666,
     "question": "Jakie swieto obchodzi sie 22 stycznia?",
     "answer": "Dzień Dziadka",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 667,
     "question": "Jakie świeto obchodzimy 14 lutego?",
     "answer": "Walentynki",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -4749,14 +4749,14 @@
     "id": 679,
     "question": "Kiedy jest dzien zwierząt?",
     "answer": "4 pazdziernika",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 680,
     "question": "Kiedy obchodzi sie Halloween?",
     "answer": "31 pazdziernika",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -4805,7 +4805,7 @@
     "id": 687,
     "question": "co to jest kobuz",
     "answer": "dęty instrument muzyczny",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -4819,7 +4819,7 @@
     "id": 689,
     "question": "co to jest zakwit wody",
     "answer": "opad kwiatów z okolicznych drzew do wody",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4847,7 +4847,7 @@
     "id": 693,
     "question": "co oznacza termin,,halofit\"",
     "answer": "roślinę pasożytniczą",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -4861,14 +4861,14 @@
     "id": 695,
     "question": "co to jest gniazdownik",
     "answer": "młody ptak zostający w gnieżdzie,dopóki nie zacznie latać",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 696,
     "question": "ile procent Ziemi jest pokryte wodą",
     "answer": "ok.83%",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4882,7 +4882,7 @@
     "id": 698,
     "question": "co to jest zagniazdownik",
     "answer": "ptak,który nigdy nie buduje gniazda",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4896,7 +4896,7 @@
     "id": 700,
     "question": "jakie kolory pełnią rolę ostrzegawczą w przyrodzie",
     "answer": "czerwony i czarny",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -4910,42 +4910,42 @@
     "id": 702,
     "question": "Jakiego mitologicznego batona zjadasz w postaci batona?",
     "answer": "Marsa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 703,
     "question": "Z której części krzewu herbacianego otrzymuje się herbatę?",
     "answer": "liści",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 704,
     "question": "Jak nazywa się zielony barwnik roślinny?",
     "answer": "chlorofil",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 705,
     "question": "Jak nazywa się afrykański bęben służący m.in do zwołania narad?",
     "answer": "tam-tam",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 706,
     "question": "Jak nazywa się technika malowania farbami wodnymi?",
     "answer": "Akwarela",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 707,
     "question": "Jak nazywają się zwierzęta, których ciepłota ciała zależy od temp otoczenia?",
     "answer": "Zmiennocieplna",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -4966,28 +4966,28 @@
     "id": 710,
     "question": "Jaki tytuł nosi zwierzchnik kościoła katolickiego w Polsce?",
     "answer": "Prymas",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 711,
     "question": "Jak nazywał się najbardziej znany w Polsce zbójnik tatrzański?",
     "answer": "Juraj",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 712,
     "question": "Ile par odnóży krocznych ma pająk?",
     "answer": "4",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 713,
     "question": "Jak się nazywa złudzenie optyczne, występujące często na pustyni?",
     "answer": "Miraż",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5001,28 +5001,28 @@
     "id": 715,
     "question": "Jaką nazwę noszą góry oddzielające Europę od Azji?",
     "answer": "Ural",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 716,
     "question": "Jaki słynny instrument muzyczny znajduje się w katedrze w Gdańsku?",
     "answer": "Organy",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 717,
     "question": "Jaką nazwę nosił czołg, którym jeździli Czterej Pancerni?",
     "answer": "Rudy",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 718,
     "question": "Jak nazywa się lekarz zajmujący się leczeniem wadliwego zgryzu?",
     "answer": "Ortodonta",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5036,35 +5036,35 @@
     "id": 720,
     "question": "Kto odkrył i z powodzeniem zastosował szczepionkę przeciw wściekliźnie?",
     "answer": "Ludwik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 721,
     "question": "Jaki tytuł nosili władcy starożytnego Egiptu?",
     "answer": "Faraon",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 722,
     "question": "Pewien muzyk powiedział\"gram na Stradivariusie\". Jaki to instrument?",
     "answer": "skrzypce",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 723,
     "question": "Jak nazywa się najpopularniejszy egipski posąg?",
     "answer": "Sfinks",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 724,
     "question": "Katedra św. Olafa została wybudowana w?",
     "answer": "w 1856",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -5078,7 +5078,7 @@
     "id": 726,
     "question": "Leaders of the Free World – trzeci album studyjny rockowego zespołu Elbow, wydany w?",
     "answer": "2005 r",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -5106,7 +5106,7 @@
     "id": 730,
     "question": "Pierwszym w historii astronautyki wahadłowcem był amerykański statek kosmiczny:",
     "answer": "Columbia",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -5141,7 +5141,7 @@
     "id": 735,
     "question": "Jedna z ras psów, należąca do grupy psów pasterskich i zaganiających to:",
     "answer": "Owczarek australijski",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5162,14 +5162,14 @@
     "id": 738,
     "question": "Bombowce B-52 weszły na wyposażenie amerykańskiego lotnictwa w roku?",
     "answer": "1995",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 739,
     "question": "Cis to:",
     "answer": "rodzaj drzew iglastych",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5183,7 +5183,7 @@
     "id": 741,
     "question": "Złoto jaki to Pierwiastek",
     "answer": "Pierwiastek chemiczny",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5225,7 +5225,7 @@
     "id": 747,
     "question": "Ile Jest nauczycieli biologii w Polsce?",
     "answer": "232101",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5246,21 +5246,21 @@
     "id": 750,
     "question": "Amerykański dwutygodnik o tematyce biznesowej, założony w 1917 przez B.C.Forbesa to:",
     "answer": "Forbes",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 751,
     "question": "Kompozytorem muzyki do filmu \"Gladiator\" Ridley'a Scotta jest:",
     "answer": "Hans Zimmer",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 752,
     "question": "jak nazywa się najmniejszy ptak drapieżny Europy",
     "answer": "sikora",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5288,14 +5288,14 @@
     "id": 756,
     "question": "co to jest pełzacz",
     "answer": "azjatycki gatunek kaczki",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 757,
     "question": "co to jest kuklik zwyczajny",
     "answer": "kwiatek ogrodkowy",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5309,7 +5309,7 @@
     "id": 759,
     "question": "Niemiecki lekarz psychiatra, założyciel Niemieckiego Towarzystwa Psychologicznego to:",
     "answer": "Robert Sommer",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5323,7 +5323,7 @@
     "id": 761,
     "question": "Jakie miasto jest stolicą województwa śląskiego?",
     "answer": "Katowice",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5337,7 +5337,7 @@
     "id": 763,
     "question": "W jakim mieście znajdują się grobowce polskich królów z dynastii Jagiellonów?",
     "answer": "W Krakowie",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -5351,7 +5351,7 @@
     "id": 765,
     "question": "W jakim mieście znajduje się pomnik siusiającego chłopca?",
     "answer": "W Brukseli",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5435,7 +5435,7 @@
     "id": 777,
     "question": "Która z wymienionych religii jest politeistyczna?",
     "answer": "shinto",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -5456,7 +5456,7 @@
     "id": 780,
     "question": "Jak z języka greckiego nazywa się nauka o społeczeństwie?",
     "answer": "socjologia",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -5477,21 +5477,21 @@
     "id": 783,
     "question": "gdzie można spotkać gruszyczkę jednokwiatową",
     "answer": "w ogródku kwiatowym",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 784,
     "question": "gdzie żyją żbiki",
     "answer": "w wysokich górach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 785,
     "question": "co to jest rożeniec",
     "answer": "kwiat będący pod ochroną",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5519,21 +5519,21 @@
     "id": 789,
     "question": "Do którego krzewu zdobnego porównuje się osobę delikatną, wrażliwą?",
     "answer": "mimoza",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 790,
     "question": "co to jest mustang",
     "answer": "zdziczały koń żyjący w Ameryce Północnej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 791,
     "question": "Jak nazywa się agenda ONZ, która zajmuje się kulturą?",
     "answer": "UNESCO",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -5568,77 +5568,77 @@
     "id": 796,
     "question": "W jakim mieście znajduje się pałac Sanssouci?",
     "answer": "Poczdam",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 797,
     "question": "co to jest białorzytka",
     "answer": "kłosy żyta spalone słońcem",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 798,
     "question": "Jakie zwierzęta w powieści Brama Stokera,,Drakula\" nazywane są,,dziećmi nocy\"",
     "answer": "czarne dzikie koty",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 799,
     "question": "skąd pochodzi nazwa:biegus Temmincka",
     "answer": "został tak nazwany na cześć zoologa Konrada Temmincka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 800,
     "question": "który z ptaków jest używany w sokolnictwie do polowania na lisy w Mongolii i w Chinach",
     "answer": "jastrząb",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 801,
     "question": "skąd pochodzi bażant",
     "answer": "z Ameryki środkowej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 802,
     "question": "Z którym instrumentem nie rozłączał się Włóczykij, bohater serialu animowanego \"Muminki\"?",
     "answer": "harmonijka",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 803,
     "question": "Która z religii dominuje w Meksyku, w państwie Ameryki Północnej?",
     "answer": "katolicyzm",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 804,
     "question": "Jak nazywa się miesięcznik poetycki który pierwotnie wydawany był przez Władysława Zawistowskiego?",
     "answer": "Skamander",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 805,
     "question": "Dokąd podążał Kleofas z drugim uczniem Jezusa?",
     "answer": "Emaus",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 806,
     "question": "Zwierzę znane jest ze swych zdolności uczenia się. Występuje w japońskiej mitologii, literaturze i sztuce, o jakie zwierzę chodzi:",
     "answer": "Makak japoński",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -5666,7 +5666,7 @@
     "id": 810,
     "question": "Daszek z wyciągiem umieszczonym nad kuchnią to...?",
     "answer": "okap",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -5687,42 +5687,42 @@
     "id": 813,
     "question": "Jak nazywał się statek, na którym w 1893 roku Fridtjof Nansen próbował dotrzeć do bieguna?",
     "answer": "Fram",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 814,
     "question": "Jak nazywał się ukochany Madame Butterfly?",
     "answer": "porucznik Pinkerton",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 815,
     "question": "Urządzenie służące do nagrywania i odtwarzania wiadomości głosowych w telefonie komórkowym to...?",
     "answer": "poczta głosowa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 816,
     "question": "Kto zmodyfikował portret \"Giocondy\" domalowując jej wąsy?",
     "answer": "Marcel Duchamp",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 817,
     "question": "Atrybutem wróżki nie jest...?",
     "answer": "bilardowa kula",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 818,
     "question": "Która liczba jest podzielna przez 3...?",
     "answer": "18",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5750,7 +5750,7 @@
     "id": 822,
     "question": "Jaki kraj jest ojczyzną ptaków kiwi?",
     "answer": "Nowa Zelandia",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5771,14 +5771,14 @@
     "id": 825,
     "question": "Ile pierwszych kręgów kręgosłupa ssaków to kręgi szyjne?",
     "answer": "7",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 826,
     "question": "Słynną chińską zupę sporządza się z gniazd?",
     "answer": "jaskółczych",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -5792,14 +5792,14 @@
     "id": 828,
     "question": "Jak według Biblii miał na imię pierwszy mężczyzna?",
     "answer": "Adam",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 829,
     "question": "Serek rodem z Podhala to?",
     "answer": "oscypek",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -5820,7 +5820,7 @@
     "id": 832,
     "question": "Który z dokumentów dotyczy samochodu?",
     "answer": "dowód rejestracyjny",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -5841,7 +5841,7 @@
     "id": 835,
     "question": "co oznacza termin gruboskórce",
     "answer": "ptaki leśne o wydłużonym dziobie i grubych szponach",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -5862,14 +5862,14 @@
     "id": 838,
     "question": "W jakim kraju wynaleziono klocki Lego?",
     "answer": "w Danii",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 839,
     "question": "Gody ryb to?",
     "answer": "tarło",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -5911,7 +5911,7 @@
     "id": 845,
     "question": "Kto jest autem powieści \"Władca much\"?",
     "answer": "W. Golding",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -5960,28 +5960,28 @@
     "id": 852,
     "question": "Jaki atrybut ma bogini Artemida?",
     "answer": "półksiężyc",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 853,
     "question": "Jakim symbolem oznacza sie pierwiastek Protaktyn?",
     "answer": "Pa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 854,
     "question": "W którym roku John Dalton przedstawił założenie teorii atomistyczno-cząsteczkowej?",
     "answer": "1808",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 855,
     "question": "Jaka wartościowość ma tlen?",
     "answer": "II",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -5995,7 +5995,7 @@
     "id": 857,
     "question": "Z ilu % azotu składa się powietrze?",
     "answer": "78%",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6009,7 +6009,7 @@
     "id": 859,
     "question": "Ilu papieży pochodziło z Afryki?",
     "answer": "trzech",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -6030,14 +6030,14 @@
     "id": 862,
     "question": "Element układu elektrycznego, umieszczony zwykle między przełącznikiem a odbiornikiem; ulega zniszczeniu przerywając obwód, gdy wskutek awarii popłynie w nim zbyt duży prąd to:",
     "answer": "bezpiecznik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 863,
     "question": "Skrót CEPiK to:",
     "answer": "Centralna Ewidencja Pojazdów i Kierowców",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -6072,7 +6072,7 @@
     "id": 868,
     "question": "Ile stopni ma kąt prosty?",
     "answer": "90",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6100,7 +6100,7 @@
     "id": 872,
     "question": "W ciągu jakiego czasu duża wskazówka zegara zakreśla kąt pełny?",
     "answer": "1h",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6121,7 +6121,7 @@
     "id": 875,
     "question": "Ile planet znajduje się w Układzie Słonecznym?",
     "answer": "9",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6135,7 +6135,7 @@
     "id": 877,
     "question": "Które z wymienionych liczb, to liczby pierwsze: 5,8,10,13?",
     "answer": "5,13",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6177,28 +6177,28 @@
     "id": 883,
     "question": "Czyim sługą był Piętaszek?",
     "answer": "Robinsona Cruzoe",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 884,
     "question": "Lekki pojazd konny, pojawił się w połowie XIX wieku, używany była jako środek transportu miejskiego, obecnie używany jako atrakcja turystyczna, pojazd ten to:",
     "answer": "dorożka",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 885,
     "question": "Drezyna to pojazd:",
     "answer": "pojazd szynowy używany przez służby techniczne na kolei",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 886,
     "question": "Duży zamknięty kołowy pojazd konny, służący do przewozu pasażerów i przesyłek pocztowych na stałych trasach obsługiwanych według ustalonego rozkładu jazdy, często występujący w filmach o \" dzikim zachodzie \" to:",
     "answer": "dyliżans",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -6226,7 +6226,7 @@
     "id": 890,
     "question": "Pierwszy Polski serwis społecznościowy to",
     "answer": "Facebook",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -6268,14 +6268,14 @@
     "id": 896,
     "question": "Jaki procent powierzchni Polski pokrywają lasy?",
     "answer": "między 20 a 30",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 897,
     "question": "Hajstra to...?",
     "answer": "bocian czarny",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -6289,7 +6289,7 @@
     "id": 899,
     "question": "Jakiej wartości jest największy nominał obiegowy waluty euro?",
     "answer": "500",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -6310,35 +6310,35 @@
     "id": 902,
     "question": "W którym roku powstał pierwszy mikrofon",
     "answer": "1827",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 903,
     "question": "W którym wieku po raz pierwszy zdobyty został szczyt Mont Blanc?",
     "answer": "XVIII",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 904,
     "question": "W którym roku powstała pierwsza ciężarówka",
     "answer": "1896",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 905,
     "question": "Kto dowodził wojskami ateńskimi w bitwie pod Maratonem w 490 roku p. n. e.?",
     "answer": "Militiades",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 906,
     "question": "Jaki znany uczony wypowiedział słowa „liczba jest istota wszystkich rzeczy”?",
     "answer": "Pitagoras",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6352,14 +6352,14 @@
     "id": 908,
     "question": "Do której bogini należy przydomek Kallipygos?",
     "answer": "Afrodyty",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 909,
     "question": "Little Willie to:",
     "answer": "pierwszy prototyp słynnego Forda T",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -6373,21 +6373,21 @@
     "id": 911,
     "question": "Pseudocaranx to:",
     "answer": "rodzaj ryb z rodziny ostrobokowatych",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 912,
     "question": "Typem prymitywnych, bez tkankowych zwierząt wyłącznie wodnych (najczęściej morskich), osiadłych, zwykle kolonijnych, o nieregularnym i najczęściej zmiennym kształcie, charakteryzującym się brakiem symetrii to:",
     "answer": "gąbki",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 913,
     "question": "Który znany uczony wypowiedział słowa „Cogito ergo sum”?",
     "answer": "Kartezjusz",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -6401,14 +6401,14 @@
     "id": 915,
     "question": "Z jakiego kraju pochodzi pisarz Paulo Coelho?",
     "answer": "Brazylia",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 916,
     "question": "Co jest walutą Litwy?",
     "answer": "lit",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -6422,21 +6422,21 @@
     "id": 918,
     "question": "Lawnmower racing to dyscyplina sportów motorowych, w której specjalnie przygotowane maszyny rywalizują na specjalnie wyznaczonej trasie, którą należy przejechać w jak najkrótszym czasie.Maszynami które startują w tych zawodach są:",
     "answer": "specjalnie przygotowane samojezdne kosiarki do trawy",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 919,
     "question": "A. G. Alfieri to historyczna włoska marka:",
     "answer": "samochodów",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 920,
     "question": "W jakim mieście znajduje się największy w Polsce rynek?",
     "answer": "w Krakowie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -6464,49 +6464,49 @@
     "id": 924,
     "question": "Jak nazywa się dzielnica Los Angeles-słynne miejsce produkcji filmów?",
     "answer": "Hollywood",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 925,
     "question": "W jakim mieście znajduje się wieża Eiffla?",
     "answer": "w Paryżu",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 926,
     "question": "W jakim mieście znajduje się kaplica Sykstyńska?",
     "answer": "W Rzymie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 927,
     "question": "Jak nazywa się kierunek w malarstwie, którego twórcą był Claude Monet?",
     "answer": "Impresjonizm",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 928,
     "question": "Jak nazywa się rzeźba ukazująca tylko głowę i ramiona człowieka?",
     "answer": "Biust",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 929,
     "question": "Kto jest autorem głównego ołtarza w kościele Mariackim w Krakowie?",
     "answer": "Wit Stwosz",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 930,
     "question": "Z której części krzewu herbacianego otrzymujemy herbatę?",
     "answer": "z liści",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -6520,35 +6520,35 @@
     "id": 932,
     "question": "Jak nazywa się ceniona przez smakoszy ikra jesiotrowatych?",
     "answer": "kawior",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 933,
     "question": "Z czym łączy się plemnik w momencie zapłodnienia?",
     "answer": "z komórka jajową",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 934,
     "question": "Jaką część rośliny jesz chrupiąc kalarepę?",
     "answer": "łodygę",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 935,
     "question": "Głównym powodem, przez który Aum Shinrikyo nie stało się organizacją masową, to:",
     "answer": "wymóg przekazywania swojego mienia na rzecz sekty",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 936,
     "question": "Które z rosnących w Polsce drzew iglastych zrzuca zimą igły?",
     "answer": "modrzew",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6562,7 +6562,7 @@
     "id": 938,
     "question": "Według Moona:",
     "answer": "objawił mu się Jezus i nakazał ustanowić Królestwo Niebieskie",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -6597,21 +6597,21 @@
     "id": 943,
     "question": "Jak nazywa się groźna choroba, przenoszona przez pchłę szczura?",
     "answer": "dżuma",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 944,
     "question": "Jakimi zwierzętami zajmuje się ornitolog?",
     "answer": "ptakami",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 945,
     "question": "Jakie ssaki z rodziny jeleniowatych ciągną sanie z Laponii?",
     "answer": "reny",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -6625,7 +6625,7 @@
     "id": 947,
     "question": "Pewien ptak znosi jaja ważące nawet 0,5kg. Co to za ptak?",
     "answer": "struś",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6646,7 +6646,7 @@
     "id": 950,
     "question": "Czego nie oznacza nazwa koziorożec?",
     "answer": "sera z koziego mleka",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -6667,7 +6667,7 @@
     "id": 953,
     "question": "Jak się nazywa izba niższa parlamentu Rosji?",
     "answer": "Duma Państwowa",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -6695,28 +6695,28 @@
     "id": 957,
     "question": "Kto powiedział \"Myślę, więc jestem\"?",
     "answer": "Kartezjusz",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 958,
     "question": "Jaki kolor ma likier aromatyzowany orzechem kokosowym, Malibu?",
     "answer": "jest bezbarwny",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 959,
     "question": "Przed jaką chorobą trzeba szczepić psy?",
     "answer": "wścieklizną",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 960,
     "question": "Bakterie próchnicy zębów by się wyżywić rozkładają:",
     "answer": "węglowodany",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6744,14 +6744,14 @@
     "id": 964,
     "question": "Jaja jakiej ryby są podawane jako kawior?",
     "answer": "jesiotra",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 965,
     "question": "Jak nazywa się największy koncern produkujący samoloty i rakiety?",
     "answer": "British Aerospace",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -6765,7 +6765,7 @@
     "id": 967,
     "question": "Młode świnie to:",
     "answer": "warchlaki",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -6779,7 +6779,7 @@
     "id": 969,
     "question": "Kolekcjonowanie monet to:",
     "answer": "numizmatyka",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -6800,7 +6800,7 @@
     "id": 972,
     "question": "Jaki był Polski hymn EURO 2012",
     "answer": "Koko koko euro spoko",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -6821,14 +6821,14 @@
     "id": 975,
     "question": "Ile chromosomów zawiera plemnik człowieka?",
     "answer": "23",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 976,
     "question": "Gitary flamenco w odróżnieniu od gitar klasycznych są wykonane najczęściej w kolorach od jasnożółtego do pomarańczowego ponieważ wytwarza się je z drzewa:",
     "answer": "cyprysowego",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -6877,7 +6877,7 @@
     "id": 983,
     "question": "Kim jest dla nas babcia naszego dziadka?",
     "answer": "praprababką",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -6891,14 +6891,14 @@
     "id": 985,
     "question": "Festiwal Bluesowo – Rockowy im. Miry Kubasińskiej \"Wielki Ogień\" odbywa się w:",
     "answer": "Ostrowcu Świętokrzyskim",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 986,
     "question": "W którym roku wynaleziono pierwszy długopis",
     "answer": "1938",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -6926,7 +6926,7 @@
     "id": 990,
     "question": "Która paremia prawnicza mówi, że nie ma przestępstwa bez ustawy?",
     "answer": "nullum crimen sine lege",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -6954,7 +6954,7 @@
     "id": 994,
     "question": "Parząca roślina to...?",
     "answer": "pokrzywa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -6968,7 +6968,7 @@
     "id": 996,
     "question": "Czarny punkt to:",
     "answer": "Miejsce na drodze lub odcinek drogi, gdzie dochodzi do szczególnie wielu wypadków drogowych",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -6989,7 +6989,7 @@
     "id": 999,
     "question": "Odmianą jakiej rośliny jest jasiek?",
     "answer": "fasoli",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7003,7 +7003,7 @@
     "id": 1001,
     "question": "Kto obchodzi imieniny 31 grudnia?",
     "answer": "Sylwester",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -7017,14 +7017,14 @@
     "id": 1003,
     "question": "Wymarły gatunek ssaka z rodziny jeleniowatych to:",
     "answer": "Jeleń Schomburgka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1004,
     "question": "W jakim kraju znajduje się akwedukt Pont du Gard zachowany w dolinie rzeki Gard, zbudowany przez Rzymian prowadzący wodę ze źródeł w Uzès do Nîmes:",
     "answer": "Francji",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7038,14 +7038,14 @@
     "id": 1006,
     "question": "Ratusz w Berlinie, w dzielnicy Mitte, neorenesansowy, wzniesiony w latach 1861–1869 to:",
     "answer": "Czerwony Ratusz",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1007,
     "question": "W Jakim Państwie powstała firma canon",
     "answer": "W Japoni",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7059,35 +7059,35 @@
     "id": 1009,
     "question": "Mitsubishi F-1 to pierwszy japoński zaawansowany:",
     "answer": "myśliwiec odrzutowy",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1010,
     "question": "Tkanka pokrywająca zębinę w obrębie korony zęba to:",
     "answer": "szkliwo",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1011,
     "question": "Jaka inna nazwa jest odpowiednikiem figury szachowej laufer?",
     "answer": "goniec",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1012,
     "question": "Ile karatów liczy czysty kruszec złota?",
     "answer": "24",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1013,
     "question": "Odmianą jakiego owocu jest renkloda?",
     "answer": "śliwki",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7101,7 +7101,7 @@
     "id": 1015,
     "question": "Jaki kolor ma chorągiew Mahometa przechowywana w meczecie w Ejab w Stambule?",
     "answer": "zielony",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -7122,7 +7122,7 @@
     "id": 1018,
     "question": "Jowisz i Io – obraz w 1532r namalowany został przez artystę pochodzącego z:",
     "answer": "Włoch",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7157,35 +7157,35 @@
     "id": 1023,
     "question": "Kto jest twórcą nurtu malarstwa zwanego kubizmem?",
     "answer": "Pablo Picasso",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 1024,
     "question": "Z jakiego kraju pochodzi firma odzieżowa RESERVED?",
     "answer": "Polska",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1025,
     "question": "Atrybut Hermesa jednego z greckich bogów to:",
     "answer": "skrzydlate sandały",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1026,
     "question": "Kogo przedstawia obraz Leonardo Da Vinci „Dama z łasiczką”?",
     "answer": "Cecylię Gallerani",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 1027,
     "question": "Ile miesięcy trwało powstanie listopadowe?",
     "answer": "11",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -7199,7 +7199,7 @@
     "id": 1029,
     "question": "Tokaj to wino?",
     "answer": "węgierskie",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -7213,21 +7213,21 @@
     "id": 1031,
     "question": "Jak się nazywa siedmioramienny świecznik żydowski?",
     "answer": "menora",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1032,
     "question": "Drzewce poziome, służące do przymocowania dolnego liku żagla skośnego to...?",
     "answer": "bom",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1033,
     "question": "Ile przykazań liczy biblijny dekalog?",
     "answer": "10",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -7276,7 +7276,7 @@
     "id": 1040,
     "question": "Brytyjskie monety o nominałach 20 i 50 pensów mają kształt?",
     "answer": "siedmiokąta foremnego",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -7297,7 +7297,7 @@
     "id": 1043,
     "question": "Czym zajmuje się modystka?",
     "answer": "kapeluszami",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -7311,21 +7311,21 @@
     "id": 1045,
     "question": "Piana z białek rozbita z cukrem i zapieczona w słodkie, białe ciastko to...?",
     "answer": "beza",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1046,
     "question": "Szafka w kościele do przechowywania Najświętszego Sakramentu to...?",
     "answer": "tabernakulum",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1047,
     "question": "Kim dla Juliusza Kossaka była Zofia Kossak-Szczucka?",
     "answer": "wnuczką",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -7346,7 +7346,7 @@
     "id": 1050,
     "question": "Który z bogów Egiptu został zabity przez Seta rozerwany na kawałki i rozrzucony po świecie?",
     "answer": "Ozyrys",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -7367,14 +7367,14 @@
     "id": 1053,
     "question": "Goodyear producent opon na potrzeby przemysłu samochodowego, lotniczego, wyścigów rajdowych, ciężkich maszyn przemysłowych powstał w roku:",
     "answer": "1898",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1054,
     "question": "Na którym kontynencie żyje w stanie dzikim ( Speothos venaticus ) czyli pies leśny?",
     "answer": "Ameryka",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7388,7 +7388,7 @@
     "id": 1056,
     "question": "Kto wstrzymał słońce ruszył ziemię",
     "answer": "Mikołaj kopernik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7437,14 +7437,14 @@
     "id": 1063,
     "question": "Ustawa z 27 sierpnia 1997 roku o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych wprowadza następujące stopnie niepełnosprawności:",
     "answer": "lekki, umiarkowany, znaczny",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1064,
     "question": "Wymiar kary za handel żywym towarem:",
     "answer": "pięć lat pozbawienia wolności i przynajmniej dziesięć lat w przypadku stwierdzenia okoliczności obciążających",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7458,21 +7458,21 @@
     "id": 1066,
     "question": "Kto w handlu żywym towarem ma status osoby bezbronnej:",
     "answer": "dzieci",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 1067,
     "question": "Dyrektywa zapobiegająca handlowi ludźmi nie dotyczy:",
     "answer": "Danii",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1068,
     "question": "Głównym ośrodkiem handlu ludźmi jest:",
     "answer": "Europa Wschodnia",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7486,21 +7486,21 @@
     "id": 1070,
     "question": "W którym roku Imperium Brytyjskie zniosło handel niewolnikami:",
     "answer": "1833 r.",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1071,
     "question": "W którym kraju jest najbardziej rozwinięty handel narządami ludzkimi:",
     "answer": "Mołdawia",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1072,
     "question": "W jakim kraju pozyskuje się narządy od więźniów:",
     "answer": "Chiny",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7514,28 +7514,28 @@
     "id": 1074,
     "question": "Objawem „siecioholizmu” jest:",
     "answer": "Notoryczne korzystanie z Internetu",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1075,
     "question": "Wskaż odpowiedź fałszywą. „Fonoholizm” to:",
     "answer": "Strach przed użytkowaniem telefonów komórkowych",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1076,
     "question": "Skutkiem uzależnienia od Internetu jest:",
     "answer": "Nie odróżnianie rzeczywistości od fikcji",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1077,
     "question": "Czym jest „telefonia komórkowa”?",
     "answer": "Infrastruktura telekomunikacyjna",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7563,7 +7563,7 @@
     "id": 1081,
     "question": "Wskaż fałszywą odpowiedź. Człowiek uzależniony od telefonu komórkowego:",
     "answer": "korzysta z telefonu tylko w razie potrzeby",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7612,7 +7612,7 @@
     "id": 1088,
     "question": "Jan Kułakowski został w 1998 roku głównym negocjatorem Polski?",
     "answer": "z Unią Europejską",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7626,7 +7626,7 @@
     "id": 1090,
     "question": "Jaki kolor mają kwiaty forsycji?",
     "answer": "żółty",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7640,14 +7640,14 @@
     "id": 1092,
     "question": "Konik morski to?",
     "answer": "ryba",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1093,
     "question": "Jak nazywa się czterostrunowa gitara hawajska?",
     "answer": "ukulele",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -7675,14 +7675,14 @@
     "id": 1097,
     "question": "Z czym w Azji kojarzona jest swastyka, który w Europie znany jest głównie jako symbol Adolfa Hitlera?",
     "answer": "szczęście i pomyślność",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1098,
     "question": "Aorta to:",
     "answer": "tętnica główna",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7696,7 +7696,7 @@
     "id": 1100,
     "question": "W jakim mieście znajduje się Luwr, dawny pałac królewski?",
     "answer": "Paryż",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -7710,7 +7710,7 @@
     "id": 1102,
     "question": "Jaką dyscyplinę sportu uprawia Kobe Bean Bryant?",
     "answer": "koszykówka",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -7731,7 +7731,7 @@
     "id": 1105,
     "question": "W filmie \" Przepraszam czy tu biją \" zagrał słynny polski bokser, który:",
     "answer": "Jerzy Kulej",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -7759,7 +7759,7 @@
     "id": 1109,
     "question": "Do jakiej Unii przystąpiła Polska 1 maja 2004 roku?",
     "answer": "Europejskiej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7773,14 +7773,14 @@
     "id": 1111,
     "question": "W którym roku powstała firma Microsoft",
     "answer": "w 1975r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1112,
     "question": "W którym roku powstał pierwszy system operacyjny Windows",
     "answer": "w 1985r",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -7801,7 +7801,7 @@
     "id": 1115,
     "question": "Jakie kolor mają kwiaty forsycji?",
     "answer": "żółty",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7829,28 +7829,28 @@
     "id": 1119,
     "question": "USS Texas to Amerykański pancernik w którym roku został zbudowany:",
     "answer": "1911-1914",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1120,
     "question": "Jak nazywa się znakomita polska rzeźbiarka?",
     "answer": "Magdalena Abakanowicz",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 1121,
     "question": "Kogo nazywano polskim Molierem i ojcem teatru polskiego?",
     "answer": "Wojciecha Bogusławskiego",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 1122,
     "question": "Czy ryba po grecku to potrwa po grecku?",
     "answer": "nie",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -7892,14 +7892,14 @@
     "id": 1128,
     "question": "W którym roku odbył się pierwszy Krajowy Festiwal Piosenki Polskiej w Opolu?",
     "answer": "1963",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1129,
     "question": "Jak nazywa się największa pustynia w Polsce?",
     "answer": "błędowska",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -7948,14 +7948,14 @@
     "id": 1136,
     "question": "Która stacja wyświetla serial \"M jak Miłość\"?",
     "answer": "TVP2",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 1137,
     "question": "Łódź wykonana z jednego pnia drzewa to?",
     "answer": "dłubanka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8011,14 +8011,14 @@
     "id": 1145,
     "question": "Co sadzimy na rabatkach?",
     "answer": "kwiaty",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1146,
     "question": "Statek wodny, na którego pokładzie mogą startować i lądować samoloty to?",
     "answer": "lotniskowiec",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -8046,14 +8046,14 @@
     "id": 1150,
     "question": "Kwiat rabatowy otwierający się i intensywnie pachnący dopiero po zmroku to...?",
     "answer": "maciejka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1151,
     "question": "Jakiego koloru kwiaty ma konwalia majowa?",
     "answer": "białe",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8074,7 +8074,7 @@
     "id": 1154,
     "question": "Nazwa Tatra nie figuruje jako:",
     "answer": "producent tabletów i laptopów",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8095,7 +8095,7 @@
     "id": 1157,
     "question": "Ptak w gospodarstwie domowym, który jest budzikiem gospodarza i udręką śpiocha to...?",
     "answer": "kogut",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8109,14 +8109,14 @@
     "id": 1159,
     "question": "Od 80 lat Mercedes dostarcza samochody do użytku papieży,nazwa tych samochodów to:",
     "answer": "papamobile",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 1160,
     "question": "Jakiego koloru owoce ma jarzębina?",
     "answer": "czerwonego",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8130,14 +8130,14 @@
     "id": 1162,
     "question": "Jak nazywa się ogromna spieniona fala morska:",
     "answer": "bałwan",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1163,
     "question": "Jaki obraz Leonarda da Vinci znajduje się w polskich zbiorach muzealnych:",
     "answer": "Dama z łasiczką",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -8179,21 +8179,21 @@
     "id": 1169,
     "question": "Podstawowym aktem prawnym w Polsce z zakresu prawa narkotykowego jest:",
     "answer": "ustawa o przeciwdziałaniu narkomanii",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1170,
     "question": "Niewielki pojazd elektryczny,napędzany silnikiem elektrycznym, produkowany przez firmę o tej samej nazwie od 1971 roku w Mielcu to:",
     "answer": "melex",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 1171,
     "question": "Jak nazywa się przyrząd do wykrywania obecności narkotyków w organizmach osób kierujących pojazdami?",
     "answer": "narkotester",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -8249,14 +8249,14 @@
     "id": 1179,
     "question": "Ile % kobiet zatrudnionych pracuje w niepełnym wymiarze:",
     "answer": "Około 33,5%",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1180,
     "question": "Błędna odpowiedź to:",
     "answer": "Dyskryminacja to traktowanie niemal identycznych pracowników w ten sam sposób",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8284,7 +8284,7 @@
     "id": 1184,
     "question": "W jakim sektorze jest najmniejszy odsetek zatrudnienia obcokrajowców?",
     "answer": "prawniczym",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -8298,7 +8298,7 @@
     "id": 1186,
     "question": "Dlaczego głównie Unia Europejska intensywnie walczy z nielegalnym zatrudnieniem?",
     "answer": "Nielegalnie zatrudnieni pracują w strasznych warunkach",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -8312,7 +8312,7 @@
     "id": 1188,
     "question": "Gdzie najczęściej osiedlają się obywatele Białorusi i Ukrainy?",
     "answer": "na wschodzie Polski",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -8326,7 +8326,7 @@
     "id": 1190,
     "question": "Wszelkie kwestie związane z zatrudnieniem i wykonywaniem pracy przez cudzoziemców uregulowane są w ustawie z dnia:",
     "answer": "20 kwietnia 2004",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -8347,14 +8347,14 @@
     "id": 1193,
     "question": "Jak nazywa się wiza wydawana przez organ polski na wjazd i ciągły pobyt na terytorium Rzeczypospolitej Polskiej:",
     "answer": "wiza krajowa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1194,
     "question": "Jaki organ NIE jest uprawniony do wydawania wiz:",
     "answer": "premier",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8375,7 +8375,7 @@
     "id": 1197,
     "question": "Która z roślin nie należy do traw?",
     "answer": "serdecznik pospolity",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8396,14 +8396,14 @@
     "id": 1200,
     "question": "Flausz to tkanina używana na...?",
     "answer": "płaszcze",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1201,
     "question": "Lasera to wino...?",
     "answer": "portugalskie",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8417,7 +8417,7 @@
     "id": 1203,
     "question": "Jakim napojem wznoszą toast nowo mianowani Kawalerowie Orderu Uśmiechu?",
     "answer": "sok z cytryną",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8438,7 +8438,7 @@
     "id": 1206,
     "question": "Co to jest kruszonka?",
     "answer": "masa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8466,14 +8466,14 @@
     "id": 1210,
     "question": "Jaki trunek w przeszłości nazywano okowitą?",
     "answer": "vódka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1211,
     "question": "Bliskim krewniakiem Żubra jest?",
     "answer": "bizon",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -8501,49 +8501,49 @@
     "id": 1215,
     "question": "Co w języku arabskim oznacza słowo „islam”?",
     "answer": "poddanie się Bogu",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1216,
     "question": "Co jest świętą księga islamu?",
     "answer": "Koran",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1217,
     "question": "Jak brzmią imiona dzieci, którym objawiła się Matka Boża w miejscowości La Salette-Fallavaux we francuskich Alpach?",
     "answer": "Melania i Maksymin",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1218,
     "question": "O jakiej tematyce jest seria gier komputerowych FIFA?",
     "answer": "piłka nożna",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1219,
     "question": "Jak nazywa się sztuka rzeźbienia w owocach i warzywach?",
     "answer": "carving",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
     "id": 1220,
     "question": "Z jakiego kraju pochodzi danie „Carpaccio”?",
     "answer": "Włochy",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1221,
     "question": "Na ile lat wybierani są sędziowie Trybunału Konstytucyjnego w Polsce?",
     "answer": "9",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -8557,21 +8557,21 @@
     "id": 1223,
     "question": "Z ilu sędziów składa się Trybunał Konstytucyjny w Polsce?",
     "answer": "15",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1224,
     "question": "Przez kogo wybierani są sędziowie Trybunału Konstytucyjnego w Polsce?",
     "answer": "Sejm",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1225,
     "question": "W którym roku powstała firma gerber",
     "answer": "w 1939r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -8592,28 +8592,28 @@
     "id": 1228,
     "question": "Kiedy powstała pierwsza wersja Gadu-Gadu",
     "answer": "w 2000r",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1229,
     "question": "Narty sygnowane przez jaką firmę samochodową stworzyła firma HEAD:",
     "answer": "Audi",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 1230,
     "question": "W którym roku zrobiono pierwszom fotografie",
     "answer": "w 1826r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1231,
     "question": "Najnowszy zegarek CASIO Edifice należy do limitowanej serii sygnowanej logotypem zespołu:",
     "answer": "Red Bull Racing Formuły 1",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8634,7 +8634,7 @@
     "id": 1234,
     "question": "Kościuszko składał przysięgę narodowi na rynku w:",
     "answer": "Krakowie",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -8648,14 +8648,14 @@
     "id": 1236,
     "question": "Trójkątna płytka służąca do szarpania strun w gitarze to:",
     "answer": "kostka",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1237,
     "question": "Pokarm bogów olimpijskich to:",
     "answer": "ambrozja",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -8669,14 +8669,14 @@
     "id": 1239,
     "question": "Kiedy w telewizji polsat został po raz pierwszy wemitowany serial Pierwsza miłość",
     "answer": "w 2004r",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 1240,
     "question": "W którym roku powstał portal społecznościowy Nasza klasa",
     "answer": "w 2006r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -8690,28 +8690,28 @@
     "id": 1242,
     "question": "Żeglarskie piosenki to:",
     "answer": "szanty",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1243,
     "question": "W którym roku wyszła pierwsza wersja beta programu skype",
     "answer": "w 2003r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1244,
     "question": "Kijanka to stadium rozwoju gatunku:",
     "answer": "płaza",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1245,
     "question": "W którym mieście znajduje się hala sportowo-widowiskowa Spodek?",
     "answer": "w Katowicach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8725,7 +8725,7 @@
     "id": 1247,
     "question": "Który z etapów produkcji win jest najwcześniejszy:",
     "answer": "winobranie",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8774,7 +8774,7 @@
     "id": 1254,
     "question": "Która religia ma największe grono wyznawców na świecie?",
     "answer": "chrześciaństwo",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -8795,21 +8795,21 @@
     "id": 1257,
     "question": "Powłoka na naczyniach kuchennych zapobiegająca przywieraniu potraw to...?",
     "answer": "teflon",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1258,
     "question": "Kto jest autorem słów hymnu Polskiego?",
     "answer": "J. Wybicki",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1259,
     "question": "Jaki skrót mają siły powietrzne Australii?",
     "answer": "RAAF",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8858,28 +8858,28 @@
     "id": 1266,
     "question": "Chablis to wino...?",
     "answer": "francuskie",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1267,
     "question": "Która z podanych miar nie jest stosowana na morzu?",
     "answer": "piędź",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1268,
     "question": "Co służy do pomiaru kątów w terenie?",
     "answer": "teodolit",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1269,
     "question": "W jakim mieście swoją siedzibę ma firma „METRON” zajmująca się produkcją urządzeń pomiarowych, wodomierzy, gazomierzy?",
     "answer": "Toruń",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8893,7 +8893,7 @@
     "id": 1271,
     "question": "Jakie kolory widnieją na fladze Francji?",
     "answer": "niebieski-biały-czerwony",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -8907,7 +8907,7 @@
     "id": 1273,
     "question": "Na podstawie opowiadania jakiego pisarza powstał film „Dzieci kukurydzy” w reżyserii Fritza Kierscha?",
     "answer": "Stephen King",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -8928,28 +8928,28 @@
     "id": 1276,
     "question": "Ile razy z rzędu Adam Małysz zdobył Kryształową Kulę w zawodach pucharu świata w skokach narciarskich?",
     "answer": "3",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1277,
     "question": "W którym roku pobito rekord największej prędkości swobodnego lotu?",
     "answer": "2012",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1278,
     "question": "W którym roku Polska została mistrzem europy w piłce siatkowej?",
     "answer": "2009",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1279,
     "question": "Którą literą w kolejności według alfabetu łacińskiego jest litera „G”?",
     "answer": "7",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -8963,7 +8963,7 @@
     "id": 1281,
     "question": "Coca Cola zawiera 10 miligramów alkoholu na:",
     "answer": "1litr napoju",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -8977,7 +8977,7 @@
     "id": 1283,
     "question": "Najdroższa wódka na świecie kosztuje?",
     "answer": "760tyś Euro",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9026,7 +9026,7 @@
     "id": 1290,
     "question": "Gdzie prawo zakazuje łaskotania kobiet?",
     "answer": "W Wirginii",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -9040,14 +9040,14 @@
     "id": 1292,
     "question": "Jedna tona makulatury pozwala ochronić:",
     "answer": "14 drzew",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1293,
     "question": "W której części ucha znajduje się narząd równowagi?",
     "answer": "w uchu wewnętrznym",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9075,7 +9075,7 @@
     "id": 1297,
     "question": "Z jakiego ciasta robi się racuchy?",
     "answer": "z drożdżowego",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9096,14 +9096,14 @@
     "id": 1300,
     "question": "Ile lat musi ukończyć polski obywatel, żeby mógł być prezydentem?",
     "answer": "35",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1301,
     "question": "Z jakiego mleka wyrabiany jest tradycyjny ser koryciński?",
     "answer": "krowiego",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9117,7 +9117,7 @@
     "id": 1303,
     "question": "W której miejscowości nadmorskiej znajduje się najszersza plaża w Polsce?",
     "answer": "w Świnoujściu",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9131,7 +9131,7 @@
     "id": 1305,
     "question": "Co to jest kwaśnica?",
     "answer": "zupa",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9145,7 +9145,7 @@
     "id": 1307,
     "question": "Co to jest pigwówka?",
     "answer": "nalewka",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9159,14 +9159,14 @@
     "id": 1309,
     "question": "Co to jest herbata z prądem?",
     "answer": "herbata z alkoholem",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1310,
     "question": "Jak zgodnie z zasadami języka polskiego nazwiemy żonę Puzyny?",
     "answer": "Puzynina",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9194,49 +9194,49 @@
     "id": 1314,
     "question": "Jaką nazwę nosi procedura przyjęcia lub odrzucenia transakcji kartą, najczęściej dokonywana przy pomocy specjalnego terminala?",
     "answer": "autoryzacja",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1315,
     "question": "Kto pełni rolę straży przybocznej papieża?",
     "answer": "Gwardia Szwajcarska",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1316,
     "question": "Jak nazywa się najważniejsza instytucja naukowa w Watykanie?",
     "answer": "Papieska Akademia Nauk",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1317,
     "question": "W którym roku urodził się Jurek Owsiak?",
     "answer": "6 października 1953 roku",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1318,
     "question": "Jak nazywa się organizacja założona przez Jerzego Owsiaka:",
     "answer": "Fundacja Wielkiej Orkiestry Świątecznej Pomocy",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1319,
     "question": "Pierwszy instrument dęty",
     "answer": "helikon",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1320,
     "question": "W którym roku powstał pierwszy silnik odrzutowy",
     "answer": "1910",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -9278,7 +9278,7 @@
     "id": 1326,
     "question": "Najpopularniejszy alkohol wywodzący się z Japonii to:",
     "answer": "sake",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9299,7 +9299,7 @@
     "id": 1329,
     "question": "Jak się nazywa siostra z kultowej bajki Fineasz i Ferb?",
     "answer": "Fretka",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -9320,14 +9320,14 @@
     "id": 1332,
     "question": "Japońskie Tora! Tora! Tora! było jednym z trzech haseł do ataku na:",
     "answer": "Pearl Harbor",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1333,
     "question": "Jaki kolor ma kwiat zwany gwiazdą betlejemską?",
     "answer": "czerwony",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9341,42 +9341,42 @@
     "id": 1335,
     "question": "Z jakiego kraju pochodzi były Sekretarz Generalny NATO Willy Claes?",
     "answer": "Belgia",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1336,
     "question": "Z jakiego kraju pochodzi były Sekretarz Generalny NATO Dirk Stikker?",
     "answer": "Holandia",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1337,
     "question": "Z jakiego kraju pochodzi były Sekretarz Generalny NATO Javier Solana?",
     "answer": "Hiszpania",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1338,
     "question": "Ile lat trwa kadencja Sekretarza Generalnego NATO?",
     "answer": "4",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1339,
     "question": "W którym powstała Organizacja Państw Amerykańskich?",
     "answer": "1948",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1340,
     "question": "Ile państw należy obecnie (2013 rok) do Organizacji Państw Amerykańskich?",
     "answer": "35",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -9390,7 +9390,7 @@
     "id": 1342,
     "question": "W jakim mieście znajduje się Sekretariat OBWE?",
     "answer": "Wiedeń",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -9425,14 +9425,14 @@
     "id": 1347,
     "question": "Rozpiętość skrzydeł dorosłego albatrosa może sięgać:",
     "answer": "około 3 -4 metrów",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1348,
     "question": "Jak brzmi angielska nazwa najpopularniejszego w Polsce gatunku piwa „jasne pełne”?",
     "answer": "Lager",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9446,14 +9446,14 @@
     "id": 1350,
     "question": "Jaki ptak składa tylko jedno jajo na 2 lata?",
     "answer": "albatros",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1351,
     "question": "Kryl antarktyczny jest:",
     "answer": "skorupiakiem",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9467,21 +9467,21 @@
     "id": 1353,
     "question": "Kiedy powstał pierwszy hipermarket w Europie",
     "answer": "w 1963r",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1354,
     "question": "Gdzie powstał pierwszy hipermarket Carreffour",
     "answer": "we Francji",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1355,
     "question": "Pierwszy przyjazny środowisku telefon komórkowy powstał w Korei Południowej, producent do jego produkcji zastosował:",
     "answer": "naturalną kukurydzę",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9502,7 +9502,7 @@
     "id": 1358,
     "question": "Projektant mody Erik De Nijs zaproponował entuzjastom serfowania czy też grania jeansy z:",
     "answer": "wbudowaną klawiaturą",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9530,21 +9530,21 @@
     "id": 1362,
     "question": "W którym roku powstała firma Samsung",
     "answer": "w 1938r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1363,
     "question": "W którym roku powstała firma Sony",
     "answer": "w 1946r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1364,
     "question": "W którym roku powstała Wikipedia",
     "answer": "w 2001r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -9600,7 +9600,7 @@
     "id": 1372,
     "question": "Jak po śląsku mówi się na ziemniaki?",
     "answer": "kartofle",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9628,7 +9628,7 @@
     "id": 1376,
     "question": "Jakie państwo ma kształt buta?",
     "answer": "Włochy",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -9649,35 +9649,35 @@
     "id": 1379,
     "question": "Wielka Orkiestra Świątecznej Pomocy została założona w roku:",
     "answer": "1993",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1380,
     "question": "Mityczna Planeta Zagłady to:",
     "answer": "Nibiru",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1381,
     "question": "Organizacja pomagająca bezdomnym, uzależnionym od narkotyków i nosicielom wirusa HIV, założona przez Marka Kotańskiego to:",
     "answer": "Stowarzyszenie MONAR",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1382,
     "question": "Tytan jest jedynym księżycem w Układzie Słonecznym:",
     "answer": "posiadającym gęstą atmosferę",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1383,
     "question": "Największą prędkością w świecie ptaków może pochwalić się:",
     "answer": "sokół wędrowny",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9698,7 +9698,7 @@
     "id": 1386,
     "question": "Największym noworodkiem w świecie ssaków jest:",
     "answer": "płetwal błękitny",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9712,14 +9712,14 @@
     "id": 1388,
     "question": "Który z krajów jest rekordzistą pod względem ilości hodowanych zwierząt domowych:",
     "answer": "USA",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1389,
     "question": "Selvas to inaczej:",
     "answer": "wilgotny las równikowy",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -9733,21 +9733,21 @@
     "id": 1391,
     "question": "Który z ptaków zapada w sen zimowy:",
     "answer": "lelek zimowy",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1392,
     "question": "Jodła pospolita nie jest rośliną:",
     "answer": "okrytozalążkową",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1393,
     "question": "Zalążnia to część anatomiczna:",
     "answer": "kwiatów",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9775,7 +9775,7 @@
     "id": 1397,
     "question": "Jedynymi gadami posiadającymi uszy są:",
     "answer": "krokodyle",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9789,14 +9789,14 @@
     "id": 1399,
     "question": "Barrakuda to gatunek:",
     "answer": "ryby",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1400,
     "question": "Dlaczego pszczoła po ukąszeniu ginie?",
     "answer": "wraz z żądłem pozostawia częsć organów wewnętrznych",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9831,7 +9831,7 @@
     "id": 1405,
     "question": "Siedzibą Stowarzyszenia Narodów Azji Południowo-Wschodniej jest:",
     "answer": "Dżakarta",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -9845,21 +9845,21 @@
     "id": 1407,
     "question": "Siedzibą Rady Państw Morza Bałtyckiego jest:",
     "answer": "Sztokholm",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1408,
     "question": "Najsilniejszym zwierzęciem w przyrodzie jest:",
     "answer": "rochatyniec boreański",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1409,
     "question": "W ciele dorosłego człowieka cała krew ( ok 5l.) przechodzi przez nerki w ciągu:",
     "answer": "5 min.",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9873,7 +9873,7 @@
     "id": 1411,
     "question": "Ssak ten to doskonały śpiewak, potrafi \"śpiewać\" przez 10 min. non stop i słychać go nawet z odległości 9 km.:",
     "answer": "humbak",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9915,21 +9915,21 @@
     "id": 1417,
     "question": "Ile pól ma szachownica?",
     "answer": "64",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1418,
     "question": "Kompozycja ułożona z kawałków kolorowego szkła, zespolonych ołowianymi ramkami to?",
     "answer": "witraż",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1419,
     "question": "Jaki ptak podrzuca swoje jaja innym ptakom?",
     "answer": "kukułka",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9943,21 +9943,21 @@
     "id": 1421,
     "question": "Dziewięćsił bezłodygowy to roślina, którą można w Polsce spotkać:",
     "answer": "w Tatrach",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1422,
     "question": "Pierwszy model telewizora nosił nazwę:",
     "answer": "Wisła",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1423,
     "question": "Która z roślin podlega ścisłej ochronie w Polsce:",
     "answer": "dziewięcsił bezłodygowy",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -9971,14 +9971,14 @@
     "id": 1425,
     "question": "Węgorze w środowisku naturalnym rozmnażają się tylko w jednym miejscu na ziemi. Jest nim:",
     "answer": "Morze Saragossowe",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1426,
     "question": "Jak brzmi imię Diesla, wynalazcy silnika z zapłonem samoczynnym?",
     "answer": "Rudolf",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -10034,7 +10034,7 @@
     "id": 1434,
     "question": "Myślę, więc jestem.Czyje to słowa:",
     "answer": "Kartezjusz",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -10055,7 +10055,7 @@
     "id": 1437,
     "question": "W którym roku Łukasiewicz wynalazł lampę naftową:",
     "answer": "w 1853 r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -10083,7 +10083,7 @@
     "id": 1441,
     "question": "W którym mieście znajduje się Piramida Cheopsa?",
     "answer": "Giza",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -10111,7 +10111,7 @@
     "id": 1445,
     "question": "Kto wymyślił pierwszy samolot",
     "answer": "Bracia Wright",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -10132,14 +10132,14 @@
     "id": 1448,
     "question": "W którym roku powstał pierwszy komputer",
     "answer": "w 1942r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1449,
     "question": "W którym roku zostało uruchomione pierwsze internetowe łącze analogowe",
     "answer": "w 1990 r",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -10167,7 +10167,7 @@
     "id": 1453,
     "question": "Ile metrów wysokości ma statua wolności",
     "answer": "93m",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -10181,7 +10181,7 @@
     "id": 1455,
     "question": "Który z ptaków w drodze na zimowiska nie przelatuje nad morzem:",
     "answer": "bocian",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -10195,14 +10195,14 @@
     "id": 1457,
     "question": "Państwo które rozwinęło się dzięki wylewom rzeki to:",
     "answer": "Egipt",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1458,
     "question": "Muzeum Pergamońskie w Berlinie słynie ze zbiorów:",
     "answer": "antycznej rzeźby i architektury",
-    "category": "ciekawostki",
+    "category": "sztuka",
     "source": "jzd-classic"
   },
   {
@@ -10216,7 +10216,7 @@
     "id": 1460,
     "question": "Pierwszym ludem czarnej Afryki, który zdobył broń palną,byli:",
     "answer": "Suahilijczycy",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -10237,14 +10237,14 @@
     "id": 1463,
     "question": "Opis wojny trojańskiej odnajdziemy w dziełach:",
     "answer": "Homera",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 1464,
     "question": "Pierwsze ślady działalności człowieka na ziemiach polskich pochodzą z:",
     "answer": "okolic Ojcowa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10265,7 +10265,7 @@
     "id": 1467,
     "question": "Świętą rośliną Celtów była",
     "answer": "jemioła",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10279,14 +10279,14 @@
     "id": 1469,
     "question": "Słynna hiszpańska Alhambra to ślad panowania w Europie:",
     "answer": "muzułmańskich Maurów",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1470,
     "question": "Przekazy starożytnych wskazują na to, że papirus to wynalazek:",
     "answer": "Egipcjan",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -10300,14 +10300,14 @@
     "id": 1472,
     "question": "Indie były pierwszym na świecie wielkim centrum uprawy:",
     "answer": "bawełny",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1473,
     "question": "Pierwsze informacje o tytoniu przywiózł do Europy:",
     "answer": "Krzysztof Kolumb",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -10335,21 +10335,21 @@
     "id": 1477,
     "question": "Hiszpański zdobywca podbijający Amerykę to:",
     "answer": "kankwistador",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1478,
     "question": "Kolos Rodyjski przedstawiał wizerunek:",
     "answer": "Heliosa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1479,
     "question": "Zwierzęta domowe takie jak świnia i pies oswoili:",
     "answer": "Chińczycy",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -10370,14 +10370,14 @@
     "id": 1482,
     "question": "Zasada \"Nullum crimen sine lege\" oznacza:",
     "answer": "nie ma przestępstwa bez przepisu prawa",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1483,
     "question": "Zasada \"prawo nie działa wstecz\" to po łacińsku:",
     "answer": "lex retro non agit",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -10391,7 +10391,7 @@
     "id": 1485,
     "question": "Siedzibą Międzynarodowej Organizacji Lotnictwa Cywilnego (ICAO) jest:",
     "answer": "Montreal",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10412,14 +10412,14 @@
     "id": 1488,
     "question": "Jaka waluta obowiązywała we Włoszech, zanim wprowadzono tam Euro?",
     "answer": "liry",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1489,
     "question": "Która z religii jest dominującą na Litwie?",
     "answer": "katolicyzm",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -10440,14 +10440,14 @@
     "id": 1492,
     "question": "Carpe diem znaczy",
     "answer": "chwytaj dzień",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1493,
     "question": "Jaka dziedzina medycyny zajmuje się układem moczowo-płciowym?",
     "answer": "urologia",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10461,7 +10461,7 @@
     "id": 1495,
     "question": "Który z polskich władców widnieje na banknocie o nominale pięćdziesiąt złotych?",
     "answer": "Kazimierz III Wielki",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10482,14 +10482,14 @@
     "id": 1498,
     "question": "Człowiek przesadnie religijny to:",
     "answer": "bigot",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1499,
     "question": "Ile jest bakterii w 1 ml ludzkiej śliny?",
     "answer": "ponad1000000",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10545,21 +10545,21 @@
     "id": 1507,
     "question": "Mieszkaniec wybrzeża Kości słoniowej to:",
     "answer": "Iworyjczyk",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1508,
     "question": "W rogaliku 7days zawarty jest:",
     "answer": "Alkohol etylowy",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1509,
     "question": "Największy statek pasażerski świata to",
     "answer": "Oasis of the Seas",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -10643,14 +10643,14 @@
     "id": 1521,
     "question": "W którym roku otwarto pierwszy sklep IKEI w Polsce?",
     "answer": "1991",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1522,
     "question": "Co oznacza słowo \"fakir\"?",
     "answer": "biedny",
-    "category": "ciekawostki",
+    "category": "jezyk-polski",
     "source": "jzd-classic"
   },
   {
@@ -10664,14 +10664,14 @@
     "id": 1524,
     "question": "Jak nazywa się substancja podawana pacjentom przed badaniem rentgenowskim znana również jako kontrast:",
     "answer": "papka barytowa",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1525,
     "question": "Rodzaj sztuki należący do pogranicza literatury i plastyki z racji rozpowszechniania w formie drukowanej w prasie lub broszurach to:",
     "answer": "komiks",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -10692,7 +10692,7 @@
     "id": 1528,
     "question": "Koło jako urządzenie techniczne po raz pierwszy zastosowano:",
     "answer": "ok 3500 lat p.n.e",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10748,21 +10748,21 @@
     "id": 1536,
     "question": "Wewnątrz Słońca panuje temperatura:",
     "answer": "16 milionów stopni",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1537,
     "question": "Jedynym naturalnym satelitą Ziemi jest:",
     "answer": "Księżyc",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1538,
     "question": "Pierwszym uniwersytetem w Europie był:",
     "answer": "uniwersytet w Bolonii",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -10783,7 +10783,7 @@
     "id": 1541,
     "question": "Pierwszy silnik odrzutowy został zaprojektowany:",
     "answer": "tuż przed II wojną swiatową",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -10811,7 +10811,7 @@
     "id": 1545,
     "question": "Przenośnik ślimakowy, nota bene stosowany do nawadniania pól do dziś wymyślił:",
     "answer": "Archimedes",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -10832,28 +10832,28 @@
     "id": 1548,
     "question": "Hologram to znak wykonany:",
     "answer": "laserem",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1549,
     "question": "Urządzenie będące połączeniem telefonu komórkowego i kieszonkowego komputera to:",
     "answer": "smartfon",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1550,
     "question": "Jedynymi ptakami o nieruchomych oczach są:",
     "answer": "sowy",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1551,
     "question": "Najszybciej rosnącym drzewem na świecie jest:",
     "answer": "eukaliptus",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10867,7 +10867,7 @@
     "id": 1553,
     "question": "Najszybszą rybą na świecie jest:",
     "answer": "żaglica",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10881,7 +10881,7 @@
     "id": 1555,
     "question": "W którym roku Kinga Rusin wzięła ślub cywilny ze swoim ówczesnym narzeczonym Tomaszem Lisem?",
     "answer": "1994",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -10916,28 +10916,28 @@
     "id": 1560,
     "question": "Państwem radykalnie świeckim, w którym państwo jest neutralne wobec przekonań religijnych, jest:",
     "answer": "Francja",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1561,
     "question": "Prawo religijne islamu to:",
     "answer": "szariat",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
     "id": 1562,
     "question": "Preambuła to:",
     "answer": "wstęp do Konstytucji Rzeczypospolitej Polskiej",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1563,
     "question": "Utwór Kamizlelka jest",
     "answer": "nowelą",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -10958,7 +10958,7 @@
     "id": 1566,
     "question": "Gdzie jest pomnik Kopernika?",
     "answer": "Toruń",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -10972,7 +10972,7 @@
     "id": 1568,
     "question": "Ile trzeba było zapłacić za rejs Titanicem w najwyższej klasie?",
     "answer": "4500dolarów",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -10986,7 +10986,7 @@
     "id": 1570,
     "question": "Gdzie znajduje się największa góra w układzie słonecznym?",
     "answer": "na marsie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11007,14 +11007,14 @@
     "id": 1573,
     "question": "Quo Vadis, Domine...znaczy",
     "answer": "Dokąd zmierzasz Panie",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 1574,
     "question": "W którym roku powstał \"Youtube\"?",
     "answer": "2005",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -11028,7 +11028,7 @@
     "id": 1576,
     "question": "Grupą etniczną o najwyższym poziomie IQ są prawdopodobnie:",
     "answer": "Żydzi aszkenazyjscy z Europy Środkowej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11042,14 +11042,14 @@
     "id": 1578,
     "question": "Jak nazywa się słynny statek widmo?",
     "answer": "Latający Holender",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
     "id": 1579,
     "question": "Lejemy to przez klucz w andrzejki",
     "answer": "wosk",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11063,7 +11063,7 @@
     "id": 1581,
     "question": "Pierwszy telefon komórkowy nazwiemy dziś z powodu wielkości",
     "answer": "cegłą",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11077,7 +11077,7 @@
     "id": 1583,
     "question": "Zdrowy człowiek traci 40-120 włosów dziennie, a całkowita ich ilość na głowie wynosi:",
     "answer": "około 120 tyś",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11091,7 +11091,7 @@
     "id": 1585,
     "question": "Duża słynna gadająca papuga",
     "answer": "Ara",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11140,21 +11140,21 @@
     "id": 1592,
     "question": "Planety gazowe to",
     "answer": "Jowisz,Saturn,Uran,Neptun",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1593,
     "question": "Pluton jest uznawany za planetę karłowatom od roku",
     "answer": "2006",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1594,
     "question": "Co ma tak silną grawitację że światło śie z niej nie wydostaje",
     "answer": "Czarna dziura",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11168,14 +11168,14 @@
     "id": 1596,
     "question": "Najdłuższa rzeka w Polsce to",
     "answer": "Wisła",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1597,
     "question": "W którym roku zmarł Steve Jobs?",
     "answer": "2011",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -11210,21 +11210,21 @@
     "id": 1602,
     "question": "Który z krajów nie należy do NATO?",
     "answer": "Rosja",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
     "id": 1603,
     "question": "W którym roku przeprowadzona została denominacja złotego?",
     "answer": "1995",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1604,
     "question": "Stolicą województwa Podlaskiego jest:",
     "answer": "Białystok",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11238,14 +11238,14 @@
     "id": 1606,
     "question": "Ile miesięcy trwa ciąża słonia indyjskiego?",
     "answer": "ok 21",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1607,
     "question": "Najmniejszym ptakiem zamieszkującym tereny Polski jest:",
     "answer": "Mysikrólik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11266,14 +11266,14 @@
     "id": 1610,
     "question": "W którym mieście ojciec święty wypowiedział te słowa \"Niech zstąpi duch Twój\"?",
     "answer": "na placu w Warszawie",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1611,
     "question": "Jakie były ulubione ciastka Jana Pawła?",
     "answer": "kremówki",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -11287,21 +11287,21 @@
     "id": 1613,
     "question": "Jak po śląsku mówi się ziemniaki?",
     "answer": "pyry",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1614,
     "question": "Do kogo szedł Czerwony Kapturek?",
     "answer": "do babci",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1615,
     "question": "Zaznacz, w którym zapisie pory roku są w prawidłowej kolejności",
     "answer": "WIOSNA,LATO,JESIEŃ,ZIMA",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -11322,7 +11322,7 @@
     "id": 1618,
     "question": "Wielkanoc obchodzimy na pamiątkę:",
     "answer": "zmartwychwstania Jezusa",
-    "category": "ciekawostki",
+    "category": "mitologia-i-religia",
     "source": "jzd-classic"
   },
   {
@@ -11336,7 +11336,7 @@
     "id": 1620,
     "question": "Głównym organem decyzyjnym UE jest:",
     "answer": "Rada Unii Europejskiej",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11357,7 +11357,7 @@
     "id": 1623,
     "question": "Słynny polski astronom to:",
     "answer": "Mikołaj Kopernik",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11371,7 +11371,7 @@
     "id": 1625,
     "question": "Katastrofa elektrowni jądrowej w Czarnobylu była w:",
     "answer": "1986",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11392,14 +11392,14 @@
     "id": 1628,
     "question": "Kto jest autorem wiersza, z którego pochodzi słynne: „Czy to jest przyjaźń, czy to jest kochanie”?",
     "answer": "Adam Mickiewicz",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
     "id": 1629,
     "question": "Jak miała na imię mała dziewczynka w czerwonych włosach z bajki Muminki",
     "answer": "Mała Mi",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -11413,28 +11413,28 @@
     "id": 1631,
     "question": "W jakim kraju powstała firma \"Adidas\"?",
     "answer": "Niemcy",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1632,
     "question": "W jakim kraju powstała firma \"Lego\"?",
     "answer": "Dania",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
     "id": 1633,
     "question": "Wieloryb jest:",
     "answer": "ssakiem",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1634,
     "question": "Jaka jest liczba ludności (stan na 2008 rok) w Republice Chińskiej?",
     "answer": "23 037 031",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11448,7 +11448,7 @@
     "id": 1636,
     "question": "W 34 Olimpiadzie szachowej mężczyzn w 2000 roku 1 msc należało do:",
     "answer": "Rosji",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -11497,7 +11497,7 @@
     "id": 1643,
     "question": "W którym roku powstała pierwsza restauracja McDonald's?",
     "answer": "1940",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -11546,7 +11546,7 @@
     "id": 1650,
     "question": "Z ilu senatorów składa się senat Rzeczypospolitej Polskiej?",
     "answer": "100",
-    "category": "ciekawostki",
+    "category": "spoleczenstwo-i-prawo",
     "source": "jzd-classic"
   },
   {
@@ -11595,7 +11595,7 @@
     "id": 1657,
     "question": "Jaki obecnie komputerowy system operacyjny jest najpopularniejszy?",
     "answer": "Windows",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -11609,7 +11609,7 @@
     "id": 1659,
     "question": "Pierwsza stolica Polski",
     "answer": "Gniezno",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11623,7 +11623,7 @@
     "id": 1661,
     "question": "Jak nazywa się deser z owoców i smietany lub mleka",
     "answer": "koktajl",
-    "category": "ciekawostki",
+    "category": "styl-zycia",
     "source": "jzd-classic"
   },
   {
@@ -11644,7 +11644,7 @@
     "id": 1664,
     "question": "Kto w filmie Kewin sam w domu ma złoty ząb?",
     "answer": "Harry Lyme:",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
@@ -11686,21 +11686,21 @@
     "id": 1670,
     "question": "Serial kręcony od bardzo dawna,który zyskał największa popularność wśród naszych babć",
     "answer": "Moda na sukces",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 1671,
     "question": "Jak miała na imię tytułowa bohaterka telenoweli CUD MIŁOŚCI",
     "answer": "Milagros",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
     "id": 1672,
     "question": "Najczęściej oglądanym serialem był:",
     "answer": "Niewolnica Isaura",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {
@@ -11742,7 +11742,7 @@
     "id": 1678,
     "question": "Ile województw liczy Polska?",
     "answer": "16",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11777,7 +11777,7 @@
     "id": 1683,
     "question": "Jego dziełami są m.in. \"Dziady\" i \"Pan Tadeusz\"",
     "answer": "Adam Mickiewicz",
-    "category": "ciekawostki",
+    "category": "literatura",
     "source": "jzd-classic"
   },
   {
@@ -11819,7 +11819,7 @@
     "id": 1689,
     "question": "Wskaż dyscyplinę zespołową, poza piłką nożną, w której Real Madryt ma swoją drużynę.",
     "answer": "koszykówka",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
@@ -11847,28 +11847,28 @@
     "id": 1693,
     "question": "W którym roku powstała grupa Coldplay?",
     "answer": "1996",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
     "id": 1694,
     "question": "Który z niżej wymienionych członków grupy Coldplay, jest jego wokalista?",
     "answer": "Chris Martin",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1695,
     "question": "W jakim mieście urodził się Lionel Messi?",
     "answer": "Rosario",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1696,
     "question": "W którym roku urodził się Lionel Messi?",
     "answer": "1987",
-    "category": "ciekawostki",
+    "category": "historia",
     "source": "jzd-classic"
   },
   {
@@ -11882,14 +11882,14 @@
     "id": 1698,
     "question": "Po ilu występach w reprezentacji Polski w piłce nożnej zyskuje się miano wybitnego reprezentanta?",
     "answer": "60",
-    "category": "ciekawostki",
+    "category": "sport",
     "source": "jzd-classic"
   },
   {
     "id": 1699,
     "question": "Jakiego koloru jest czarna skrzynka w samolotach?",
     "answer": "pomaranczowa",
-    "category": "ciekawostki",
+    "category": "motoryzacja",
     "source": "jzd-classic"
   },
   {
@@ -11903,7 +11903,7 @@
     "id": 1701,
     "question": "Kto jest wykonawcą oficjalnego hymnu EURO 2012 Endless Summer?",
     "answer": "Oceana",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
@@ -11917,21 +11917,21 @@
     "id": 1703,
     "question": "Co jest najtwardszym elementem ciala ssakow?",
     "answer": "powierzchnia zebow",
-    "category": "ciekawostki",
+    "category": "nauki-scisle",
     "source": "jzd-classic"
   },
   {
     "id": 1704,
     "question": "W jakim mieście urodził się Kazimierz Klaudiusz Górski?",
     "answer": "Lwów",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
     "id": 1705,
     "question": "Gdzie znajduje się najwyższy szczyt na ziemi?",
     "answer": "Himalaje",
-    "category": "ciekawostki",
+    "category": "geografia",
     "source": "jzd-classic"
   },
   {
@@ -11945,14 +11945,14 @@
     "id": 1707,
     "question": "Kto śpiewa piosenkę Mydełko Fa",
     "answer": "Marek Kondrat",
-    "category": "ciekawostki",
+    "category": "muzyka",
     "source": "jzd-classic"
   },
   {
     "id": 1708,
     "question": "W jakim serialu wystąpiła Natalia Oreiro",
     "answer": "Zbuntowany Anioł",
-    "category": "ciekawostki",
+    "category": "film",
     "source": "jzd-classic"
   },
   {

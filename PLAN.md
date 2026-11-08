@@ -155,6 +155,7 @@ stateDiagram-v2
 
 ### Faza 1: Silnik Logiki i Parser Pytań
 - [x] Walidacja i oczyszczenie `data/questions.json` (11 052 unikalnych pytań: połączenie bazy klasycznej 5067 pytań + zbioru PolEval 2021 z 5985 pytaniami, normalizacja spacji i interpunkcji, tablica synonimów `aliases`).
+- [x] Klasyfikacja tematyczna pytań: podział zbioru na 15 spójnych kategorii (geografia, nauki ścisłe, historia, literatura, film, muzyka, sport, sztuka, mitologia i religia, język polski, społeczeństwo i prawo, styl życia, motoryzacja, wiedza ogólna).
 - [ ] Implementacja niezależnej maszyny stanów `GameEngine` w TypeScript z pełnymi testami jednostkowymi (Vitest/Jest).
 - [ ] Obsługa przejść: Etap 1 $\rightarrow$ Etap 2 $\rightarrow$ Finał, losowanie bez powtórzeń, przeliczanie punktów.
 

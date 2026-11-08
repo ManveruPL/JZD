@@ -1,52 +1,77 @@
 [
   {
-    "id": "wiedza-ogolna",
-    "name": "Wiedza Ogolna",
-    "count": 5985
+    "id": "ciekawostki",
+    "name": "Ciekawostki i Wiedza Ogólna",
+    "count": 3168
   },
   {
-    "id": "ciekawostki",
-    "name": "Ciekawostki",
-    "count": 1708
+    "id": "nauki-scisle",
+    "name": "Nauki Ścisłe i Przyroda",
+    "count": 1523
+  },
+  {
+    "id": "geografia",
+    "name": "Geografia i Świat",
+    "count": 1069
   },
   {
     "id": "sport",
     "name": "Sport",
-    "count": 758
-  },
-  {
-    "id": "nauki-scisle",
-    "name": "Nauki Scisle",
-    "count": 673
-  },
-  {
-    "id": "film",
-    "name": "Film",
-    "count": 653
+    "count": 914
   },
   {
     "id": "literatura",
-    "name": "Literatura",
-    "count": 539
+    "name": "Literatura i Lektury",
+    "count": 875
+  },
+  {
+    "id": "film",
+    "name": "Film i Seriale",
+    "count": 826
+  },
+  {
+    "id": "historia",
+    "name": "Historia",
+    "count": 569
   },
   {
     "id": "muzyka",
     "name": "Muzyka",
-    "count": 288
-  },
-  {
-    "id": "motoryzacja",
-    "name": "Motoryzacja",
-    "count": 245
+    "count": 563
   },
   {
     "id": "styl-zycia",
-    "name": "Styl Zycia",
-    "count": 103
+    "name": "Styl Życia i Kulinaria",
+    "count": 369
+  },
+  {
+    "id": "motoryzacja",
+    "name": "Motoryzacja i Transport",
+    "count": 355
+  },
+  {
+    "id": "mitologia-i-religia",
+    "name": "Mitologia i Religia",
+    "count": 242
+  },
+  {
+    "id": "spoleczenstwo-i-prawo",
+    "name": "Społeczeństwo i Prawo",
+    "count": 197
+  },
+  {
+    "id": "sztuka",
+    "name": "Sztuka i Architektura",
+    "count": 153
+  },
+  {
+    "id": "jezyk-polski",
+    "name": "Język Polski i Przysłowia",
+    "count": 129
   },
   {
     "id": "wielka-brytania",
-    "name": "Wielka Brytania",
+    "name": "Wiedza o Wielkiej Brytanii",
     "count": 100
   }
 ]
