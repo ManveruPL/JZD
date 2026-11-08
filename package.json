@@ -4,6 +4,8 @@
   "description": "Jeden z Dziesięciu - gra quizowa w czasie rzeczywistym",
   "main": "dist/index.js",
   "scripts": {
+    "start": "tsx src/server/index.ts",
+    "start:prod": "node dist/server/index.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "tsc",
@@ -20,8 +22,15 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "socket.io-client": "^4.8.4",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.4.1",
+    "@fastify/static": "^10.1.10",
+    "fastify": "^5.12.8",
+    "socket.io": "^4.8.4"
   }
 }

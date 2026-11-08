@@ -160,9 +160,10 @@ stateDiagram-v2
 - [ ] Obsługa przejść: Etap 1 $\rightarrow$ Etap 2 $\rightarrow$ Finał, losowanie bez powtórzeń, przeliczanie punktów.
 
 ### Faza 2: Serwer i Komunikacja Czasu Rzeczywistego
-- [ ] Serwer Fastify/Express z Socket.IO.
-- [ ] Pokoje gier (zarządzanie pokojami, generowanie kodów PIN, reconnect gracza).
-- [ ] Serwerowe timery (30s na odpowiedź, 10s na buzzer) z synchronizacją co 100ms.
+- [x] Serwer Fastify z Socket.IO (`src/server/app.ts`, `src/server/server.ts`, CORS, static sounds).
+- [x] Pokoje gier i sesje (`src/server/RoomManager.ts`, unikalne kody PIN `JZD-XXXX`, reconnect gracza).
+- [x] Serwerowe timery (`src/server/ServerTimer.ts`, odliczanie 30s/10s, pauza, wznowienie, synchronizacja zdarzeń `timer:state`).
+- [x] Testy integracyjne serwera (`tests/Server.test.ts`, `tests/ServerTimer.test.ts` - 36/36 testów zaliczonych).
 
 ### Faza 3: Tryb Towarzyski (Asystent Mistrza Gry + Ekran TV)
 - [ ] Pulpit Mistrza Gry:
