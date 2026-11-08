@@ -1,0 +1,52 @@
+[
+  {
+    "id": "wiedza-ogolna",
+    "name": "Wiedza Ogolna",
+    "count": 5985
+  },
+  {
+    "id": "ciekawostki",
+    "name": "Ciekawostki",
+    "count": 1708
+  },
+  {
+    "id": "sport",
+    "name": "Sport",
+    "count": 758
+  },
+  {
+    "id": "nauki-scisle",
+    "name": "Nauki Scisle",
+    "count": 673
+  },
+  {
+    "id": "film",
+    "name": "Film",
+    "count": 653
+  },
+  {
+    "id": "literatura",
+    "name": "Literatura",
+    "count": 539
+  },
+  {
+    "id": "muzyka",
+    "name": "Muzyka",
+    "count": 288
+  },
+  {
+    "id": "motoryzacja",
+    "name": "Motoryzacja",
+    "count": 245
+  },
+  {
+    "id": "styl-zycia",
+    "name": "Styl Zycia",
+    "count": 103
+  },
+  {
+    "id": "wielka-brytania",
+    "name": "Wielka Brytania",
+    "count": 100
+  }
+]

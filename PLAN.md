@@ -39,7 +39,7 @@ graph TD
 - **Dźwięk i Animacje**: **Howler.js + Lucide Icons + Framer Motion**
   - *Dlaczego*: Klasyczne dźwięki teleturnieju (odliczanie sekundnika, gong poprawnej odpowiedzi, syrena błędu, utrata szansy) budują 80% klimatu rozgrywki.
 - **Baza Danych Pytań**:
-  - `data/questions.json` (5079 pytań z kategoriami, pytaniami i odpowiedziami) wczytana do indeksu pamięciowego z cache i filtrami, z możliwością późniejszej rozbudowy o SQLite lub JSON-schema walidację.
+  - `data/questions.json` (**11 052 pytań** po oczyszczeniu i połączeniu bazy klasycznej 5067 pytań oraz zbioru PolEval 2021 Q&A z 5985 pytaniami w stylu 1z10). Posiada podział na kategorie, znormalizowaną interpunkcję oraz tablicę alternatywnych dopuszczalnych odpowiedzi (`aliases`).
 
 ---
 
@@ -154,7 +154,7 @@ stateDiagram-v2
 ## 5. Etapy Realizacji Projektu (Roadmap)
 
 ### Faza 1: Silnik Logiki i Parser Pytań
-- [ ] Walidacja i oczyszczenie `data/questions.json` (5079 pytań, usunięcie duplikatów, normalizacja białych znaków).
+- [x] Walidacja i oczyszczenie `data/questions.json` (11 052 unikalnych pytań: połączenie bazy klasycznej 5067 pytań + zbioru PolEval 2021 z 5985 pytaniami, normalizacja spacji i interpunkcji, tablica synonimów `aliases`).
 - [ ] Implementacja niezależnej maszyny stanów `GameEngine` w TypeScript z pełnymi testami jednostkowymi (Vitest/Jest).
 - [ ] Obsługa przejść: Etap 1 $\rightarrow$ Etap 2 $\rightarrow$ Finał, losowanie bez powtórzeń, przeliczanie punktów.
 
