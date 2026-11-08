@@ -10,11 +10,17 @@ export function useSocket() {
   const socketRef = useRef<TypedSocket | null>(null);
 
   useEffect(() => {
-    // Determine target URL: in dev proxy works on current origin, in prod on same origin
-    const socket: TypedSocket = io({
+    // In dev mode (Vite running on port 5173), connect directly to the Fastify backend on port 3001.
+    // In production, connect to the same origin serving the app.
+    const serverUrl =
+      typeof window !== 'undefined' && window.location.port === '5173'
+        ? `http://${window.location.hostname}:3001`
+        : undefined;
+
+    const socket: TypedSocket = io(serverUrl, {
       transports: ['websocket', 'polling'],
       autoConnect: true,
-      reconnectionAttempts: 10,
+      reconnectionAttempts: 15,
       reconnectionDelay: 1000
     });
 
