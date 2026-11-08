@@ -381,4 +381,65 @@ describe('GameEngine - Jeden z Dziesięciu', () => {
       expect(publicState.currentQuestion?.aliases).toBeUndefined();
     });
   });
+
+  describe('Faza 5: Konfiguracja parametrów rozgrywki (updateConfig)', () => {
+    it('pozwala zmienić limity czasu, liczbę szans i pulę pytań w lobby', () => {
+      engine.addPlayer('Gracz 1');
+      engine.addPlayer('Gracz 2');
+
+      engine.updateConfig({
+        answerTimeLimitSeconds: 20,
+        buzzerTimeLimitSeconds: 5,
+        finalQuestionsPoolCount: 30,
+        initialChances: 2
+      });
+
+      const state = engine.getState();
+      expect(state.config.answerTimeLimitSeconds).toBe(20);
+      expect(state.config.buzzerTimeLimitSeconds).toBe(5);
+      expect(state.config.finalQuestionsPoolCount).toBe(30);
+      expect(state.config.initialChances).toBe(2);
+
+      // Existing players should have updated chances
+      expect(state.players[0].chances).toBe(2);
+    });
+
+    it('blokuje zmianę konfiguracji po rozpoczęciu gry', () => {
+      for (let i = 1; i <= 4; i++) {
+        engine.addPlayer(`Gracz ${i}`);
+      }
+      engine.startGame();
+
+      expect(() => {
+        engine.updateConfig({ answerTimeLimitSeconds: 15 });
+      }).toThrow('tylko w poczekalni');
+    });
+  });
+
+  describe('Faza 5: Statystyki graczy i podsumowanie teleturnieju (GameStats)', () => {
+    it('śledzi liczbę odpowiedzi, celność i generuje gameStats po zakończeniu', () => {
+      for (let i = 1; i <= 4; i++) {
+        engine.addPlayer(`Gracz ${i}`);
+      }
+      engine.startGame();
+
+      const activeId = engine.getState().activePlayerId!;
+      engine.recordAnswer(true);
+
+      const p1 = engine.getState().players.find(p => p.id === activeId)!;
+      expect(p1.stats?.totalAnswers).toBe(1);
+      expect(p1.stats?.correctAnswers).toBe(1);
+      expect(p1.stats?.wrongAnswers).toBe(0);
+      expect(p1.stats?.accuracy).toBe(100);
+
+      // Wrong answer on next player
+      const nextId = engine.getState().activePlayerId!;
+      engine.recordAnswer(false);
+      const p2 = engine.getState().players.find(p => p.id === nextId)!;
+      expect(p2.stats?.totalAnswers).toBe(1);
+      expect(p2.stats?.correctAnswers).toBe(0);
+      expect(p2.stats?.wrongAnswers).toBe(1);
+      expect(p2.stats?.accuracy).toBe(0);
+    });
+  });
 });

@@ -161,6 +161,14 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
           }
         }
 
+        // Apply custom config and category selection before start
+        if (payload?.config) {
+          room.engine.updateConfig(payload.config);
+        }
+        if (payload?.categories && payload.categories.length > 0) {
+          room.engine.updateConfig({ allowedCategories: payload.categories });
+        }
+
         room.engine.startGame();
         if (room.isPartyMode) {
           room.timer.reset(room.engine.getState().config.answerTimeLimitSeconds);

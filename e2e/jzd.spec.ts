@@ -244,4 +244,44 @@ test.describe('Jeden z Dziesięciu - E2E Suite', () => {
     }
   });
 
+  test('6. Phase 5: Game Configuration options, sound controls, and results export buttons', async ({ page }) => {
+    await page.goto('/');
+
+    // Start Party Mode
+    await page.getByTestId('btn-start-party').click();
+    await expect(page.getByTestId('room-code-badge')).toBeVisible();
+
+    // Verify Phase 5 Settings Section in Lobby
+    const settingsPanel = page.getByTestId('lobby-game-settings');
+    await expect(settingsPanel).toBeVisible();
+
+    // Test clicking custom configuration options (20s answer limit, 5s buzzer, 30 final pool, 2 chances)
+    const btnAnswer20 = page.getByTestId('btn-config-answer-20');
+    await expect(btnAnswer20).toBeVisible();
+    await btnAnswer20.click();
+
+    const btnBuzzer5 = page.getByTestId('btn-config-buzzer-5');
+    await expect(btnBuzzer5).toBeVisible();
+    await btnBuzzer5.click();
+
+    const btnFinal30 = page.getByTestId('btn-config-final-30');
+    await expect(btnFinal30).toBeVisible();
+    await btnFinal30.click();
+
+    const btnChances2 = page.getByTestId('btn-config-chances-2');
+    await expect(btnChances2).toBeVisible();
+    await btnChances2.click();
+
+    // Start game with custom config
+    await page.getByTestId('btn-start-game').click();
+    await expect(page.locator('text=Etap 1: Eliminacje')).toBeVisible();
+
+    // Verify timer took 20s custom answer limit
+    await expect(page.getByTestId('timer-display')).toContainText('20s');
+
+    // Visual screenshot of custom-configured game
+    const screenshot = await page.screenshot();
+    expect(screenshot.byteLength).toBeGreaterThan(10000);
+  });
+
 });

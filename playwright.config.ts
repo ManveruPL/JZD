@@ -30,7 +30,7 @@ export default defineConfig({
   webServer: {
     command: 'npx tsx src/server/index.ts',
     url: 'http://localhost:3001/health',
-    reuseExistingServer: false,
+    reuseExistingServer: true,
     timeout: 15000,
   },
 });

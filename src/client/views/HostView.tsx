@@ -17,7 +17,10 @@ import {
   VolumeX,
   Plus,
   Trash2,
-  Edit2
+  Edit2,
+  Sliders,
+  Shield,
+  Zap
 } from 'lucide-react';
 import { GameConfig, GameStage, GameState, Player, Question, Stage3Phase } from '../../types/index.js';
 import { TimerState, SubmittedAnswer } from '../../types/socket.js';
@@ -35,7 +38,7 @@ interface HostViewProps {
   currentQuestion: Question | null;
   buzzerPlayerId: string | null;
   submittedAnswer?: SubmittedAnswer | null;
-  onStartGame: (categories?: string[], partyPlayers?: string[]) => void;
+  onStartGame: (categories?: string[], partyPlayers?: string[], config?: Partial<GameConfig>) => void;
   onVerdict: (isCorrect: boolean) => void;
   onNominate: (targetPlayerId: string) => void;
   onNextQuestion: () => void;
@@ -69,6 +72,13 @@ export const HostView: React.FC<HostViewProps> = ({
   const [categories, setCategories] = useState<{ id: string; name: string; count: number }[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [soundEnabled, setSoundEnabled] = useState(sounds.enabled);
+  const [volume, setVolumeState] = useState(sounds.getVolume());
+  const [customConfig, setCustomConfig] = useState<Partial<GameConfig>>({
+    answerTimeLimitSeconds: 30,
+    buzzerTimeLimitSeconds: 10,
+    finalQuestionsPoolCount: 40,
+    initialChances: 3
+  });
 
   // Local party setup state
   const [partyPlayers, setPartyPlayers] = useState<string[]>([
@@ -479,11 +489,181 @@ export const HostView: React.FC<HostViewProps> = ({
               </div>
             </div>
 
+            {/* Phase 5: Game Configuration & Audio Settings */}
+            <div className="mb-6 p-4 rounded-xl bg-theme-card border border-zinc-800" data-testid="lobby-game-settings">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs uppercase font-bold text-zinc-300 tracking-wider flex items-center gap-1.5">
+                  <Sliders className="w-4 h-4 text-cyan-400" /> Ustawienia Rozgrywki i Dźwięk
+                </span>
+                <span className="text-[10px] text-zinc-500">Konfiguracja parametrów teleturnieju</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                {/* 1. Answer Time Limit */}
+                <div>
+                  <span className="text-[11px] text-zinc-400 block mb-1.5 flex items-center gap-1">
+                    <Clock className="w-3 h-3 text-cyan-400" /> Czas na odpowiedź:
+                  </span>
+                  <div className="grid grid-cols-4 gap-1">
+                    {[15, 20, 30, 40].map((sec) => (
+                      <button
+                        key={sec}
+                        type="button"
+                        onClick={() => setCustomConfig((prev) => ({ ...prev, answerTimeLimitSeconds: sec }))}
+                        data-testid={`btn-config-answer-${sec}`}
+                        className={`py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                          customConfig.answerTimeLimitSeconds === sec
+                            ? 'bg-status-active text-black'
+                            : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                        }`}
+                      >
+                        {sec}s
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 2. Buzzer Time Limit */}
+                <div>
+                  <span className="text-[11px] text-zinc-400 block mb-1.5 flex items-center gap-1">
+                    <Zap className="w-3 h-3 text-amber-400" /> Czas zgłoszenia (Buzzer):
+                  </span>
+                  <div className="grid grid-cols-4 gap-1">
+                    {[5, 7, 10, 15].map((sec) => (
+                      <button
+                        key={sec}
+                        type="button"
+                        onClick={() => setCustomConfig((prev) => ({ ...prev, buzzerTimeLimitSeconds: sec }))}
+                        data-testid={`btn-config-buzzer-${sec}`}
+                        className={`py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                          customConfig.buzzerTimeLimitSeconds === sec
+                            ? 'bg-amber-400 text-black'
+                            : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                        }`}
+                      >
+                        {sec}s
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 3. Final Pool Questions */}
+                <div>
+                  <span className="text-[11px] text-zinc-400 block mb-1.5 flex items-center gap-1">
+                    <Sparkles className="w-3 h-3 text-purple-400" /> Pula pytań Finału:
+                  </span>
+                  <div className="grid grid-cols-3 gap-1">
+                    {[20, 30, 40].map((count) => (
+                      <button
+                        key={count}
+                        type="button"
+                        onClick={() => setCustomConfig((prev) => ({ ...prev, finalQuestionsPoolCount: count }))}
+                        data-testid={`btn-config-final-${count}`}
+                        className={`py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                          customConfig.finalQuestionsPoolCount === count
+                            ? 'bg-purple-500 text-white'
+                            : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                        }`}
+                      >
+                        {count} pyt.
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 4. Initial Chances */}
+                <div>
+                  <span className="text-[11px] text-zinc-400 block mb-1.5 flex items-center gap-1">
+                    <Shield className="w-3 h-3 text-emerald-400" /> Szanse początkowe:
+                  </span>
+                  <div className="grid grid-cols-2 gap-1">
+                    {[2, 3].map((chances) => (
+                      <button
+                        key={chances}
+                        type="button"
+                        onClick={() => setCustomConfig((prev) => ({ ...prev, initialChances: chances }))}
+                        data-testid={`btn-config-chances-${chances}`}
+                        className={`py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                          customConfig.initialChances === chances
+                            ? 'bg-emerald-500 text-black'
+                            : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                        }`}
+                      >
+                        {chances} szanse
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Audio Volume & Sound Effects Test Strip */}
+              <div className="pt-3 border-t border-zinc-800/80 flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-zinc-400 flex items-center gap-1">
+                    <Volume2 className="w-3.5 h-3.5 text-zinc-400" /> Głośność:
+                  </span>
+                  <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value={volume}
+                    onChange={(e) => {
+                      const v = parseFloat(e.target.value);
+                      sounds.setVolume(v);
+                      setVolumeState(v);
+                    }}
+                    className="w-24 accent-status-active h-1.5 bg-zinc-800 rounded-lg cursor-pointer"
+                  />
+                  <span className="font-mono text-xs text-zinc-400 w-8">{Math.round(volume * 100)}%</span>
+                </div>
+
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[11px] text-zinc-500 mr-1">Test dźwięków:</span>
+                  <button
+                    type="button"
+                    onClick={() => sounds.playGong()}
+                    className="px-2 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-[10px] text-zinc-300 font-medium"
+                  >
+                    Gong
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => sounds.playCorrect()}
+                    className="px-2 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-[10px] text-emerald-400 font-medium"
+                  >
+                    Dobrze
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => sounds.playWrong()}
+                    className="px-2 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-[10px] text-rose-400 font-medium"
+                  >
+                    Źle
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => sounds.playBuzzer()}
+                    className="px-2 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-[10px] text-amber-400 font-medium"
+                  >
+                    Buzzer
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => sounds.playDrumroll()}
+                    className="px-2 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-[10px] text-purple-400 font-medium"
+                  >
+                    Werbel
+                  </button>
+                </div>
+              </div>
+            </div>
+
             {/* Start Button */}
             <button
               onClick={() => {
                 sounds.playGong();
-                onStartGame(selectedCategories, isPartyMode ? partyPlayers : undefined);
+                onStartGame(selectedCategories, isPartyMode ? partyPlayers : undefined, customConfig);
               }}
               data-testid="btn-start-game"
               disabled={isPartyMode ? partyPlayers.length < 4 : (gameState?.players.length || 0) < 4}
@@ -833,7 +1013,8 @@ export const HostView: React.FC<HostViewProps> = ({
       {isFinished && gameState && (
         <WinnerCelebration
           players={gameState.players}
-          onNewGame={() => onStartGame(selectedCategories)}
+          gameState={gameState}
+          onNewGame={() => onStartGame(selectedCategories, isPartyMode ? partyPlayers : undefined, customConfig)}
           onHome={onLeave}
         />
       )}

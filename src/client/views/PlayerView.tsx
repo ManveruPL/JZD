@@ -3,8 +3,9 @@ import { GameStage, GameState, Question, Player, Stage3Phase } from '../../types
 import { TimerState, SubmittedAnswer } from '../../types/socket.js';
 import { ChanceIndicators } from '../components/ChanceIndicators.js';
 import { TimerDisplay } from '../components/TimerDisplay.js';
-import { Send, Zap, Award, Flame, Volume2, VolumeX, Crown, Trophy, CheckCircle2 } from 'lucide-react';
+import { Send, Zap, Award, Flame, Volume2, VolumeX, Crown, Trophy, CheckCircle2, Download, Copy, Check } from 'lucide-react';
 import { sounds } from '../utils/sound.js';
+import { downloadFile, generateCSV, generateMarkdownReport, copyToClipboard } from '../utils/exportReport.js';
 
 interface PlayerViewProps {
   roomCode: string;
@@ -36,6 +37,7 @@ export const PlayerView: React.FC<PlayerViewProps> = ({
   const [answerInput, setAnswerInput] = useState('');
   const [localSubmittedAnswer, setLocalSubmittedAnswer] = useState<string | null>(null);
   const [soundEnabled, setSoundEnabled] = useState(sounds.enabled);
+  const [copiedReport, setCopiedReport] = useState(false);
 
   const me: Player | undefined = gameState?.players.find((p) => p.id === myPlayerId);
   const stage = gameState?.stage || GameStage.LOBBY;
@@ -270,6 +272,33 @@ export const PlayerView: React.FC<PlayerViewProps> = ({
           <div className="text-xs font-mono text-zinc-400 mt-4">
             Twój wynik: <strong className="text-white">{me?.score || 0} pkt</strong>
           </div>
+
+          {gameState && (
+            <div className="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-center gap-2">
+              <button
+                onClick={() => downloadFile(generateCSV(gameState), `jzd-wyniki-${roomCode}.csv`, 'text/csv;charset=utf-8')}
+                className="py-2 px-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-xs text-zinc-300 font-semibold border border-zinc-800 flex items-center gap-1.5"
+                title="Pobierz wyniki w formacie CSV"
+              >
+                <Download className="w-3.5 h-3.5 text-cyan-400" /> CSV
+              </button>
+              <button
+                onClick={async () => {
+                  const ok = await copyToClipboard(generateMarkdownReport(gameState));
+                  if (ok) {
+                    setCopiedReport(true);
+                    setTimeout(() => setCopiedReport(false), 2000);
+                  }
+                }}
+                className="py-2 px-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-xs text-zinc-300 font-semibold border border-zinc-800 flex items-center gap-1.5"
+                title="Skopiuj sformatowany raport"
+              >
+                {copiedReport ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-emerald-400" />}
+                {copiedReport ? 'Skopiowano!' : 'Kopiuj raport'}
+              </button>
+            </div>
+          )}
+
           <button
             onClick={onLeave}
             className="mt-6 py-3 px-6 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-sm transition-colors border border-zinc-700"

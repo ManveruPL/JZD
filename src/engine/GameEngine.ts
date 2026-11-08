@@ -3,6 +3,7 @@ import {
   GameEventRecord,
   GameStage,
   GameState,
+  GameStatsSummary,
   Player,
   Question,
   QuestionState,
@@ -46,6 +47,11 @@ export class GameEngine {
   private winner: Player | null = null;
   private history: GameEventRecord[] = [];
 
+  // Statistics & Timers
+  private startedAt: number | null = null;
+  private finishedAt: number | null = null;
+  private totalQuestionsAsked: number = 0;
+
   // Stage 1 queue tracking
   private stage1Round: number = 1; // 1 or 2
 
@@ -58,6 +64,20 @@ export class GameEngine {
     this.questionsRepo = questionsRepo || new QuestionsRepository();
     this.config = { ...DEFAULT_GAME_CONFIG, ...customConfig };
     this.finalQuestionsTotal = this.config.finalQuestionsPoolCount;
+  }
+
+  public updateConfig(newConfig: Partial<GameConfig>): void {
+    if (this.stage !== GameStage.LOBBY) {
+      throw new Error('Konfigurację można zmieniać tylko w poczekalni (Lobby).');
+    }
+    this.config = { ...this.config, ...newConfig };
+    this.finalQuestionsTotal = this.config.finalQuestionsPoolCount;
+    if (newConfig.initialChances !== undefined) {
+      for (const p of this.players) {
+        p.chances = newConfig.initialChances;
+      }
+    }
+    this.logEvent('CONFIG_UPDATED', 'Zaktualizowano konfigurację parametrów gry.');
   }
 
   // --- LOBBY MANAGEMENT ---
@@ -84,7 +104,15 @@ export class GameEngine {
       isEliminated: false,
       stage1CorrectCount: 0,
       stage1QuestionsAnswered: 0,
-      isConnected: true
+      isConnected: true,
+      stats: {
+        totalAnswers: 0,
+        correctAnswers: 0,
+        wrongAnswers: 0,
+        accuracy: 0,
+        selfNominations: 0,
+        eliminatedInStage: null
+      }
     };
 
     this.players.push(newPlayer);
@@ -121,7 +149,25 @@ export class GameEngine {
       [this.players[i], this.players[j]] = [this.players[j], this.players[i]];
     }
 
-    // 2. Setup Stage 1
+    this.startedAt = Date.now();
+    this.totalQuestionsAsked = 0;
+
+    // 2. Assign positions & init stats
+    this.players.forEach((p, idx) => {
+      p.position = idx + 1;
+      if (!p.stats) {
+        p.stats = {
+          totalAnswers: 0,
+          correctAnswers: 0,
+          wrongAnswers: 0,
+          accuracy: 0,
+          selfNominations: 0,
+          eliminatedInStage: null
+        };
+      }
+    });
+
+    // 3. Setup Stage 1
     this.stage = GameStage.STAGE_1;
     this.stage1Round = 1;
     this.activePlayerIndex = 0;
@@ -249,6 +295,9 @@ export class GameEngine {
         this.activePlayerId = this.nominationHolderId;
         this.targetPlayerId = this.nominationHolderId;
         this.stage3Phase = Stage3Phase.ANSWERING_NOMINATED;
+        if (nominator?.stats) {
+          nominator.stats.selfNominations++;
+        }
         this.logEvent('SELF_NOMINATED', `Gracz ${nominator?.name} bierze pytanie na siebie (+20 pkt).`, this.nominationHolderId);
       } else {
         const target = this.players.find(p => p.id === targetPlayerId);
@@ -338,12 +387,39 @@ export class GameEngine {
       throw new Error('Brak aktywnego pytania.');
     }
 
+    const answeringPlayer = this.players.find(p => p.id === this.activePlayerId);
+    if (answeringPlayer) {
+      if (!answeringPlayer.stats) {
+        answeringPlayer.stats = {
+          totalAnswers: 0,
+          correctAnswers: 0,
+          wrongAnswers: 0,
+          accuracy: 0,
+          selfNominations: 0,
+          eliminatedInStage: null
+        };
+      }
+      answeringPlayer.stats.totalAnswers++;
+      if (isCorrect) {
+        answeringPlayer.stats.correctAnswers++;
+      } else {
+        answeringPlayer.stats.wrongAnswers++;
+      }
+      answeringPlayer.stats.accuracy = Math.round(
+        (answeringPlayer.stats.correctAnswers / answeringPlayer.stats.totalAnswers) * 100
+      );
+    }
+
     if (this.stage === GameStage.STAGE_1) {
       this.handleAnswerStage1(isCorrect);
     } else if (this.stage === GameStage.STAGE_2) {
       this.handleAnswerStage2(isCorrect);
     } else if (this.stage === GameStage.STAGE_3) {
       this.handleAnswerStage3(isCorrect);
+    }
+
+    if (answeringPlayer?.isEliminated && answeringPlayer.stats && !answeringPlayer.stats.eliminatedInStage) {
+      answeringPlayer.stats.eliminatedInStage = this.stage;
     }
   }
 
@@ -563,6 +639,7 @@ export class GameEngine {
   private endGame(winner: Player | null, reason: string): void {
     this.stage = GameStage.FINISHED;
     this.winner = winner;
+    this.finishedAt = Date.now();
     this.questionState = QuestionState.IDLE;
     this.currentQuestion = null;
     this.activePlayerId = null;
@@ -577,6 +654,7 @@ export class GameEngine {
   // --- DRAWING QUESTIONS ---
 
   private drawNewQuestion(): void {
+    this.totalQuestionsAsked++;
     this.currentQuestion = this.questionsRepo.drawQuestion();
     this.questionState = QuestionState.ANSWERING;
   }
@@ -587,6 +665,7 @@ export class GameEngine {
       return;
     }
 
+    this.totalQuestionsAsked++;
     this.currentQuestion = this.finalPool.shift()!;
     if (this.stage3Phase === Stage3Phase.BUZZER) {
       this.questionState = QuestionState.BUZZER_OPEN;
@@ -633,6 +712,38 @@ export class GameEngine {
 
   // --- STATE SNAPSHOTS ---
 
+  public buildGameStatsSummary(): GameStatsSummary {
+    const durationSeconds = this.startedAt
+      ? Math.max(0, Math.round(((this.finishedAt || Date.now()) - this.startedAt) / 1000))
+      : 0;
+    let totalCorrect = 0;
+    let totalWrong = 0;
+
+    for (const p of this.players) {
+      if (p.stats) {
+        totalCorrect += p.stats.correctAnswers;
+        totalWrong += p.stats.wrongAnswers;
+      }
+    }
+
+    const totalAnswers = totalCorrect + totalWrong;
+    const overallAccuracy = totalAnswers > 0 ? Math.round((totalCorrect / totalAnswers) * 100) : 0;
+    const finalists = this.players.filter(
+      p => p.stats?.eliminatedInStage === GameStage.STAGE_3 || p.id === this.winner?.id
+    ).length;
+
+    return {
+      startedAt: this.startedAt,
+      finishedAt: this.finishedAt,
+      durationSeconds,
+      totalQuestionsAsked: this.totalQuestionsAsked,
+      totalCorrectAnswers: totalCorrect,
+      totalWrongAnswers: totalWrong,
+      overallAccuracy,
+      finalistCount: finalists || (this.players.length >= 3 ? 3 : this.players.length)
+    };
+  }
+
   public getState(): GameState {
     return {
       id: this.id,
@@ -650,6 +761,7 @@ export class GameEngine {
       finalQuestionsTotal: this.finalQuestionsTotal,
       timer: null,
       winner: this.winner ? { ...this.winner } : null,
+      gameStats: this.stage === GameStage.FINISHED ? this.buildGameStatsSummary() : undefined,
       history: [...this.history]
     };
   }

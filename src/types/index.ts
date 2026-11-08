@@ -8,6 +8,15 @@ export interface Question {
   difficulty?: string;
 }
 
+export interface PlayerStats {
+  totalAnswers: number;
+  correctAnswers: number;
+  wrongAnswers: number;
+  accuracy: number; // percentage 0-100
+  selfNominations: number;
+  eliminatedInStage: GameStage | null;
+}
+
 export interface Player {
   id: string;
   name: string;
@@ -19,6 +28,7 @@ export interface Player {
   isConnected?: boolean;
   socketId?: string;
   position?: number;
+  stats?: PlayerStats;
 }
 
 export enum GameStage {
@@ -60,6 +70,17 @@ export interface GameConfig {
   allowedCategories?: string[];
 }
 
+export interface GameStatsSummary {
+  startedAt: number | null;
+  finishedAt: number | null;
+  durationSeconds: number;
+  totalQuestionsAsked: number;
+  totalCorrectAnswers: number;
+  totalWrongAnswers: number;
+  overallAccuracy: number;
+  finalistCount: number;
+}
+
 export interface GameState {
   id: string;
   stage: GameStage;
@@ -82,6 +103,7 @@ export interface GameState {
     expiresAt?: number | null;
   } | null;
   winner: Player | null;
+  gameStats?: GameStatsSummary;
   submittedAnswer?: {
     playerId: string;
     playerName: string;

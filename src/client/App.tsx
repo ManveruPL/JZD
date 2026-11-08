@@ -4,7 +4,7 @@ import { HomeView } from './views/HomeView.js';
 import { HostView } from './views/HostView.js';
 import { PlayerView } from './views/PlayerView.js';
 import { TvView } from './views/TvView.js';
-import { GameState, Question } from '../types/index.js';
+import { GameConfig, GameState, Question } from '../types/index.js';
 import { TimerState, SubmittedAnswer } from '../types/socket.js';
 
 export type AppView = 'HOME' | 'HOST' | 'PLAYER' | 'TV';
@@ -157,8 +157,8 @@ export const App: React.FC = () => {
   };
 
   // Host Controls
-  const handleStartGame = (categories?: string[], partyPlayers?: string[]) => {
-    emit('game:start', { categories, players: partyPlayers });
+  const handleStartGame = (categories?: string[], partyPlayers?: string[], config?: Partial<GameConfig>) => {
+    emit('game:start', { categories, players: partyPlayers, config });
   };
 
   const handleVerdict = (isCorrect: boolean) => {
