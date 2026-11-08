@@ -65,10 +65,33 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
   }
 
   io.on('connection', (socket: TypedSocket) => {
+    let socketCreatedRoomsCount = 0;
+
     // 1. Create Room
     socket.on('room:create', (payload, callback) => {
       try {
-        const room = roomManager.createRoom(socket.id, payload.config, payload.isPartyMode);
+        if (socketCreatedRoomsCount >= 5) {
+          throw new Error('Przekroczono limit tworzenia pokojów dla tego połączenia.');
+        }
+
+        // Validate config bounds if provided
+        if (payload?.config) {
+          if (typeof payload.config.answerTimeLimitSeconds === 'number') {
+            payload.config.answerTimeLimitSeconds = Math.max(5, Math.min(120, payload.config.answerTimeLimitSeconds));
+          }
+          if (typeof payload.config.buzzerTimeLimitSeconds === 'number') {
+            payload.config.buzzerTimeLimitSeconds = Math.max(3, Math.min(30, payload.config.buzzerTimeLimitSeconds));
+          }
+          if (typeof payload.config.finalQuestionsPoolCount === 'number') {
+            payload.config.finalQuestionsPoolCount = Math.max(10, Math.min(100, payload.config.finalQuestionsPoolCount));
+          }
+          if (typeof payload.config.initialChances === 'number') {
+            payload.config.initialChances = Math.max(1, Math.min(5, payload.config.initialChances));
+          }
+        }
+
+        const room = roomManager.createRoom(socket.id, payload?.config, payload?.isPartyMode);
+        socketCreatedRoomsCount++;
         socket.data.roomCode = room.roomCode;
         socket.data.role = 'host';
 
@@ -90,7 +113,13 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     // 2. Join Room
     socket.on('room:join', (payload, callback) => {
       try {
-        const { roomCode, playerName, role = 'player' } = payload;
+        const roomCode = String(payload?.roomCode || '').trim().toUpperCase();
+        const rawName = String(payload?.playerName || '').trim();
+        const playerName = rawName.slice(0, 30);
+        if (!playerName) {
+          throw new Error('Imię gracza nie może być puste.');
+        }
+        const role = payload?.role === 'spectator' ? 'spectator' : 'player';
         const { room, player } = roomManager.joinRoom(roomCode, playerName, socket.id, role);
 
         socket.data.roomCode = room.roomCode;
@@ -324,11 +353,15 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
         return;
       }
 
+      const rawText = typeof payload?.answerText === 'string' ? payload.answerText : '';
+      const answerText = rawText.trim().slice(0, 200);
+      if (!answerText) return;
+
       const player = state.players.find(p => p.id === playerId);
       const answerPayload = {
         playerId,
         playerName: player?.name || 'Gracz',
-        answerText: payload.answerText.trim(),
+        answerText,
         submittedAt: Date.now()
       };
 
@@ -396,7 +429,10 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     socket.on('timer:add_time', (payload) => {
       const room = roomManager.getRoom(socket.data.roomCode || '');
       if (room && room.hostSocketId === socket.id) {
-        room.timer.addTime(payload.seconds);
+        const seconds = Number(payload?.seconds);
+        if (Number.isFinite(seconds) && seconds >= -60 && seconds <= 60) {
+          room.timer.addTime(seconds);
+        }
       }
     });
 
@@ -404,16 +440,22 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     socket.on('host:adjust_score', (payload) => {
       const room = roomManager.getRoom(socket.data.roomCode || '');
       if (room && room.hostSocketId === socket.id) {
-        room.engine.manualAdjustScore(payload.playerId, payload.delta);
-        broadcastGameState(room);
+        const delta = Number(payload?.delta);
+        if (Number.isFinite(delta) && delta >= -100 && delta <= 100) {
+          room.engine.manualAdjustScore(payload.playerId, delta);
+          broadcastGameState(room);
+        }
       }
     });
 
     socket.on('host:adjust_chances', (payload) => {
       const room = roomManager.getRoom(socket.data.roomCode || '');
       if (room && room.hostSocketId === socket.id) {
-        room.engine.manualAdjustChances(payload.playerId, payload.delta);
-        broadcastGameState(room);
+        const delta = Number(payload?.delta);
+        if (Number.isFinite(delta) && delta >= -3 && delta <= 3) {
+          room.engine.manualAdjustChances(payload.playerId, delta);
+          broadcastGameState(room);
+        }
       }
     });
 

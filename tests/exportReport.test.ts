@@ -99,6 +99,20 @@ describe('exportReport - Quiz Summary & Stats Exporter', () => {
     expect(csv).toContain('2;"Jan Nowak";2;62;0;8;5;3;63%;1;"Etap 3: Wielki Finał"');
   });
 
+  it('escapes formula trigger characters in CSV export to prevent formula injection (CWE-1236)', () => {
+    const maliciousState: GameState = {
+      ...dummyState,
+      players: [
+        {
+          ...dummyState.players[0],
+          name: '=cmd|"/C calc"!A0'
+        }
+      ]
+    };
+    const csv = generateCSV(maliciousState);
+    expect(csv).toContain("\"'=cmd|\"\"/C calc\"\"!A0\"");
+  });
+
   it('generates valid JSON report', () => {
     const jsonStr = generateJSON(dummyState);
     const parsed = JSON.parse(jsonStr);

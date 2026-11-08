@@ -36,6 +36,15 @@ export function formatStageName(stage?: GameStage | null): string {
   }
 }
 
+function sanitizeCsvValue(val: string): string {
+  let cleaned = val.replace(/"/g, '""');
+  // Prevent CSV Formula Injection (CWE-1236) by escaping formula triggers with a single quote
+  if (/^[=+\-@\t\r]/.test(cleaned)) {
+    cleaned = `'${cleaned}`;
+  }
+  return `"${cleaned}"`;
+}
+
 export function generateCSV(gameState: GameState): string {
   const ranked = getRankedPlayers(gameState.players, gameState.winner);
 
@@ -59,7 +68,7 @@ export function generateCSV(gameState: GameState): string {
 
     return [
       p.rank,
-      `"${p.name.replace(/"/g, '""')}"`,
+      sanitizeCsvValue(p.name),
       p.position || 1,
       p.score,
       p.chances,
@@ -68,7 +77,7 @@ export function generateCSV(gameState: GameState): string {
       p.stats?.wrongAnswers || 0,
       `${p.stats?.accuracy || 0}%`,
       p.stats?.selfNominations || 0,
-      `"${statusText}"`
+      sanitizeCsvValue(statusText)
     ].join(';');
   });
 

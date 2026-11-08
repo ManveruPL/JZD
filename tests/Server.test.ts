@@ -75,6 +75,25 @@ describe('Fastify & Socket.IO Server Integration', () => {
 
       expect(res.statusCode).toBe(404);
     });
+
+    it('GET /data/questions.json zwraca 404 - baza pytań nie jest wystawiona publicznie przez static mount', async () => {
+      const res = await serverContext.app.inject({
+        method: 'GET',
+        url: '/data/questions.json'
+      });
+
+      expect(res.statusCode).toBe(404);
+    });
+
+    it('Odpowiedzi HTTP zawierają nagłówki bezpieczeństwa Helmet (CSP, nosniff, frameguard)', async () => {
+      const res = await serverContext.app.inject({
+        method: 'GET',
+        url: '/health'
+      });
+
+      expect(res.headers['x-content-type-options']).toBe('nosniff');
+      expect(res.headers['content-security-policy']).toBeDefined();
+    });
   });
 
   describe('Socket.IO Real-Time Gameplay Flows', () => {

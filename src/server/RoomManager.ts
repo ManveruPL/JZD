@@ -19,11 +19,20 @@ export interface GameRoom {
 }
 
 export class RoomManager {
+  public static readonly MAX_ACTIVE_ROOMS = 100;
   private rooms: Map<string, GameRoom> = new Map();
   private sharedRepo: QuestionsRepository;
+  private sweepInterval: NodeJS.Timeout | null = null;
 
   constructor(repo?: QuestionsRepository) {
     this.sharedRepo = repo || new QuestionsRepository();
+    // Periodically sweep inactive rooms every 15 minutes
+    this.sweepInterval = setInterval(() => {
+      this.pruneInactiveRooms();
+    }, 15 * 60 * 1000);
+    if (this.sweepInterval.unref) {
+      this.sweepInterval.unref();
+    }
   }
 
   public generateRoomCode(): string {
@@ -39,11 +48,31 @@ export class RoomManager {
     return code;
   }
 
+  public pruneInactiveRooms(maxIdleMs: number = 2 * 60 * 60 * 1000): number {
+    const now = Date.now();
+    let pruned = 0;
+    for (const [code, room] of this.rooms.entries()) {
+      if (now - room.lastActivityAt > maxIdleMs) {
+        room.timer.stop();
+        this.rooms.delete(code);
+        pruned++;
+      }
+    }
+    return pruned;
+  }
+
   public createRoom(
     hostSocketId: string,
     customConfig?: Partial<GameConfig>,
     isPartyMode: boolean = false
   ): GameRoom {
+    if (this.rooms.size >= RoomManager.MAX_ACTIVE_ROOMS) {
+      this.pruneInactiveRooms();
+      if (this.rooms.size >= RoomManager.MAX_ACTIVE_ROOMS) {
+        throw new Error('Osiągnięto limit aktywnych pokojów teleturnieju. Spróbuj ponownie później.');
+      }
+    }
+
     const roomCode = this.generateRoomCode();
     const engine = new GameEngine(roomCode, this.sharedRepo, customConfig);
     const timer = new ServerTimer(engine.getState().config.answerTimeLimitSeconds);
@@ -163,5 +192,16 @@ export class RoomManager {
 
   public get activeRoomsCount(): number {
     return this.rooms.size;
+  }
+
+  public destroy(): void {
+    if (this.sweepInterval) {
+      clearInterval(this.sweepInterval);
+      this.sweepInterval = null;
+    }
+    for (const room of this.rooms.values()) {
+      room.timer.stop();
+    }
+    this.rooms.clear();
   }
 }

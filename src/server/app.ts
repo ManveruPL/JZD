@@ -1,5 +1,7 @@
 import fastify, { FastifyInstance } from 'fastify';
 import cors from '@fastify/cors';
+import helmet from '@fastify/helmet';
+import rateLimit from '@fastify/rate-limit';
 import fastifyStatic from '@fastify/static';
 import path from 'path';
 import fs from 'fs';
@@ -28,9 +30,35 @@ export async function buildApp(
     logger: false
   });
 
-  // CORS configuration for local development and online clients
+  // Security Headers via Helmet
+  await app.register(helmet, {
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        imgSrc: ["'self'", "data:", "blob:"],
+        connectSrc: ["'self'", "ws:", "wss:"],
+        objectSrc: ["'none'"]
+      }
+    },
+    crossOriginEmbedderPolicy: false
+  });
+
+  // Global Rate Limiting to prevent DoS attacks
+  await app.register(rateLimit, {
+    max: 200,
+    timeWindow: '1 minute'
+  });
+
+  // CORS configuration with environment-driven allowlist
+  const corsOrigin = process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',').map((s) => s.trim())
+    : true;
+
   await app.register(cors, {
-    origin: true,
+    origin: corsOrigin,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true
   });
@@ -45,15 +73,8 @@ export async function buildApp(
     });
   }
 
-  // Serve questions data if needed
-  const dataDir = path.resolve(process.cwd(), 'data');
-  if (fs.existsSync(dataDir)) {
-    await app.register(fastifyStatic, {
-      root: dataDir,
-      prefix: '/data/',
-      decorateReply: false
-    });
-  }
+  // NOTE: Static mounting of /data/ removed to prevent leaking questions.json with answers.
+  // Questions are accessed strictly in-memory by GameEngine on the server.
 
   // Serve compiled client frontend if present (Production / Docker build)
   const clientDistDir = path.resolve(process.cwd(), 'dist/client');
@@ -66,8 +87,14 @@ export async function buildApp(
 
     app.setNotFoundHandler((req, reply) => {
       const url = req.raw.url || '';
-      if (!url.startsWith('/api') && !url.startsWith('/socket.io') && !url.startsWith('/data') && !url.startsWith('/assets')) {
-        return reply.sendFile('index.html', clientDistDir);
+      if (
+        !url.startsWith('/api') &&
+        !url.startsWith('/socket.io') &&
+        !url.startsWith('/assets') &&
+        !url.startsWith('/data') &&
+        !url.includes('.')
+      ) {
+        return reply.sendFile('index.html');
       }
       reply.status(404).send({ error: 'Endpoint nie istnieje' });
     });
@@ -113,16 +140,21 @@ export async function buildApp(
     };
   });
 
+  const ioCorsOrigin = process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',').map((s) => s.trim())
+    : (process.env.NODE_ENV === 'production' ? false : '*');
+
   // Attach Socket.IO to Fastify's underlying HTTP server
   const io = new Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>(
     app.server,
     {
       cors: {
-        origin: '*',
+        origin: ioCorsOrigin,
         methods: ['GET', 'POST']
       },
       pingTimeout: 20000,
-      pingInterval: 10000
+      pingInterval: 10000,
+      maxHttpBufferSize: 1e5 // 100 KB max payload limit
     }
   );
 
