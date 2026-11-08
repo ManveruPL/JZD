@@ -160,4 +160,88 @@ test.describe('Jeden z Dziesięciu - E2E Suite', () => {
     await playerContext.close();
   });
 
+  test('5. Phase 4: Interactive Player submits answer on smartphone, Game Master verifies via 1-click panel', async ({ browser }) => {
+    // 1. Host creates online room
+    const hostContext = await browser.newContext();
+    const hostPage = await hostContext.newPage();
+    await hostPage.goto('/');
+
+    await hostPage.getByTestId('btn-create-room').click();
+    const roomBadge = hostPage.getByTestId('room-code-badge');
+    await expect(roomBadge).toBeVisible();
+    const roomCode = await roomBadge.innerText();
+
+    // 2. 4 players join to meet minimum requirement
+    const playerContexts = [];
+    const playerPages = [];
+    const names = ['Katarzyna', 'Michał', 'Anna', 'Piotr'];
+
+    for (const name of names) {
+      const pContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
+      const pPage = await pContext.newPage();
+      await pPage.goto('/');
+      await pPage.getByTestId('btn-open-join').click();
+      await pPage.getByTestId('input-room-code').fill(roomCode);
+      await pPage.getByTestId('input-player-name').fill(name);
+      await pPage.getByTestId('btn-submit-join').click();
+      await expect(pPage.locator('text=Jesteś w teleturnieju!')).toBeVisible();
+
+      playerContexts.push(pContext);
+      playerPages.push(pPage);
+    }
+
+    // 3. Host starts game
+    const startBtn = hostPage.getByTestId('btn-start-game');
+    await expect(startBtn).toBeEnabled();
+    await startBtn.click();
+
+    // Verify game starts in Stage 1
+    await expect(hostPage.locator('text=Etap 1: Eliminacje')).toBeVisible();
+
+    // 4. Find which player is active (player order is randomized at start)
+    let activePlayerPage = playerPages[0];
+    await expect.poll(async () => {
+      for (const pPage of playerPages) {
+        if (await pPage.locator('text=TWOJA KOLEJ NA ODPOWIEDŹ!').isVisible()) {
+          activePlayerPage = pPage;
+          return true;
+        }
+      }
+      return false;
+    }, { timeout: 10000 }).toBe(true);
+
+    // Ensure active player view is loaded
+    await expect(activePlayerPage.locator('text=TWOJA KOLEJ NA ODPOWIEDŹ!')).toBeVisible();
+
+    // 5. Active player types answer on smartphone and submits
+    const answerInput = activePlayerPage.getByTestId('input-contestant-answer');
+    await expect(answerInput).toBeVisible();
+    await answerInput.fill('Kopernik');
+    await activePlayerPage.getByTestId('btn-submit-contestant-answer').click();
+
+    // 6. Player sees submission confirmation
+    const confirmEl = activePlayerPage.getByTestId('player-submitted-confirmation');
+    await expect(confirmEl).toBeVisible();
+    await expect(confirmEl).toContainText('Kopernik');
+
+    // 7. Host sees Online Answer Verification Panel
+    const hostSubmittedPanel = hostPage.getByTestId('host-submitted-answer-panel');
+    await expect(hostSubmittedPanel).toBeVisible();
+    await expect(hostPage.getByTestId('host-received-answer-text')).toContainText('Kopernik');
+
+    // 8. Host verifies and accepts answer with 1 click
+    const btnAccept = hostPage.getByTestId('btn-accept-submitted-answer');
+    await expect(btnAccept).toBeVisible();
+    await btnAccept.click();
+
+    // 9. Host panel clears and game advances
+    await expect(hostSubmittedPanel).not.toBeVisible();
+
+    // Clean up contexts
+    await hostContext.close();
+    for (const ctx of playerContexts) {
+      await ctx.close();
+    }
+  });
+
 });

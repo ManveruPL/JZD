@@ -20,6 +20,10 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     fullState.timer = room.timer.getState();
     publicState.timer = room.timer.getState();
 
+    // Attach submitted answer
+    fullState.submittedAnswer = room.submittedAnswer;
+    publicState.submittedAnswer = room.submittedAnswer;
+
     // Send full state (with answers) to Host
     io.to(room.hostSocketId).emit('game:state', fullState);
 
@@ -241,8 +245,9 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
 
       // Host or player with nomination rights can nominate
       const state = room.engine.getState();
+      const playerId = room.socketPlayers.get(socket.id) || socket.data.playerId;
       const isHost = room.hostSocketId === socket.id;
-      const isHolder = socket.data.playerId === state.nominationHolderId;
+      const isHolder = playerId === state.nominationHolderId;
 
       if (!isHost && !isHolder) {
         socket.emit('room:error', { message: 'Nie masz uprawnień do wyznaczania gracza.' });
@@ -251,6 +256,8 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
 
       try {
         room.engine.nominate(payload.targetPlayerId);
+        room.submittedAnswer = null;
+        io.to(room.roomCode).emit('answer:cleared');
         if (room.isPartyMode) {
           room.timer.reset(room.engine.getState().config.answerTimeLimitSeconds);
         } else {
@@ -269,11 +276,13 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
       const room = roomManager.getRoom(roomCode);
       if (!room) return;
 
-      const playerId = socket.data.playerId;
+      const playerId = room.socketPlayers.get(socket.id) || socket.data.playerId;
       if (!playerId) return;
 
       try {
         room.engine.buzz(playerId);
+        room.submittedAnswer = null;
+        io.to(room.roomCode).emit('answer:cleared');
         room.timer.stop(); // stop 10s buzzer timer
         room.timer.start(room.engine.getState().config.answerTimeLimitSeconds); // start 30s answer timer
 
@@ -317,6 +326,7 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
       io.to(room.hostSocketId).emit('answer:submitted', answerPayload);
       // Pause timer while Host evaluates
       room.timer.pause();
+      broadcastGameState(room);
     });
 
     // 9. Skip Buzzer Question (Host or timeout)
@@ -328,6 +338,8 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
 
       try {
         room.engine.skipBuzzerQuestion();
+        room.submittedAnswer = null;
+        io.to(room.roomCode).emit('answer:cleared');
         const updated = room.engine.getState();
         if (updated.stage === GameStage.STAGE_3 && updated.stage3Phase === Stage3Phase.BUZZER) {
           room.timer.start(updated.config.buzzerTimeLimitSeconds);

@@ -5,7 +5,7 @@ import { HostView } from './views/HostView.js';
 import { PlayerView } from './views/PlayerView.js';
 import { TvView } from './views/TvView.js';
 import { GameState, Question } from '../types/index.js';
-import { TimerState } from '../types/socket.js';
+import { TimerState, SubmittedAnswer } from '../types/socket.js';
 
 export type AppView = 'HOME' | 'HOST' | 'PLAYER' | 'TV';
 
@@ -26,6 +26,7 @@ export const App: React.FC = () => {
     expiresAt: null
   });
   const [buzzerPlayerId, setBuzzerPlayerId] = useState<string | null>(null);
+  const [submittedAnswer, setSubmittedAnswer] = useState<SubmittedAnswer | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   // Parse initial query params on load (e.g. ?tv=JZD-XXXX or ?join=JZD-XXXX)
@@ -66,6 +67,9 @@ export const App: React.FC = () => {
           expiresAt: state.timer.expiresAt ?? null
         });
       }
+      if (state.submittedAnswer !== undefined) {
+        setSubmittedAnswer(state.submittedAnswer);
+      }
     });
 
     socket.on('timer:state', (timer) => {
@@ -80,6 +84,14 @@ export const App: React.FC = () => {
       setBuzzerPlayerId(null);
     });
 
+    socket.on('answer:submitted', (payload) => {
+      setSubmittedAnswer(payload);
+    });
+
+    socket.on('answer:cleared', () => {
+      setSubmittedAnswer(null);
+    });
+
     socket.on('room:error', (payload) => {
       setErrorMessage(payload.message);
     });
@@ -90,6 +102,8 @@ export const App: React.FC = () => {
       socket.off('timer:state');
       socket.off('buzzer:won');
       socket.off('buzzer:reset');
+      socket.off('answer:submitted');
+      socket.off('answer:cleared');
       socket.off('room:error');
     };
   }, [socket]);
@@ -216,6 +230,7 @@ export const App: React.FC = () => {
           timerState={timerState}
           currentQuestion={currentQuestion}
           buzzerPlayerId={buzzerPlayerId}
+          submittedAnswer={submittedAnswer}
           onStartGame={handleStartGame}
           onVerdict={handleVerdict}
           onNominate={handleNominate}
@@ -237,6 +252,7 @@ export const App: React.FC = () => {
           timerState={timerState}
           currentQuestion={currentQuestion}
           buzzerPlayerId={buzzerPlayerId}
+          submittedAnswer={submittedAnswer}
           onSubmitAnswer={handleSubmitAnswer}
           onBuzz={handleBuzz}
           onNominate={handleNominate}
@@ -251,6 +267,7 @@ export const App: React.FC = () => {
           timerState={timerState}
           currentQuestion={currentQuestion}
           buzzerPlayerId={buzzerPlayerId}
+          submittedAnswer={submittedAnswer}
         />
       )}
     </div>

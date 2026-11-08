@@ -20,11 +20,12 @@ import {
   Edit2
 } from 'lucide-react';
 import { GameConfig, GameStage, GameState, Player, Question, Stage3Phase } from '../../types/index.js';
-import { TimerState } from '../../types/socket.js';
+import { TimerState, SubmittedAnswer } from '../../types/socket.js';
 import { TimerDisplay } from '../components/TimerDisplay.js';
 import { PlayerCard } from '../components/PlayerCard.js';
 import { WinnerCelebration } from '../components/WinnerCelebration.js';
 import { sounds } from '../utils/sound.js';
+import { evaluateSubmittedAnswer } from '../utils/textSimilarity.js';
 
 interface HostViewProps {
   roomCode: string;
@@ -33,6 +34,7 @@ interface HostViewProps {
   timerState: TimerState;
   currentQuestion: Question | null;
   buzzerPlayerId: string | null;
+  submittedAnswer?: SubmittedAnswer | null;
   onStartGame: (categories?: string[], partyPlayers?: string[]) => void;
   onVerdict: (isCorrect: boolean) => void;
   onNominate: (targetPlayerId: string) => void;
@@ -52,6 +54,7 @@ export const HostView: React.FC<HostViewProps> = ({
   timerState,
   currentQuestion,
   buzzerPlayerId,
+  submittedAnswer,
   onStartGame,
   onVerdict,
   onNominate,
@@ -126,6 +129,16 @@ export const HostView: React.FC<HostViewProps> = ({
   const isFinished = stage === 'FINISHED';
   const activePlayer = gameState?.players.find((p) => p.id === gameState?.activePlayerId);
   const buzzeredPlayer = gameState?.players.find((p) => p.id === buzzerPlayerId);
+
+  // Automated evaluation for contestant submitted text answer
+  const answerEval =
+    submittedAnswer && currentQuestion
+      ? evaluateSubmittedAnswer(
+          submittedAnswer.answerText,
+          currentQuestion.answer,
+          currentQuestion.aliases
+        )
+      : null;
 
   // Check if current phase requires player nomination
   const isNominationPhase =
@@ -555,6 +568,101 @@ export const HostView: React.FC<HostViewProps> = ({
                 </div>
               )}
             </div>
+
+            {/* Online Contestant Submitted Answer Acceptance Panel */}
+            {submittedAnswer && (
+              <div
+                data-testid="host-submitted-answer-panel"
+                className="p-5 rounded-2xl bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-800 border-2 border-status-active glow-cyan mb-6 animate-fade-in shadow-2xl"
+              >
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-zinc-700/80 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-status-active animate-ping" />
+                    <span className="text-xs uppercase font-extrabold text-status-active tracking-wider">
+                      Wpłynęła odpowiedź ze smartfona
+                    </span>
+                  </div>
+                  <span className="text-xs font-mono text-zinc-400">
+                    Zawodnik: <strong className="text-white">{submittedAnswer.playerName}</strong>
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                  <div>
+                    <span className="text-xs text-zinc-400 block mb-1">Odpowiedź gracza:</span>
+                    <div
+                      data-testid="host-received-answer-text"
+                      className="text-xl sm:text-2xl font-black text-white px-4 py-3 rounded-xl bg-theme-black border border-zinc-700"
+                    >
+                      "{submittedAnswer.answerText}"
+                    </div>
+                  </div>
+
+                  <div>
+                    <span className="text-xs text-zinc-400 block mb-1">Analiza zgodności z wzorcem:</span>
+                    {answerEval ? (
+                      <div className="flex flex-col gap-1.5 p-3 rounded-xl bg-zinc-950/80 border border-zinc-800">
+                        <div className="flex items-center justify-between">
+                          <span
+                            className={`px-2.5 py-1 rounded-lg text-xs font-black uppercase tracking-wide flex items-center gap-1.5 ${
+                              answerEval.confidence === 'EXACT'
+                                ? 'bg-emerald-950 text-emerald-400 border border-emerald-500'
+                                : answerEval.confidence === 'HIGH'
+                                ? 'bg-cyan-950 text-cyan-300 border border-cyan-500'
+                                : answerEval.confidence === 'MEDIUM'
+                                ? 'bg-amber-950 text-amber-300 border border-amber-500'
+                                : 'bg-rose-950 text-rose-300 border border-rose-500'
+                            }`}
+                          >
+                            {answerEval.isLikelyCorrect ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />}
+                            {answerEval.label}
+                          </span>
+                          <span className="text-xs font-mono text-zinc-400">
+                            Wzorzec: <strong className="text-emerald-400">{answerEval.matchedWith}</strong>
+                          </span>
+                        </div>
+                        <span className="text-[11px] text-zinc-400">
+                          {answerEval.isLikelyCorrect
+                            ? 'Sugerowana decyzja: ZATWIERDŹ JAKO POPRAWNĄ'
+                            : 'Wymaga ręcznej weryfikacji prowadzącego'}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="text-xs text-zinc-500">Brak wzorca do porównania</div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Direct 1-Click Approval Buttons */}
+                <div className="mt-4 pt-3 border-t border-zinc-700/80 flex flex-wrap items-center justify-end gap-3">
+                  <span className="text-xs text-zinc-400 mr-auto hidden sm:inline">
+                    Werdykt jednym kliknięciem (lub skrót Enter / Backspace):
+                  </span>
+                  <button
+                    onClick={() => {
+                      sounds.playCorrect();
+                      onVerdict(true);
+                    }}
+                    data-testid="btn-accept-submitted-answer"
+                    className="py-3 px-5 rounded-xl bg-status-success text-black font-extrabold hover:bg-emerald-400 transition-all flex items-center gap-2 shadow-lg glow-emerald text-sm"
+                  >
+                    <CheckCircle2 className="w-4 h-4 fill-black" />
+                    <span>ZATWIERDŹ ODPOWIEDŹ (1 / Enter)</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      sounds.playWrong();
+                      onVerdict(false);
+                    }}
+                    data-testid="btn-reject-submitted-answer"
+                    className="py-3 px-5 rounded-xl bg-status-danger text-white font-extrabold hover:bg-rose-500 transition-all flex items-center gap-2 shadow-lg glow-rose text-sm"
+                  >
+                    <XCircle className="w-4 h-4 fill-white text-status-danger" />
+                    <span>ODRZUĆ JAKO BŁĘDNĄ (2 / Backspace)</span>
+                  </button>
+                </div>
+              </div>
+            )}
 
             {/* Central Controls: Timer & Big Verdict Buttons */}
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pt-4 border-t border-zinc-800">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { GameStage, GameState, Question } from '../../types/index.js';
-import { TimerState } from '../../types/socket.js';
+import { GameStage, GameState, Question, Stage3Phase } from '../../types/index.js';
+import { TimerState, SubmittedAnswer } from '../../types/socket.js';
 import { ChanceIndicators } from '../components/ChanceIndicators.js';
 import { TimerDisplay } from '../components/TimerDisplay.js';
 import { Volume2, VolumeX, Maximize2 } from 'lucide-react';
@@ -12,6 +12,7 @@ interface TvViewProps {
   timerState: TimerState;
   currentQuestion: Question | null;
   buzzerPlayerId: string | null;
+  submittedAnswer?: SubmittedAnswer | null;
 }
 
 export const TvView: React.FC<TvViewProps> = ({
@@ -19,7 +20,8 @@ export const TvView: React.FC<TvViewProps> = ({
   gameState,
   timerState,
   currentQuestion,
-  buzzerPlayerId
+  buzzerPlayerId,
+  submittedAnswer
 }) => {
   const [soundEnabled, setSoundEnabled] = useState(sounds.enabled);
 
@@ -39,6 +41,12 @@ export const TvView: React.FC<TvViewProps> = ({
   const stage = gameState?.stage || 'LOBBY';
   const activePlayer = gameState?.players.find((p) => p.id === gameState?.activePlayerId);
   const buzzeredPlayer = gameState?.players.find((p) => p.id === buzzerPlayerId);
+  const nominator =
+    !activePlayer &&
+    ((stage === GameStage.STAGE_2 && !!gameState?.nominationHolderId) ||
+      (stage === GameStage.STAGE_3 && gameState?.stage3Phase === Stage3Phase.NOMINATING))
+      ? gameState?.players.find((p) => p.id === gameState?.nominationHolderId)
+      : null;
 
   return (
     <div className="min-h-screen bg-theme-black text-white studio-grid flex flex-col justify-between p-6 sm:p-10 select-none overflow-hidden">
@@ -120,6 +128,10 @@ export const TvView: React.FC<TvViewProps> = ({
                 <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-amber-500/10 border-2 border-amber-500 text-amber-400 font-black text-lg tracking-wider uppercase glow-amber animate-pulse">
                   <span>Zgłoszenie: #{buzzeredPlayer.position || 1} {buzzeredPlayer.name}</span>
                 </div>
+              ) : nominator ? (
+                <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-amber-500/10 border-2 border-amber-500 text-amber-400 font-black text-lg tracking-wider uppercase glow-amber animate-pulse">
+                  <span>Wskazuje rywala: Stanowisko #{nominator.position || 1} {nominator.name}</span>
+                </div>
               ) : (
                 <span className="text-sm font-semibold text-zinc-500 uppercase tracking-widest">
                   Oczekiwanie na zgłoszenie
@@ -128,7 +140,7 @@ export const TvView: React.FC<TvViewProps> = ({
             </div>
 
             {/* Central Question Display */}
-            <div className="bg-theme-darker/90 border-2 border-zinc-800 rounded-3xl p-8 sm:p-12 mb-8 shadow-2xl relative">
+            <div className="bg-theme-darker/90 border-2 border-zinc-800 rounded-3xl p-8 sm:p-12 mb-6 shadow-2xl relative">
               <span className="text-xs uppercase font-extrabold tracking-widest text-zinc-400 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 inline-block mb-4">
                 Kategoria: {currentQuestion?.category || 'Wiedza ogólna'}
               </span>
@@ -139,6 +151,13 @@ export const TvView: React.FC<TvViewProps> = ({
               >
                 {currentQuestion?.question || 'Pytanie teleturnieju...'}
               </h2>
+
+              {submittedAnswer && (
+                <div className="mt-6 inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-emerald-950/80 border border-emerald-500/60 text-emerald-300 font-bold text-xs sm:text-sm tracking-wide animate-pulse">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
+                  <span>Odpowiedź zawodnika ({submittedAnswer.playerName}) wpłynęła do Mistrza Gry...</span>
+                </div>
+              )}
             </div>
 
             {/* TV Countdown Timer */}

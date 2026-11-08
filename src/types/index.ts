@@ -82,6 +82,12 @@ export interface GameState {
     expiresAt?: number | null;
   } | null;
   winner: Player | null;
+  submittedAnswer?: {
+    playerId: string;
+    playerName: string;
+    answerText: string;
+    submittedAt: number;
+  } | null;
   history: GameEventRecord[];
 }
 
