@@ -284,4 +284,80 @@ test.describe('Jeden z Dziesięciu - E2E Suite', () => {
     expect(screenshot.byteLength).toBeGreaterThan(10000);
   });
 
+  test('7. TV View in Interactive Mode: renders QR Code, PIN, and scan-to-join auto-fills room code', async ({ browser }) => {
+    const hostContext = await browser.newContext();
+    const tvContext = await browser.newContext();
+    const playerContext = await browser.newContext();
+
+    const hostPage = await hostContext.newPage();
+    const tvPage = await tvContext.newPage();
+    const playerPage = await playerContext.newPage();
+
+    // 1. Host creates an interactive / online room
+    await hostPage.goto('/');
+    await hostPage.getByTestId('btn-create-room').click();
+
+    const roomBadge = hostPage.getByTestId('room-code-badge');
+    await expect(roomBadge).toBeVisible();
+    const roomCode = await roomBadge.innerText();
+    expect(roomCode).toMatch(/^JZD-[A-Z0-9]{4}$/);
+
+    // 2. Open TV screen for this room
+    await tvPage.goto(`/?tv=${roomCode}`);
+
+    // Verify TV Lobby in interactive mode displays QR Code and PIN
+    await expect(tvPage.getByTestId('tv-lobby-interactive')).toBeVisible();
+    const qrImage = tvPage.getByTestId('tv-qr-image');
+    await expect(qrImage).toBeVisible();
+
+    const tvRoomPin = tvPage.getByTestId('tv-room-pin');
+    await expect(tvRoomPin).toContainText(roomCode);
+
+    const countBadge = tvPage.getByTestId('tv-player-count-badge');
+    await expect(countBadge).toContainText('0 /');
+
+    // 3. Player scans QR code (navigates to encoded join link: /?join=ROOMCODE)
+    await playerPage.goto(`/?join=${roomCode}`);
+
+    // Verify room code input is pre-filled automatically
+    const inputCode = playerPage.getByTestId('input-room-code');
+    await expect(inputCode).toBeVisible();
+    await expect(inputCode).toHaveValue(roomCode);
+
+    // Fill player name and join
+    const inputName = playerPage.getByTestId('input-player-name');
+    await expect(inputName).toBeVisible();
+    await inputName.fill('Krzysztof');
+    await playerPage.locator('button[type="submit"]').click();
+
+    // Player enters contestant view
+    await expect(playerPage.locator('text=Krzysztof').first()).toBeVisible();
+
+    // 4. Verify TV View updates in real time with joined contestant
+    await expect(tvPage.locator('text=Krzysztof').first()).toBeVisible();
+    await expect(countBadge).toContainText('1 /');
+
+    // 5. Verify TV View Header QR modal toggle
+    const btnToggleQr = tvPage.getByTestId('tv-btn-toggle-qr');
+    await expect(btnToggleQr).toBeVisible();
+    await btnToggleQr.click();
+
+    const qrModal = tvPage.getByTestId('tv-qr-modal');
+    await expect(qrModal).toBeVisible();
+    await expect(qrModal).toContainText(roomCode);
+
+    // Close modal via close button
+    await tvPage.getByTestId('tv-btn-close-qr-modal').click();
+    await expect(qrModal).not.toBeVisible();
+
+    // Visual screenshot of TV screen with QR code and joined player
+    const tvScreenshot = await tvPage.screenshot();
+    expect(tvScreenshot.byteLength).toBeGreaterThan(10000);
+
+    // Cleanup
+    await hostContext.close();
+    await tvContext.close();
+    await playerContext.close();
+  });
+
 });

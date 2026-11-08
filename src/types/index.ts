@@ -85,6 +85,7 @@ export interface GameState {
   id: string;
   stage: GameStage;
   config: GameConfig;
+  isPartyMode?: boolean;
   players: Player[];
   activePlayerId: string | null;
   nominationHolderId: string | null;

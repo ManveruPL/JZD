@@ -33,15 +33,23 @@ export const App: React.FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
-      const tvParam = params.get('tv');
       const joinParam = params.get('join');
-
-      if (tvParam && socket) {
-        setRoomCode(tvParam.toUpperCase());
-        emit('room:join', { roomCode: tvParam.toUpperCase(), playerName: 'Ekran TV', role: 'spectator' });
-        setCurrentView('TV');
-      } else if (joinParam) {
+      if (joinParam) {
         setRoomCode(joinParam.toUpperCase());
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && socket) {
+      const params = new URLSearchParams(window.location.search);
+      const tvParam = params.get('tv');
+
+      if (tvParam) {
+        const code = tvParam.toUpperCase();
+        setRoomCode(code);
+        emit('room:join', { roomCode: code, playerName: 'Ekran TV', role: 'spectator' });
+        setCurrentView('TV');
       }
     }
   }, [socket, emit]);
@@ -215,6 +223,7 @@ export const App: React.FC = () => {
 
       {currentView === 'HOME' && (
         <HomeView
+          initialJoinCode={roomCode}
           onStartParty={handleStartParty}
           onCreateRoom={handleCreateRoom}
           onJoinRoom={handleJoinRoom}

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Users, Wifi, Tv, Volume2, VolumeX, Sparkles, ArrowRight, Play } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Users, Wifi, Tv, Volume2, VolumeX, Sparkles, ArrowRight, Play, QrCode } from 'lucide-react';
 import { sounds } from '../utils/sound.js';
 
 interface HomeViewProps {
+  initialJoinCode?: string;
   onStartParty: () => void;
   onCreateRoom: () => void;
   onJoinRoom: (roomCode: string, name: string) => void;
@@ -10,16 +11,24 @@ interface HomeViewProps {
 }
 
 export const HomeView: React.FC<HomeViewProps> = ({
+  initialJoinCode,
   onStartParty,
   onCreateRoom,
   onJoinRoom,
   onOpenTv
 }) => {
   const [soundEnabled, setSoundEnabled] = useState(sounds.enabled);
-  const [joinCode, setJoinCode] = useState('');
+  const [joinCode, setJoinCode] = useState(initialJoinCode || '');
   const [playerName, setPlayerName] = useState('');
   const [tvCode, setTvCode] = useState('');
-  const [modeTab, setModeTab] = useState<'menu' | 'join' | 'tv'>('menu');
+  const [modeTab, setModeTab] = useState<'menu' | 'join' | 'tv'>(initialJoinCode ? 'join' : 'menu');
+
+  useEffect(() => {
+    if (initialJoinCode) {
+      setJoinCode(initialJoinCode);
+      setModeTab('join');
+    }
+  }, [initialJoinCode]);
 
   const toggleSound = () => {
     sounds.enabled = !sounds.enabled;
@@ -158,6 +167,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
               <Wifi className="w-5 h-5 text-emerald-400" /> Dołącz do teleturnieju
             </h3>
+
+            {initialJoinCode && (
+              <div className="mb-4 px-3 py-2 rounded-xl bg-cyan-950/60 border border-cyan-500/50 text-cyan-300 text-xs flex items-center gap-2">
+                <QrCode className="w-4 h-4 shrink-0" />
+                <span>Kod pokoju wpisany automatycznie ze skanowania QR! Wpisz swoje imię i graj.</span>
+              </div>
+            )}
+
             <div className="space-y-4">
               <div>
                 <label className="block text-xs uppercase font-semibold text-zinc-400 mb-1">
@@ -184,6 +201,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   onChange={(e) => setPlayerName(e.target.value)}
                   placeholder="np. Janusz"
                   required
+                  autoFocus={!!initialJoinCode}
                   data-testid="input-player-name"
                   className="w-full px-4 py-3 rounded-xl bg-theme-card border border-zinc-700 text-white focus:outline-none focus:border-emerald-500"
                 />

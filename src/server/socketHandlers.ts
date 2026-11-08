@@ -20,6 +20,10 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
     fullState.timer = room.timer.getState();
     publicState.timer = room.timer.getState();
 
+    // Attach room mode
+    fullState.isPartyMode = room.isPartyMode;
+    publicState.isPartyMode = room.isPartyMode;
+
     // Attach submitted answer
     fullState.submittedAnswer = room.submittedAnswer;
     publicState.submittedAnswer = room.submittedAnswer;
