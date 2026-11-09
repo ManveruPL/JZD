@@ -246,7 +246,8 @@ export class GameEngine {
 
     // Transition to Stage 2
     this.stage = GameStage.STAGE_2;
-    this.activePlayerIndex = 0;
+    const firstActiveIdx = this.players.findIndex(p => p.id === survivors[0].id);
+    this.activePlayerIndex = firstActiveIdx >= 0 ? firstActiveIdx : 0;
     this.activePlayerId = survivors[0].id;
     this.nominationHolderId = null;
     this.targetPlayerId = null;
@@ -458,6 +459,7 @@ export class GameEngine {
       // Player gains nomination rights
       this.nominationHolderId = player.id;
       this.activePlayerId = null;
+      this.targetPlayerId = null;
       this.questionState = QuestionState.IDLE;
       this.logEvent('ANSWER_CORRECT_NOMINATE', `Gracz ${player.name} odpowiedział poprawnie i uzyskuje prawo wyznaczania rywala.`, player.id);
     } else {
@@ -482,6 +484,24 @@ export class GameEngine {
         return;
       }
 
+      // Check if there was an active nominator who retains nomination rights
+      const nominator = this.nominationHolderId
+        ? this.players.find(p => p.id === this.nominationHolderId)
+        : null;
+
+      if (nominator && !nominator.isEliminated && nominator.chances > 0) {
+        // Rule: In Stage 2, if the nominated player answers wrong, the nominator keeps nomination rights
+        this.activePlayerId = null;
+        this.targetPlayerId = null;
+        this.questionState = QuestionState.IDLE;
+        this.logEvent(
+          'NOMINATION_RETAINED',
+          `Gracz ${player.name} odpowiedział błędnie. Prawo wyznaczania rywala zachowuje gracz ${nominator.name}.`,
+          nominator.id
+        );
+        return;
+      }
+
       // Pass turn to the next player on the list in cyclic order
       this.advanceStage2ToNextPlayer();
     }
@@ -491,8 +511,11 @@ export class GameEngine {
     const active = this.getActivePlayers();
     if (active.length === 0) return;
 
+    let currentIdx = this.players.findIndex(p => p.id === this.activePlayerId);
+    if (currentIdx < 0) currentIdx = this.activePlayerIndex;
+
     // Find current index in full players array and cycle
-    let nextIdx = (this.activePlayerIndex + 1) % this.players.length;
+    let nextIdx = (currentIdx + 1) % this.players.length;
     while (this.players[nextIdx].isEliminated || this.players[nextIdx].chances === 0) {
       nextIdx = (nextIdx + 1) % this.players.length;
     }

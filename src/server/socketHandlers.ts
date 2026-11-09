@@ -244,8 +244,14 @@ export function registerSocketHandlers(io: TypedServer, roomManager: RoomManager
             } else {
               room.timer.stop();
             }
-          } else if (state.stage === GameStage.STAGE_1 || state.stage === GameStage.STAGE_2) {
+          } else if (state.stage === GameStage.STAGE_1) {
             room.timer.reset(state.config.answerTimeLimitSeconds);
+          } else if (state.stage === GameStage.STAGE_2) {
+            if (state.activePlayerId && state.questionState === QuestionState.ANSWERING) {
+              room.timer.reset(state.config.answerTimeLimitSeconds);
+            } else {
+              room.timer.stop();
+            }
           } else {
             room.timer.stop();
           }

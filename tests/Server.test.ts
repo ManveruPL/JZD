@@ -226,5 +226,51 @@ describe('Fastify & Socket.IO Server Integration', () => {
       const stateAfter = room.engine.getState();
       expect(stateAfter).toBeDefined();
     });
+
+    it('W Etapie 2 po błędnej odpowiedzi wyznaczonego rywala, wyznaczający zachowuje prawo głosu', async () => {
+      const room = serverContext.roomManager.getRoom(createdRoomCode)!;
+      // Setup engine directly into Stage 2 for integration check
+      // Add 2 mock players so 4 players are present in Stage 2
+      (room.engine as any).players.push(
+        { id: 'p_celina', name: 'Celina', chances: 3, score: 0, isEliminated: false, stage1CorrectCount: 1, stage1QuestionsAnswered: 2 },
+        { id: 'p_damian', name: 'Damian', chances: 3, score: 0, isEliminated: false, stage1CorrectCount: 1, stage1QuestionsAnswered: 2 }
+      );
+      const state = room.engine.getState();
+      const p1 = state.players[0];
+      const p2 = state.players[1];
+
+      // Give players 3 chances and put stage into STAGE_2
+      (room.engine as any).stage = 'STAGE_2';
+      (room.engine as any).activePlayerId = p1.id;
+      (room.engine as any).nominationHolderId = null;
+      (room.engine as any).targetPlayerId = null;
+      (room.engine as any).drawNewQuestion();
+
+      // P1 answers correctly -> earns nomination right
+      hostSocket.emit('game:answer_verdict', { isCorrect: true });
+      await new Promise((r) => setTimeout(r, 50));
+
+      const stateAfterP1 = room.engine.getState();
+      expect(stateAfterP1.nominationHolderId).toBe(p1.id);
+      expect(stateAfterP1.activePlayerId).toBeNull();
+
+      // P1 nominates P2
+      hostSocket.emit('game:nominate', { targetPlayerId: p2.id });
+      await new Promise((r) => setTimeout(r, 50));
+
+      const stateAfterNom = room.engine.getState();
+      expect(stateAfterNom.activePlayerId).toBe(p2.id);
+      expect(stateAfterNom.nominationHolderId).toBe(p1.id);
+
+      // P2 answers INCORRECTLY
+      hostSocket.emit('game:answer_verdict', { isCorrect: false });
+      await new Promise((r) => setTimeout(r, 50));
+
+      const stateAfterWrong = room.engine.getState();
+      // P1 MUST STILL retain nomination rights!
+      expect(stateAfterWrong.nominationHolderId).toBe(p1.id);
+      expect(stateAfterWrong.activePlayerId).toBeNull();
+      expect(stateAfterWrong.questionState).toBe('IDLE');
+    });
   });
 });

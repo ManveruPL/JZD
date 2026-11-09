@@ -163,12 +163,12 @@ describe('GameEngine - Jeden z Dziesięciu', () => {
       expect(stateAfterNom.currentQuestion).not.toBeNull();
     });
 
-    it('błędna odpowiedź odbiera szansę i przekazuje głos kolejnemu z listy', () => {
+    it('błędna odpowiedź w początkowej kolejce odbiera szansę i przekazuje pytanie kolejnemu z listy', () => {
       const stateBefore = engine5.getState();
       const firstActive = stateBefore.players.find(p => p.id === stateBefore.activePlayerId)!;
       const initialChances = firstActive.chances;
 
-      // Answer incorrectly
+      // Answer incorrectly (before any nomination right has been won)
       engine5.recordAnswer(false);
 
       const stateAfter = engine5.getState();
@@ -176,6 +176,52 @@ describe('GameEngine - Jeden z Dziesięciu', () => {
       expect(updatedFirstActive.chances).toBe(initialChances - 1);
       // Turn passes to next player on list
       expect(stateAfter.activePlayerId).not.toBe(firstActive.id);
+      expect(stateAfter.nominationHolderId).toBeNull();
+    });
+
+    it('gdy wyznaczony gracz odpowie błędnie, wyznaczający zachowuje prawo wyznaczania i może wyznaczyć ponownie (nawet tę samą osobę)', () => {
+      const stateBefore = engine5.getState();
+      const nominatorId = stateBefore.activePlayerId!;
+
+      // 1. Nominator answers correctly -> earns nomination right
+      engine5.recordAnswer(true);
+      expect(engine5.getState().nominationHolderId).toBe(nominatorId);
+      expect(engine5.getState().activePlayerId).toBeNull();
+
+      // 2. Nominator nominates target player
+      const targetPlayer = engine5.getState().players.find(p => p.id !== nominatorId)!;
+      const targetInitialChances = targetPlayer.chances;
+      engine5.nominate(targetPlayer.id);
+
+      expect(engine5.getState().activePlayerId).toBe(targetPlayer.id);
+      expect(engine5.getState().nominationHolderId).toBe(nominatorId);
+
+      // 3. Target player answers incorrectly
+      engine5.recordAnswer(false);
+
+      const stateAfterWrong = engine5.getState();
+      const updatedTarget = stateAfterWrong.players.find(p => p.id === targetPlayer.id)!;
+      expect(updatedTarget.chances).toBe(targetInitialChances - 1);
+
+      // 4. Nomination right MUST remain with original nominator!
+      expect(stateAfterWrong.nominationHolderId).toBe(nominatorId);
+      expect(stateAfterWrong.activePlayerId).toBeNull();
+      expect(stateAfterWrong.questionState).toBe(QuestionState.IDLE);
+
+      // 5. Nominator can nominate the SAME player again
+      engine5.nominate(targetPlayer.id);
+      expect(engine5.getState().activePlayerId).toBe(targetPlayer.id);
+      expect(engine5.getState().nominationHolderId).toBe(nominatorId);
+
+      // 6. Target answers wrong again -> nominator still retains nomination right
+      engine5.recordAnswer(false);
+      expect(engine5.getState().nominationHolderId).toBe(nominatorId);
+      expect(engine5.getState().activePlayerId).toBeNull();
+
+      // 7. Nominator can nominate a DIFFERENT player
+      const thirdPlayer = engine5.getState().players.find(p => p.id !== nominatorId && p.id !== targetPlayer.id)!;
+      engine5.nominate(thirdPlayer.id);
+      expect(engine5.getState().activePlayerId).toBe(thirdPlayer.id);
     });
 
     it('kończy Etap 2 w momencie gdy zostanie dokładnie 3 graczy', () => {
